@@ -1,8 +1,13 @@
+import { React, useEffect} from 'react'
+import AOS from 'aos';
 import Link from "next/link";
 import styles from './layout.module.css';
 import { clsx } from 'clsx';
 
 export default function Layout({ children, donde }) {
+    useEffect(() => {
+        setTimeout(() => {AOS.refresh()}, 500);
+     }, [])
     return(
         <div id={ styles.todo }>
             <header>
