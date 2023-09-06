@@ -1,4 +1,4 @@
-import { React, useEffect} from 'react'
+import { React, useEffect } from 'react'
 import AOS from 'aos';
 import Link from "next/link";
 import styles from './layout.module.css';
