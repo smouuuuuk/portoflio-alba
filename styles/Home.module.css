@@ -7,6 +7,19 @@
   align-items: center;
 }
 
+#proyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+
+
+
+
+
+
 .title a {
   color: #0070f3;
   text-decoration: none;

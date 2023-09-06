@@ -1,17 +1,17 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Layout from '../components/layout';
-import Proyecto from '../components/proyecto';
+// import styles from '../styles/Home.module.css';
+import Layout from '../../components/layout';
+import Proyecto from '../../components/proyecto';
 
 export default function Home() {
   return (
-    <div className={ styles.container }>
-      <Layout donde="work">
+    <div>
+      <Layout donde="photo">
         <Head>
           <title>Alba Castro</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <div id={ styles.proyectos }>
+        <div>
           <Proyecto props={{ href:"/proyectos/un-gusto-conocerte", src:"/images/un-gusto-conocerte.jpg", alt:"Un Gusto Conocerte Libro" }}></Proyecto>
           <Proyecto props={{ href:"/proyectos/un-gusto-conocerte-identidad", src:"/images/un-gusto-conocerte-identidad.jpg", alt:"Un Gusto Conocerte Marca" }}></Proyecto>
           <Proyecto props={{ href:"/proyectos/mucha-mierda", src:"/images/mucha-mierda.jpg", alt:"Mucha Mierda" }}></Proyecto>

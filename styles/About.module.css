@@ -1,0 +1,58 @@
+#todo {
+    display: grid;
+    grid-template-columns: calc(600px + 4rem) 1fr 520px;
+}
+
+#todo img {
+    border-radius: 40px;
+    justify-self: center;
+}
+
+#presentacion {
+    padding: 0 2em;
+    font-size: 1.25em;
+    display: flex;
+    justify-content: center;
+}
+
+#presentacion div {
+    max-width: 600px;
+}
+
+#presentacion p:first-child {
+    margin-bottom: 1em;
+    position: relative;
+}
+
+#presentacion p:first-child::after {
+    content: url("/images/handshake-emoji.png");
+    position: absolute;
+    left: 290px;
+    top: -10px;
+}
+
+#datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.seccion_datos {
+    display: flex;
+    flex-direction: column;
+}
+
+.seccion_datos h2 {
+    margin-bottom: 1em;
+    font-size: 1.4em;
+    font-weight: 400;
+}
+
+.seccion_datos a {
+    text-decoration: underline;
+}
+
+.seccion_datos a,
+.seccion_datos p {
+    font-size: 1.25em;
+}
