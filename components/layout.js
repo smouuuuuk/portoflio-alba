@@ -2,6 +2,7 @@ import { React, useEffect } from 'react'
 import AOS from 'aos';
 import Link from "next/link";
 import styles from './layout.module.css';
+import Head from 'next/head';
 import { clsx } from 'clsx';
 
 export default function Layout({ children, donde }) {
@@ -10,6 +11,10 @@ export default function Layout({ children, donde }) {
      }, [])
     return(
         <div id={ styles.todo }>
+            <Head>
+            <title>Alba Castro</title>
+            <link rel="icon" href="/favicon.ico" />
+            </Head>
             <header>
                 <nav id={ styles.navegacion }>
                     <Link href="/">ALBA CASTRO</Link>
