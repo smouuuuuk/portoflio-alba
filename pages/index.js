@@ -2,6 +2,7 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import Layout from '../components/layout';
 import Proyecto from '../components/proyecto';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -13,7 +14,10 @@ export default function Home() {
         </Head>
         <div id={ styles.proyectos }>
           <Proyecto props={{ href:"/proyectos/un-gusto-conocerte", src:"/images/un-gusto-conocerte.jpg", alt:"Un Gusto Conocerte Libro" }}></Proyecto>
-          <Proyecto props={{ href:"/proyectos/un-gusto-conocerte-identidad", src:"/images/un-gusto-conocerte-identidad.jpg", alt:"Un Gusto Conocerte Marca" }}></Proyecto>
+          {/* <Proyecto props={{ href:"/proyectos/un-gusto-conocerte-identidad", src:"/videos/logo.mp4", alt:"Un Gusto Conocerte Marca" }}></Proyecto> */}
+          <Link href="/proyectos/un-gusto-conocerte-identidad" data-aos="fade-up">
+            <video width="1400" autoplay="" loop muted style={{ borderRadius:"35px" }}><source src="/videos/logo.mp4" type="video/mp4"/></video>
+          </Link>
           <Proyecto props={{ href:"/proyectos/mucha-mierda", src:"/images/mucha-mierda.jpg", alt:"Mucha Mierda" }}></Proyecto>
           <Proyecto props={{ href:"/proyectos/catalalata", src:"/images/catalalata.jpg", alt:"Catalalata" }}></Proyecto>
           <Proyecto props={{ href:"/proyectos/fos", src:"/images/fos.jpg", alt:"Fos" }}></Proyecto>

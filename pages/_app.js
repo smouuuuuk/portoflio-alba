@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
     useEffect(() => {
         AOS.init({
              duration: 800,
-             once: true,
+             once: false,
            })
      }, [])
     return <Component {...pageProps} />
