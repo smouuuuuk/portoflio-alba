@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from './layout.module.css';
 import Head from 'next/head';
 import { clsx } from 'clsx';
+import Image from 'next/image';
 
 export default function Layout({ children, donde }) {
     useEffect(() => {
@@ -28,7 +29,26 @@ export default function Layout({ children, donde }) {
                         <Link href="/about">ABOUT</Link>
                     </div>
                 </nav>
-                <div id={ styles.nav_filler }></div>
+                <div id={ styles.nav_filler }>
+                    {donde=="proyecto" ? (
+                        <>
+                        <Link href="/">
+                            <Image
+                                id={ styles.flecha_atras }
+                                priority
+                                src="/images/arrow-left.svg"
+                                width={ 40 }
+                                height={ 40 }
+                                alt="Volver al inicio"
+                            />
+                        </Link>
+                        </>
+                            ) : (
+                                <>
+                            </>
+                            )
+                    }
+                </div>
             </header>
             { children }
             <div id={ styles.footer_filler }></div>

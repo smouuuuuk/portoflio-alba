@@ -17,6 +17,9 @@ export default function Catalalata() {
             spacing: 15,
             perView: 1
         },
+        defaultAnimation: {
+            duration: 1500
+        },
         slideChanged(slider) {
         setCurrentSlide(slider.track.details.rel)
         },
@@ -26,7 +29,7 @@ export default function Catalalata() {
     })
 
     return(
-        <Layout>
+        <Layout donde="proyecto">
             <div id={ styles.todo }>
                 <div id={ styles.textos }>
                     <div id={ styles.textos_izq }>
