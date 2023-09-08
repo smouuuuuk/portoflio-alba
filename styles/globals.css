@@ -61,13 +61,11 @@ button {
 
 .arrow--left {
   left: 25px;
-  transform: scale(1.5);
 }
 
 .arrow--right {
   left: auto;
   right: 25px;
-  transform: scale(1.5);
 }
 
 .keen-slider {

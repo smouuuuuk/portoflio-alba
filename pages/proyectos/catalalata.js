@@ -82,7 +82,7 @@ export default function Catalalata() {
                             <Image
                                     className= { styles.imagen }
                                     priority
-                                    src="/images/catalalata/atun.jpg"
+                                    src="/images/catalalata/mejillones.jpg"
                                     width={ 1600 }
                                     height={ 1600 }
                                     alt="Todos los estuches de conservas"
@@ -92,7 +92,7 @@ export default function Catalalata() {
                             <Image 
                                 className= { styles.imagen }
                                 priority
-                                src="/images/catalalata/sardinillas.jpg"
+                                src="/images/catalalata/chipirones.jpg"
                                 width={ 1600 }
                                 height={ 1600 }
                                 alt="Todos los estuches de conservas"
@@ -102,7 +102,7 @@ export default function Catalalata() {
                             <Image
                                     className= { styles.imagen }
                                     priority
-                                    src="/images/catalalata/atun.jpg"
+                                    src="/images/catalalata/berberecho.jpg"
                                     width={ 1600 }
                                     height={ 1600 }
                                     alt="Todos los estuches de conservas"
@@ -112,7 +112,7 @@ export default function Catalalata() {
                             <Image 
                                 className= { styles.imagen }
                                 priority
-                                src="/images/catalalata/sardinillas.jpg"
+                                src="/images/catalalata/zamburinas.jpg"
                                 width={ 1600 }
                                 height={ 1600 }
                                 alt="Todos los estuches de conservas"
@@ -141,14 +141,6 @@ export default function Catalalata() {
                     </>
                     )}
                 </div>
-                    <Image 
-                        className= { styles.imagen }
-                        priority
-                        src="/images/catalalata/sardinillas.jpg"
-                        width={ 1600 }
-                        height={ 1600 }
-                        alt="Todos los estuches de conservas"
-                        />
                     <Image 
                         className= { styles.imagen }
                         priority
