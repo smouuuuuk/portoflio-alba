@@ -1,7 +1,7 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
 import styles from '../../styles/Catalalata.module.css';
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
@@ -52,8 +52,92 @@ export default function Catalalata() {
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
-                    />
-                    
+                        />
+                <div className={ `${styles.imagen} navigation-wrapper` }>
+                    <div ref={sliderRef} className="keen-slider">
+                        <div className="keen-slider__slide">
+                            <Image
+                                    className= { styles.imagen }
+                                    priority
+                                    src="/images/catalalata/atun.jpg"
+                                    width={ 1600 }
+                                    height={ 1600 }
+                                    alt="Todos los estuches de conservas"
+                                    />
+                        </div>
+                        <div className="keen-slider__slide">
+                            <Image 
+                                className= { styles.imagen }
+                                priority
+                                src="/images/catalalata/sardinillas.jpg"
+                                width={ 1600 }
+                                height={ 1600 }
+                                alt="Todos los estuches de conservas"
+                                />
+                        </div>
+                        <div className="keen-slider__slide">
+                            <Image
+                                    className= { styles.imagen }
+                                    priority
+                                    src="/images/catalalata/atun.jpg"
+                                    width={ 1600 }
+                                    height={ 1600 }
+                                    alt="Todos los estuches de conservas"
+                                    />
+                        </div>
+                        <div className="keen-slider__slide">
+                            <Image 
+                                className= { styles.imagen }
+                                priority
+                                src="/images/catalalata/sardinillas.jpg"
+                                width={ 1600 }
+                                height={ 1600 }
+                                alt="Todos los estuches de conservas"
+                                />
+                        </div>
+                        <div className="keen-slider__slide">
+                            <Image
+                                    className= { styles.imagen }
+                                    priority
+                                    src="/images/catalalata/atun.jpg"
+                                    width={ 1600 }
+                                    height={ 1600 }
+                                    alt="Todos los estuches de conservas"
+                                    />
+                        </div>
+                        <div className="keen-slider__slide">
+                            <Image 
+                                className= { styles.imagen }
+                                priority
+                                src="/images/catalalata/sardinillas.jpg"
+                                width={ 1600 }
+                                height={ 1600 }
+                                alt="Todos los estuches de conservas"
+                                />
+                        </div>
+                    </div>
+                    {loaded && instanceRef.current && (
+                        <>
+                        <Arrow
+                        left
+                        onClick={(e) =>
+                            e.stopPropagation() || instanceRef.current?.prev()
+                        }
+                        disabled={currentSlide === 0}
+                        />
+
+                        <Arrow
+                        onClick={(e) =>
+                            e.stopPropagation() || instanceRef.current?.next()
+                        }
+                        disabled={
+                            currentSlide ===
+                            instanceRef.current.track.details.slides.length - 1
+                        }
+                        />
+                    </>
+                    )}
+                </div>
                     <Image 
                         className= { styles.imagen }
                         priority
@@ -61,7 +145,7 @@ export default function Catalalata() {
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
-                    />
+                        />
                     <Image 
                         className= { styles.imagen }
                         priority
@@ -69,96 +153,12 @@ export default function Catalalata() {
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
-                    />
+                        />
                 </div>
             </div>
 
 
-            <div className={ `${styles.imagen} navigation-wrapper` }>
-                <div ref={sliderRef} className="keen-slider">
-                    <div className="keen-slider__slide">
-                        <Image
-                                className= { styles.imagen }
-                                priority
-                                src="/images/catalalata/atun.jpg"
-                                width={ 1600 }
-                                height={ 1600 }
-                                alt="Todos los estuches de conservas"
-                        />
-                    </div>
-                    <div className="keen-slider__slide">
-                        <Image 
-                            className= { styles.imagen }
-                            priority
-                            src="/images/catalalata/sardinillas.jpg"
-                            width={ 1600 }
-                            height={ 1600 }
-                            alt="Todos los estuches de conservas"
-                        />
-                    </div>
-                    <div className="keen-slider__slide">
-                        <Image
-                                className= { styles.imagen }
-                                priority
-                                src="/images/catalalata/atun.jpg"
-                                width={ 1600 }
-                                height={ 1600 }
-                                alt="Todos los estuches de conservas"
-                        />
-                    </div>
-                    <div className="keen-slider__slide">
-                        <Image 
-                            className= { styles.imagen }
-                            priority
-                            src="/images/catalalata/sardinillas.jpg"
-                            width={ 1600 }
-                            height={ 1600 }
-                            alt="Todos los estuches de conservas"
-                        />
-                    </div>
-                    <div className="keen-slider__slide">
-                        <Image
-                                className= { styles.imagen }
-                                priority
-                                src="/images/catalalata/atun.jpg"
-                                width={ 1600 }
-                                height={ 1600 }
-                                alt="Todos los estuches de conservas"
-                        />
-                    </div>
-                    <div className="keen-slider__slide">
-                        <Image 
-                            className= { styles.imagen }
-                            priority
-                            src="/images/catalalata/sardinillas.jpg"
-                            width={ 1600 }
-                            height={ 1600 }
-                            alt="Todos los estuches de conservas"
-                        />
-                    </div>
-                </div>
-                {loaded && instanceRef.current && (
-                <>
-                    <Arrow
-                    left
-                    onClick={(e) =>
-                        e.stopPropagation() || instanceRef.current?.prev()
-                    }
-                    disabled={currentSlide === 0}
-                    />
-
-                    <Arrow
-                    onClick={(e) =>
-                        e.stopPropagation() || instanceRef.current?.next()
-                    }
-                    disabled={
-                        currentSlide ===
-                        instanceRef.current.track.details.slides.length - 1
-                    }
-                    />
-                </>
-                )}
-            </div>
+            
 
         </Layout>
     )
@@ -167,16 +167,16 @@ export default function Catalalata() {
 function Arrow(props) {
     const disabeld = props.disabled ? " arrow--disabled" : ""
     return (
-      <svg
+        <svg
         onClick={props.onClick}
         className={`arrow ${
-          props.left ? "arrow--left" : "arrow--right"
+            props.left ? "arrow--left" : "arrow--right"
         }`}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 24 24"
-      >
+        >
         {props.left && (
-          <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
+            <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
         )}
         {!props.left && (
           <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />

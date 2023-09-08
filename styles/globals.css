@@ -45,7 +45,7 @@ button {
 
 .navigation-wrapper {
   position: relative;
-  align-self: baseline;
+  max-width: clamp(1em, 1600px, calc(100vw - 4em));
 }
 
 .arrow {
@@ -60,14 +60,19 @@ button {
 }
 
 .arrow--left {
-  left: 5px;
+  left: 25px;
+  transform: scale(1.5);
 }
 
 .arrow--right {
   left: auto;
-  right: 5px;
+  right: 25px;
+  transform: scale(1.5);
 }
 
+.keen-slider {
+  border-radius: 40px;
+}
 
 .keen-slider__slide {
   display: flex;
