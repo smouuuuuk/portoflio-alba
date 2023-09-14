@@ -18,9 +18,23 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    gap: 4em;
 }
 
 .imagen {
     border-radius: 40px;
+}
+
+#animaciones {
+    max-width: 80vw;
+}
+
+#animaciones div {
+    display: flex;
+    flex-direction: row;
+    gap: 4em;
+}
+
+.animacion {
+    width: 100%;
 }
