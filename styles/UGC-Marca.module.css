@@ -1,0 +1,49 @@
+#todo {
+    padding: 0 2em;
+}
+
+#videougc {
+    max-width: 100%;
+}
+
+#textos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6em;
+}
+
+#textos_izq {
+    min-width: 260px;
+}
+
+#imagenes {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.imagen {
+    border-radius: 40px;
+    max-width: 100%;
+}
+
+#tote_gif {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    width: 100%;
+}
+
+#tote_gif > div {
+    max-width: 100%;
+}
+
+#tote_gif > div img {
+    display: block;
+    width: auto;
+    height: 100%;
+}
