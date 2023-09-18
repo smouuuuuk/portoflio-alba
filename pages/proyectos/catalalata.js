@@ -33,18 +33,24 @@ export default function Catalalata() {
             <div id={ styles.todo }>
                 <div id={ styles.textos }>
                     <div id={ styles.textos_izq }>
-                        <div>
-                            <p>CATA LA LATA WINNER</p>
-                            <p>ANFACO-Fundación Banco Sabadell</p>
+                        <div id={ styles.titulo }>
+                            <h2>CATA LA LATA</h2>
+                        </div>
+                        <div id={ styles.fecha }>
                             <p>2023</p>
                         </div>
-                        <div>
-                            <p>Packaging</p>
-                            <p>Illustration</p>
+                        <div id={ styles.mencion }>
+                            <p>Premiado: <a href="https://www.fundacionbancosabadell.com/alba-castro-ganadora-del-v-premio-de-diseno-anfaco/">Ganadora V Edición Cata La Lata <br></br> Anfaco x Fundación Banco Sabadell</a></p>
+                        </div>
+                        <div id={ styles.categorias }>
+                            <div className={ styles.categoria }>Packaging</div>
+                            <div className={ styles.categoria }>Ilustración</div>
+                            <div className={ styles.categoria }>Motion graphics</div>
                         </div>
                     </div>
                     <div id={ styles.textos_drch }>
-                        <p>Donec sed tincidunt orci. Quisque maximus tempus ligula, et tristique massa feugiat ut. Curabitur volutpat orci sed nisl aliquam mollis. Etiam at eros nisl. Phasellus lectus urna, facilisis at est vitae, pellentesque dignissim magna. Quisque ut lacus lorem. Suspendisse facilisis, est rhoncus elementum pharetra, magna purus fermentum tellus, ac volutpat lacus dolor ut elit. Vestibulum ac bibendum erat, id dictum ligula. Vestibulum elementum, sapien a imperdiet lobortis, magna urna viverra ligula, et maximus metus odio et massa. Suspendisse aliquam eu risus nec varius. Morbi id dolor vitae sem accumsan sollicitudin in in nunc. Proin eget urna non eros viverra sodales sed quis lectus. Vestibulum quis mattis diam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc mattis, sapien at interdum rutrum, odio lectus consectetur odio, ac lobortis tortor nibh eget leo.</p>
+                        <p className={ styles.texto_drch }>Diseño de packaging para seis variedades de conservas. Además de mostrar el producto, aparece la figura humana que es clave en todo el proceso. Se diseñó un personaje neutro que interactúa de forma simpática con el producto. Por un lado, este personaje hace referencia a los pescadores y las mariscadoras gallegas y por otro lado, también hace un guiño al consumidor que disfruta del producto. Se buscaba que cualquiera pudiese sentirse identificado con el diseño, independientemente de su edad.</p>
+                        <p className={ styles.texto_drch } small>- Se ha valorado la creatividad y la profesionalidad de ejecución del diseño en su conjunto. La limpieza del diseño, con un predominio del blanco y negro sobre el que contrasta una ingeniosa reinterpretación del logo-marca “Cata la Lata” aplicada en colores vivos. El tratamiento y la carga emotiva de las ilustraciones que representan a un pescador cariñoso en distintas situaciones, que utiliza con versatilidad, jugando con el frente y el reverso de los estuches. El resultado en su conjunto desarrolla una historia coherente, homogénea, que hace familia al integrar con destreza a las distintas categorías de producto - Jurado</p>
                     </div>
                 </div>
                 <div id={ styles.imagenes }>

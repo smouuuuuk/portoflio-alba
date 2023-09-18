@@ -19,17 +19,17 @@
     max-width: 600px;
 }
 
-#presentacion p:first-child {
+#presentacion p:nth-child(-n+2) {
     margin-bottom: 1em;
     position: relative;
 }
 
-#presentacion p:first-child::after {
+/* #presentacion p:first-child::after {
     content: url("/images/handshake-emoji.png");
     position: absolute;
     left: 290px;
     top: -10px;
-}
+} */
 
 #datos {
     display: flex;

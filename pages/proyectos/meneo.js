@@ -1,37 +1,32 @@
-import Image from "next/image";
 import Layout from "../../components/layout";
-import styles from '../../styles/UGC-Marca.module.css';
-import React, { useEffect, useState } from "react"
-import { useKeenSlider } from "keen-slider/react"
-import "keen-slider/keen-slider.min.css"
+import Image from "next/image";
+import styles from '../../styles/Catalalata.module.css';
 
-export default function UnGustoConocerteMarca() {
+
+export default function Meneo(){
     return(
         <Layout donde="proyecto">
-            <div id={styles.todo}>
+             <div id={styles.todo}>
 
                 <div id={ styles.textos }>
                     <div id={ styles.textos_izq }>
                         <div id={ styles.titulo }>
-                            <h2>UN GUSTO CONOCERTE</h2>
+                            <h2>MENEO</h2>
                         </div>
                         <div id={ styles.fecha }>
-                            <p>2023</p>
+                            <p>2020</p>
                         </div>
                         <div id={ styles.mencion }>
-                            <p>Trabajo Fin de Grado</p>
+                            <p>Proyecto universitario</p>
                         </div>
                         <div id={ styles.categorias }>
-                            <div className={ styles.categoria }>Brand guidelines</div>
-                            <div className={ styles.categoria }>Dirección de arte</div>
-                            <div className={ styles.categoria }>Motion graphics</div>
+                            <div className={ styles.categoria }>Identidad visual</div>
+                            <div className={ styles.categoria }>Packaging</div>
                             <div className={ styles.categoria }>Ilustración</div>
                         </div>
                     </div>
                     <div id={ styles.textos_drch }>
-                        <p className={ styles.texto_drch }>“Un gusto conocerte” es una iniciativa sin ánimo de lucro que surge con el objetivo de eliminar todos aquellos estigmas presentes en la sociedad hacia las personas con síndrome de Down, a través de los aspectos que les hacen singulares más allá de la etiqueta diagnóstica.</p>
-                        <p className={ styles.texto_drch }>Se dirige principalmente a las personas con síndrome de Down por loque se busca que toda su imagen y aplicaciones sean lo más claras yaccesibles posible. Para ello, se crea una marca cercana y amigable atendiendo a las directrices de la Lectura Fácil. Partimos de un namingdirecto, autoexplicativo y notorio, creando un universo visual que gira en torno a la mano comoelemento representativo del momento de conocer a alguien.</p>
-                        <a href="">VER PRODUCTO</a> 
+                        <p className={ styles.texto_drch }>Meneo, es una propuesta de vinos para gente joven. Apuesta por una imagen diferente a los vinos convencionales con el objetivo de posicionarlo como competidor de las cañas o el vermut.</p>
                     </div>
                 </div>
 

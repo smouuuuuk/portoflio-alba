@@ -15,8 +15,10 @@ export default function About(){
                 />
                 <div id={ styles.presentacion }>
                     <div>
-                        <p>¡Hola! Encantada de conocerte</p>
+                        <p>¡Hola! Encantada de conocerte.</p>
                         <p>Me llamo Alba (22) y soy una Diseñadora Gráfica e Ilustradora asturiana actualmente viviendo en Madrid.</p>
+                        <p>Me inspiran muchas cosas,  pero especialmente: mi tío René, mis raíces, las personas y cómo se comportan.</p>
+                        <p>Me gusta explorar temas cotidianos para transformar problemas o cuestiones sociales a través del diseño. Busco llevar mi trabajo más allá de una cuestión estética, a través de la sensibilidad, transmitir y provocar emociones.</p>
                     </div>
                 </div>
                 <div id={ styles.datos }>

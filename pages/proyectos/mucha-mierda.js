@@ -5,7 +5,8 @@ import React, { useEffect, useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
-export default function UnGustoConocerteMarca() {
+
+export default function MuchaMierda(){
     return(
         <Layout donde="proyecto">
             <div id={styles.todo}>
@@ -13,25 +14,28 @@ export default function UnGustoConocerteMarca() {
                 <div id={ styles.textos }>
                     <div id={ styles.textos_izq }>
                         <div id={ styles.titulo }>
-                            <h2>UN GUSTO CONOCERTE</h2>
+                            <h2>MUCHA MIERDA</h2>
                         </div>
                         <div id={ styles.fecha }>
                             <p>2023</p>
                         </div>
                         <div id={ styles.mencion }>
-                            <p>Trabajo Fin de Grado</p>
+                            <p>Premiado: <a href="https://www.adg-fad.org/es/laus/proyecto/mucha-mierda-0">ADG Laus Bronce</a></p>
+                        </div>
+                        <div id={ styles.informacion}>
+                            <p>Tamaño: A2</p>
+                            <p>Papel ecológico de 100gr</p>
+                            <p>Encuadernación grapada</p>
                         </div>
                         <div id={ styles.categorias }>
-                            <div className={ styles.categoria }>Brand guidelines</div>
                             <div className={ styles.categoria }>Dirección de arte</div>
-                            <div className={ styles.categoria }>Motion graphics</div>
-                            <div className={ styles.categoria }>Ilustración</div>
+                            <div className={ styles.categoria }>Editorial</div>
                         </div>
                     </div>
                     <div id={ styles.textos_drch }>
-                        <p className={ styles.texto_drch }>“Un gusto conocerte” es una iniciativa sin ánimo de lucro que surge con el objetivo de eliminar todos aquellos estigmas presentes en la sociedad hacia las personas con síndrome de Down, a través de los aspectos que les hacen singulares más allá de la etiqueta diagnóstica.</p>
-                        <p className={ styles.texto_drch }>Se dirige principalmente a las personas con síndrome de Down por loque se busca que toda su imagen y aplicaciones sean lo más claras yaccesibles posible. Para ello, se crea una marca cercana y amigable atendiendo a las directrices de la Lectura Fácil. Partimos de un namingdirecto, autoexplicativo y notorio, creando un universo visual que gira en torno a la mano comoelemento representativo del momento de conocer a alguien.</p>
-                        <a href="">VER PRODUCTO</a> 
+                        <p className={ styles.texto_drch }>La revista explora el concepto de suerte en la vida cotidiana. </p>
+                        <p className={ styles.texto_drch }>Navega por diferentes temas para informar y entretener al lector, dejando paso a su subjetividad.</p>
+                        <p className={ styles.texto_drch }>Equipo: Inés Oliver, Hugo Morán, Sara Zaloña y Alba Castro.</p>
                     </div>
                 </div>
 

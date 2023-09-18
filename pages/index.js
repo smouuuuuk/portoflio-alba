@@ -8,7 +8,7 @@ export default function Home() {
     <div className={ styles.container }>
       <Layout donde="work">
         <div id={ styles.proyectos }>
-          <Proyecto props={{ href:"/proyectos/un-gusto-conocerte", src:"/images/un-gusto-conocerte/un-gusto-conocerte.jpg", alt:"Un Gusto Conocerte Libro" }}></Proyecto>
+          <Proyecto props={{ href:"/proyectos/un-gusto-conocerte", src:"/images/un-gusto-conocerte/foto_exterior.jpg", alt:"Un Gusto Conocerte Libro" }}></Proyecto>
           {/* <Proyecto props={{ href:"/proyectos/un-gusto-conocerte-identidad", src:"/videos/logo.mp4", alt:"Un Gusto Conocerte Marca" }}></Proyecto> */}
           <Link href="/proyectos/un-gusto-conocerte-marca" data-aos="fade-up">
             <video id={ styles.videougc} width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }}><source src="/images/un-gusto-conocerte-marca/logo.mp4" type="video/mp4"/></video>
