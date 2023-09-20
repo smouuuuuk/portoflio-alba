@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
 import styles from '../../styles/Catalalata.module.css';
+import textStyles from '../../styles/Textos.module.css';
 import React, { useEffect, useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
@@ -31,26 +32,26 @@ export default function Catalalata() {
     return(
         <Layout donde="proyecto">
             <div id={ styles.todo }>
-                <div id={ styles.textos }>
-                    <div id={ styles.textos_izq }>
-                        <div id={ styles.titulo }>
+                <div id={ textStyles.textos }>
+                    <div id={ textStyles.textos_izq }>
+                        <div id={ textStyles.titulo }>
                             <h2>CATA LA LATA</h2>
                         </div>
-                        <div id={ styles.fecha }>
+                        <div id={ textStyles.fecha }>
                             <p>2023</p>
                         </div>
-                        <div id={ styles.mencion }>
+                        <div id={ textStyles.mencion }>
                             <p>Premiado: <a href="https://www.fundacionbancosabadell.com/alba-castro-ganadora-del-v-premio-de-diseno-anfaco/">Ganadora V Edición Cata La Lata <br></br> Anfaco x Fundación Banco Sabadell</a></p>
                         </div>
-                        <div id={ styles.categorias }>
-                            <div className={ styles.categoria }>Packaging</div>
-                            <div className={ styles.categoria }>Ilustración</div>
-                            <div className={ styles.categoria }>Motion graphics</div>
+                        <div id={ textStyles.categorias }>
+                            <div className={ textStyles.categoria }>Packaging</div>
+                            <div className={ textStyles.categoria }>Ilustración</div>
+                            <div className={ textStyles.categoria }>Motion graphics</div>
                         </div>
                     </div>
-                    <div id={ styles.textos_drch }>
-                        <p className={ styles.texto_drch }>Diseño de packaging para seis variedades de conservas. Además de mostrar el producto, aparece la figura humana que es clave en todo el proceso. Se diseñó un personaje neutro que interactúa de forma simpática con el producto. Por un lado, este personaje hace referencia a los pescadores y las mariscadoras gallegas y por otro lado, también hace un guiño al consumidor que disfruta del producto. Se buscaba que cualquiera pudiese sentirse identificado con el diseño, independientemente de su edad.</p>
-                        <p className={ styles.texto_drch } small>- Se ha valorado la creatividad y la profesionalidad de ejecución del diseño en su conjunto. La limpieza del diseño, con un predominio del blanco y negro sobre el que contrasta una ingeniosa reinterpretación del logo-marca “Cata la Lata” aplicada en colores vivos. El tratamiento y la carga emotiva de las ilustraciones que representan a un pescador cariñoso en distintas situaciones, que utiliza con versatilidad, jugando con el frente y el reverso de los estuches. El resultado en su conjunto desarrolla una historia coherente, homogénea, que hace familia al integrar con destreza a las distintas categorías de producto - Jurado</p>
+                    <div id={ textStyles.textos_drch }>
+                        <p className={ textStyles.texto_drch }>Diseño de packaging para seis variedades de conservas. Además de mostrar el producto, aparece la figura humana que es clave en todo el proceso. Se diseñó un personaje neutro que interactúa de forma simpática con el producto. Por un lado, este personaje hace referencia a los pescadores y las mariscadoras gallegas y por otro lado, también hace un guiño al consumidor que disfruta del producto. Se buscaba que cualquiera pudiese sentirse identificado con el diseño, independientemente de su edad.</p>
+                        <p className={ textStyles.texto_drch } small>- Se ha valorado la creatividad y la profesionalidad de ejecución del diseño en su conjunto. La limpieza del diseño, con un predominio del blanco y negro sobre el que contrasta una ingeniosa reinterpretación del logo-marca “Cata la Lata” aplicada en colores vivos. El tratamiento y la carga emotiva de las ilustraciones que representan a un pescador cariñoso en distintas situaciones, que utiliza con versatilidad, jugando con el frente y el reverso de los estuches. El resultado en su conjunto desarrolla una historia coherente, homogénea, que hace familia al integrar con destreza a las distintas categorías de producto - Jurado</p>
                     </div>
                 </div>
                 <div id={ styles.imagenes }>

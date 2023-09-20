@@ -2,17 +2,6 @@
     padding: 0 2em;
 }
 
-#textos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 6em;
-}
-
-#textos_izq {
-    min-width: 260px;
-}
-
 #imagenes {
     margin-top: 4em;
     display: flex;
@@ -24,3 +13,5 @@
 .imagen {
     border-radius: 40px;
 }
+
+

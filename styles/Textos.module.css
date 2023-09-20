@@ -1,0 +1,40 @@
+#textos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 6em;
+}
+
+#textos_izq {
+    min-width: 260px;
+}
+
+#titulo {
+    margin-bottom: 1rem;
+}
+
+#informacion {
+    margin-bottom: 1.25rem;
+}
+
+#mencion {
+    margin-bottom: 1.25rem;
+}
+
+#categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5em;
+}
+
+.categoria {
+    padding: .25em 1em;
+    border: 1px solid black;
+    border-radius: 40px;
+}
+
+.categoria p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
 import styles from '../../styles/Catalalata.module.css';
+import textStyles from '../../styles/Textos.module.css';
 
 
 export default function Fos(){
@@ -8,25 +9,25 @@ export default function Fos(){
         <Layout donde="proyecto">
             <div id={styles.todo}>
 
-                <div id={ styles.textos }>
-                    <div id={ styles.textos_izq }>
-                        <div id={ styles.titulo }>
+                <div id={ textStyles.textos }>
+                    <div id={ textStyles.textos_izq }>
+                        <div id={ textStyles.titulo }>
                             <h2>FOS ESTUDIO ®</h2>
                         </div>
-                        <div id={ styles.fecha }>
+                        <div id={ textStyles.fecha }>
                             <p>2022</p>
                         </div>
-                        <div id={ styles.mencion }>
+                        <div id={ textStyles.mencion }>
                             <p>Cliente: Fos Estudio</p>
                         </div>
-                        <div id={ styles.categorias }>
-                            <div className={ styles.categoria }>Identidad visual</div>
-                            <div className={ styles.categoria }>Papelería</div>
-                            <div className={ styles.categoria }>Animación de logotipo</div>
+                        <div id={ textStyles.categorias }>
+                            <div className={ textStyles.categoria }>Identidad visual</div>
+                            <div className={ textStyles.categoria }>Papelería</div>
+                            <div className={ textStyles.categoria }>Animación de logotipo</div>
                         </div>
                     </div>
-                    <div id={ styles.textos_drch }>
-                        <p className={ styles.texto_drch }>Creación de la identidad visual para Fos Estudio ®, un proyecto de interiorismo y diseño llevado a cabo por Irina Ivanova enfocado a traducir la luz, los interiores y la simbiosis entre ambos mundos.</p>
+                    <div id={ textStyles.textos_drch }>
+                        <p className={ textStyles.texto_drch }>Creación de la identidad visual para Fos Estudio ®, un proyecto de interiorismo y diseño llevado a cabo por Irina Ivanova enfocado a traducir la luz, los interiores y la simbiosis entre ambos mundos.</p>
                     </div>
                 </div>
 

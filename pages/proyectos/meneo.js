@@ -1,6 +1,7 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
 import styles from '../../styles/Catalalata.module.css';
+import textStyles from '../../styles/Textos.module.css';
 
 
 export default function Meneo(){
@@ -8,25 +9,25 @@ export default function Meneo(){
         <Layout donde="proyecto">
              <div id={styles.todo}>
 
-                <div id={ styles.textos }>
-                    <div id={ styles.textos_izq }>
-                        <div id={ styles.titulo }>
+                <div id={ textStyles.textos }>
+                    <div id={ textStyles.textos_izq }>
+                        <div id={ textStyles.titulo }>
                             <h2>MENEO</h2>
                         </div>
-                        <div id={ styles.fecha }>
+                        <div id={ textStyles.fecha }>
                             <p>2020</p>
                         </div>
-                        <div id={ styles.mencion }>
+                        <div id={ textStyles.mencion }>
                             <p>Proyecto universitario</p>
                         </div>
-                        <div id={ styles.categorias }>
-                            <div className={ styles.categoria }>Identidad visual</div>
-                            <div className={ styles.categoria }>Packaging</div>
-                            <div className={ styles.categoria }>Ilustración</div>
+                        <div id={ textStyles.categorias }>
+                            <div className={ textStyles.categoria }>Identidad visual</div>
+                            <div className={ textStyles.categoria }>Packaging</div>
+                            <div className={ textStyles.categoria }>Ilustración</div>
                         </div>
                     </div>
-                    <div id={ styles.textos_drch }>
-                        <p className={ styles.texto_drch }>Meneo, es una propuesta de vinos para gente joven. Apuesta por una imagen diferente a los vinos convencionales con el objetivo de posicionarlo como competidor de las cañas o el vermut.</p>
+                    <div id={ textStyles.textos_drch }>
+                        <p className={ textStyles.texto_drch }>Meneo, es una propuesta de vinos para gente joven. Apuesta por una imagen diferente a los vinos convencionales con el objetivo de posicionarlo como competidor de las cañas o el vermut.</p>
                     </div>
                 </div>
 
