@@ -3,9 +3,9 @@ body {
   padding: 0;
   margin: 0;
   /* font-family:  Helvetica Neue, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif;
-  background-color: #B6B6B6; */
-  font-family: var(--cooper-font);
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif; */
+  background-color: #B6B6B6;
+  font-family: var(--cooper-font), Segoe UI;
 }
 
 a {
