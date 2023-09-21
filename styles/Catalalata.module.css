@@ -1,11 +1,17 @@
 #animaciones {
-    max-width: 80vw;
+    width: 1600px;
+    max-width: clamp(1em, 1600px, calc(100vw - 4em));
+    padding: 6em 0;
+    background-color: black;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 #animaciones div {
     display: flex;
     flex-direction: row;
-    gap: 4em;
+    gap: 2em;
 }
 
 .animacion {

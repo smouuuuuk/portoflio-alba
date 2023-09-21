@@ -9,11 +9,7 @@ const helvetica_neue = localFont({
       {
         path: '../public/fonts/HELVETICANEUE-ROMAN_0.woff2',
         weight: '400',
-      },
-    //   {
-    //     path: '../public/fonts/cooperhewitt-bold-webfont.woff2',
-    //     weight: '700',
-    //   },
+      }
     ],
   });
 
@@ -29,7 +25,7 @@ export default function App({ Component, pageProps }) {
             <style jsx global>{`
                 :root {
                 /* ... */
-                --cooper-font: ${helvetica_neue.style.fontFamily};
+                --helvetica-neue: ${helvetica_neue.style.fontFamily};
                 }
             `}</style>
             <Component {...pageProps} />
