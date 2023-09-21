@@ -37,7 +37,15 @@ export default function UnGustoConocerteMarca() {
                 </div>
 
                 <div id={ styles.imagenes }>
-                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }}><source src="/images/un-gusto-conocerte-marca/logo.mp4" type="video/mp4"/></video>
+                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }}><source src="/images/home/home_2.mp4" type="video/mp4"/></video>
+                    <Image
+                        className= { styles.imagen }
+                        priority
+                        src="/images/un-gusto-conocerte-marca/colores.svg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                    />
                     <div id={styles.tote_gif}>
                         <div>
                             <Image 
@@ -60,6 +68,40 @@ export default function UnGustoConocerteMarca() {
                                 />
                         </div>
                     </div>
+                    <Image
+                        className= { styles.imagen }
+                        priority
+                        src="/images/un-gusto-conocerte-marca/camiseta.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                    />
+                    <Image
+                        className= { styles.imagen }
+                        priority
+                        src="/images/un-gusto-conocerte-marca/manual.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                    />
+                    <Image
+                        className= { styles.imagen }
+                        priority
+                        src="/images/un-gusto-conocerte-marca/libro+marcapaginas.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                    />
+                    <Image
+                        className= { styles.imagen }
+                        priority
+                        src="/images/un-gusto-conocerte-marca/instagram_feed.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                    />
+                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }}><source src="/images/un-gusto-conocerte-marca/rrss_video.mp4" type="video/mp4"/></video>
+
                 </div>
 
             </div>
