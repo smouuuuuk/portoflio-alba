@@ -1,0 +1,34 @@
+#todo {
+    padding: 0 2em;
+}
+
+#imagenes {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4em;
+}
+
+.imagen {
+    border-radius: 40px;
+}
+
+
+#lamp_tarj {
+    max-width: 1600px;
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    width: 100%;
+}
+
+#lamp_tarj > div {
+    max-width: 100%;
+}
+
+#lamp_tarj > div img {
+    display: block;
+    width: auto;
+    height: 100%;
+}
