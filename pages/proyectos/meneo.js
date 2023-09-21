@@ -1,6 +1,6 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-import styles from '../../styles/Catalalata.module.css';
+import styles from '../../styles/Meneo.module.css';
 import textStyles from '../../styles/Textos.module.css';
 
 
@@ -32,13 +32,28 @@ export default function Meneo(){
                 </div>
 
                 <div id={ styles.imagenes }>
-                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }}><source src="/images/un-gusto-conocerte-marca/logo.mp4" type="video/mp4"/></video>
-                    <div id={styles.tote_gif}>
+                    <Image 
+                        className= { styles.imagen }
+                        priority
+                        src="/images/home/home_6.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                    />
+                    <Image 
+                        className= { styles.imagen }
+                        priority
+                        src="/images/meneo/etiquetas.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                    />
+                    <div id={styles.tote_botella}>
                         <div>
                             <Image 
                                 className= { styles.imagen }
                                 priority
-                                src="/images/un-gusto-conocerte-marca/tote-1.jpg"
+                                src="/images/meneo/mano_botella.jpg"
                                 width={ 1600 }
                                 height={ 1600 }
                                 alt="Todos los estuches de conservas"
@@ -48,7 +63,7 @@ export default function Meneo(){
                             <Image
                                 className= { styles.imagen }
                                 priority
-                                src="/images/un-gusto-conocerte-marca/manos.gif"
+                                src="/images/meneo/etiqueta_zoom.jpg"
                                 width={ 1600 }
                                 height={ 1600 }
                                 alt="Todos los estuches de conservas"
