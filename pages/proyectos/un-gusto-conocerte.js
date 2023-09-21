@@ -61,7 +61,7 @@ export default function UnGustoConocerteLibro() {
                     <Image
                         className= { styles.imagen }
                         priority
-                        src="/images/un-gusto-conocerte/foto_exterior.jpg"
+                        src="/images/home/home_1.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt=""
@@ -113,6 +113,15 @@ export default function UnGustoConocerteLibro() {
                                     alt=""
                                 />
                             </div>
+                            <div className="keen-slider__slide">
+                                <Image
+                                    priority
+                                    src="/images/un-gusto-conocerte/carrusel_5.jpg"
+                                    width={ 1600 }
+                                    height={ 1600 }
+                                    alt=""
+                                />
+                            </div>
                         </div>
                         {loaded && instanceRef.current && (
                             <>
@@ -137,6 +146,14 @@ export default function UnGustoConocerteLibro() {
                         )}
                     </div>
 
+                    <Image
+                        className= { styles.imagen }
+                        priority
+                        src="/images/un-gusto-conocerte/encestes.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt=""
+                    />
                     <Image
                         className= { styles.imagen }
                         priority

@@ -13,8 +13,8 @@ export default function Layout({ children, donde }) {
     return(
         <div id={ styles.todo }>
             <Head>
-            <title>Alba Castro</title>
-            <link rel="icon" href="/favicon.ico" />
+                <title>Alba Castro</title>
+                <link rel="icon" href="/favicon.ico" />
             </Head>
             <header>
                 <nav id={ styles.navegacion }>
