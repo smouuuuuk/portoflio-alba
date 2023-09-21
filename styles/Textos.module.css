@@ -13,6 +13,11 @@
     margin-bottom: 1rem;
 }
 
+#titulo h2 {
+    font-size: 1em;
+    font-weight: 400;
+}
+
 #informacion {
     margin-bottom: 1.25rem;
 }

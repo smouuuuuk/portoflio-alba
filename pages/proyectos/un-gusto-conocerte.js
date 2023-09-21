@@ -2,6 +2,7 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 import styles from '../../styles/UGC-Libro.module.css';
 import textStyles from '../../styles/Textos.module.css';
+import imgTodoStyles from '../../styles/TodoImgs.module.css';
 import React, { useEffect, useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
@@ -30,7 +31,7 @@ export default function UnGustoConocerteLibro() {
 
     return(
         <Layout donde="proyecto">
-            <div id={ styles.todo }>
+            <div id={ imgTodoStyles.todo }>
                 <div id={ textStyles.textos }>
                     <div id={ textStyles.textos_izq }>
                         <div id={ textStyles.titulo }>
@@ -56,26 +57,27 @@ export default function UnGustoConocerteLibro() {
                         <a href="">VER BRANDING</a> 
                     </div>
                 </div>
-                <div id={ styles.imagenes }>
+                <div id={ imgTodoStyles.imagenes }>
 
                     <Image
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/home/home_1.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt=""
+                        data-aos="fade-up"
                     />
                     <Image
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/un-gusto-conocerte/contraportada_zoom.jpg"
                         width={ 1600 }
                         height={ 1600 }
-                        alt=""
+                        data-aos="fade-up"
                     />
                     
-                    <div className={ `${styles.imagen} navigation-wrapper` }>
+                    <div className={ `${imgTodoStyles.imagen} navigation-wrapper` } data-aos="fade-up">
                         <div ref={sliderRef} className="keen-slider">
                             <div className="keen-slider__slide">
                                 <Image
@@ -147,36 +149,40 @@ export default function UnGustoConocerteLibro() {
                     </div>
 
                     <Image
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/un-gusto-conocerte/encestes.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt=""
+                        data-aos="fade-up"
                     />
                     <Image
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/un-gusto-conocerte/paginas.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt=""
+                        data-aos="fade-up"
                     />
                     <Image
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/un-gusto-conocerte/caja_abierta.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt=""
+                        data-aos="fade-up"
                     />
                     <Image
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/un-gusto-conocerte/folleto_objeto.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt=""
+                        data-aos="fade-up"
                     />
 
                 </div>

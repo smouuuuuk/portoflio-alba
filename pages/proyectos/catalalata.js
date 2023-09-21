@@ -2,9 +2,10 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 import styles from '../../styles/Catalalata.module.css';
 import textStyles from '../../styles/Textos.module.css';
-import React, { useEffect, useState } from "react"
-import { useKeenSlider } from "keen-slider/react"
-import "keen-slider/keen-slider.min.css"
+import imgTodoStyles from '../../styles/TodoImgs.module.css';
+import React, { useEffect, useState } from "react";
+import { useKeenSlider } from "keen-slider/react";
+import "keen-slider/keen-slider.min.css";
 
 
 export default function Catalalata() {
@@ -15,7 +16,7 @@ export default function Catalalata() {
         initial: 0,
         loop: true,
         slides: {
-            spacing: 15,
+            spacing: 0,
             perView: 1
         },
         defaultAnimation: {
@@ -31,7 +32,7 @@ export default function Catalalata() {
 
     return(
         <Layout donde="proyecto">
-            <div id={ styles.todo }>
+            <div id={ imgTodoStyles.todo }>
                 <div id={ textStyles.textos }>
                     <div id={ textStyles.textos_izq }>
                         <div id={ textStyles.titulo }>
@@ -54,9 +55,9 @@ export default function Catalalata() {
                         <p className={ textStyles.texto_drch } small>- Se ha valorado la creatividad y la profesionalidad de ejecución del diseño en su conjunto. La limpieza del diseño, con un predominio del blanco y negro sobre el que contrasta una ingeniosa reinterpretación del logo-marca “Cata la Lata” aplicada en colores vivos. El tratamiento y la carga emotiva de las ilustraciones que representan a un pescador cariñoso en distintas situaciones, que utiliza con versatilidad, jugando con el frente y el reverso de los estuches. El resultado en su conjunto desarrolla una historia coherente, homogénea, que hace familia al integrar con destreza a las distintas categorías de producto - Jurado</p>
                     </div>
                 </div>
-                <div id={ styles.imagenes }>
+                <div id={ imgTodoStyles.imagenes }>
                     <Image 
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/catalalata/todas.jpg"
                         width={ 1600 }
@@ -69,11 +70,10 @@ export default function Catalalata() {
                             <video className={ styles.animacion } autoPlay={true} loop={true} muted={true} playsInline={true} ><source src="/images/catalalata/berberechos_animar.mp4" type="video/mp4"/></video>
                         </div>
                     </div>
-                    <div className={ `${styles.imagen} navigation-wrapper` }>
+                    <div className={ `${imgTodoStyles.imagen} navigation-wrapper` }>
                         <div ref={sliderRef} className="keen-slider">
                             <div className="keen-slider__slide">
                                 <Image
-                                        className= { styles.imagen }
                                         priority
                                         src="/images/catalalata/atun.jpg"
                                         width={ 1600 }
@@ -83,7 +83,6 @@ export default function Catalalata() {
                             </div>
                             <div className="keen-slider__slide">
                                 <Image 
-                                    className= { styles.imagen }
                                     priority
                                     src="/images/catalalata/sardinillas.jpg"
                                     width={ 1600 }
@@ -93,7 +92,6 @@ export default function Catalalata() {
                             </div>
                             <div className="keen-slider__slide">
                                 <Image
-                                        className= { styles.imagen }
                                         priority
                                         src="/images/catalalata/mejillones.jpg"
                                         width={ 1600 }
@@ -103,7 +101,6 @@ export default function Catalalata() {
                             </div>
                             <div className="keen-slider__slide">
                                 <Image 
-                                    className= { styles.imagen }
                                     priority
                                     src="/images/catalalata/chipirones.jpg"
                                     width={ 1600 }
@@ -113,7 +110,6 @@ export default function Catalalata() {
                             </div>
                             <div className="keen-slider__slide">
                                 <Image
-                                        className= { styles.imagen }
                                         priority
                                         src="/images/catalalata/berberecho.jpg"
                                         width={ 1600 }
@@ -123,7 +119,6 @@ export default function Catalalata() {
                             </div>
                             <div className="keen-slider__slide">
                                 <Image 
-                                    className= { styles.imagen }
                                     priority
                                     src="/images/catalalata/zamburinas.jpg"
                                     width={ 1600 }
@@ -155,7 +150,7 @@ export default function Catalalata() {
                         )}
                     </div>
                         <Image 
-                            className= { styles.imagen }
+                            className= { imgTodoStyles.imagen }
                             priority
                             src="/images/catalalata/foto.jpg"
                             width={ 1600 }

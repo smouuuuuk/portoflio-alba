@@ -2,12 +2,13 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 import styles from '../../styles/Fos.module.css';
 import textStyles from '../../styles/Textos.module.css';
+import imgTodoStyles from '../../styles/TodoImgs.module.css';
 
 
 export default function Fos(){
     return(
         <Layout donde="proyecto">
-            <div id={styles.todo}>
+            <div id={imgTodoStyles.todo}>
 
                 <div id={ textStyles.textos }>
                     <div id={ textStyles.textos_izq }>
@@ -31,9 +32,9 @@ export default function Fos(){
                     </div>
                 </div>
 
-                <div id={ styles.imagenes }>
+                <div id={ imgTodoStyles.imagenes }>
                     <Image 
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/home/home_5.jpg"
                         width={ 1600 }
@@ -42,18 +43,18 @@ export default function Fos(){
                     />
                     <div id={styles.lamp_tarj}>
                         <div>
-                        <Image 
-                            className= { styles.imagen }
-                            priority
-                            src="/images/fos/fos_1.jfif"
-                            width={ 1600 }
-                            height={ 1600 }
-                            alt="Todos los estuches de conservas"
-                        />
+                            <Image 
+                                className= { imgTodoStyles.imagen }
+                                priority
+                                src="/images/fos/fos_1.jfif"
+                                width={ 1600 }
+                                height={ 1600 }
+                                alt="Todos los estuches de conservas"
+                            />
                         </div>
                         <div>
                             <Image
-                                className= { styles.imagen }
+                                className= { imgTodoStyles.imagen }
                                 priority
                                 src="/images/fos/tarjetas.jpg"
                                 width={ 1600 }

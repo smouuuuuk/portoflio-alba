@@ -2,6 +2,7 @@ import Image from "next/image";
 import Layout from "../../components/layout";
 import styles from '../../styles/Muchamierda.module.css';
 import textStyles from '../../styles/Textos.module.css';
+import imgTodoStyles from '../../styles/TodoImgs.module.css';
 import React, { useEffect, useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
@@ -30,7 +31,7 @@ export default function MuchaMierda(){
 
     return(
         <Layout donde="proyecto">
-            <div id={styles.todo}>
+            <div id={imgTodoStyles.todo}>
 
                 <div id={ textStyles.textos }>
                     <div id={ textStyles.textos_izq }>
@@ -60,16 +61,16 @@ export default function MuchaMierda(){
                     </div>
                 </div>
 
-                <div id={ styles.imagenes }>
+                <div id={ imgTodoStyles.imagenes }>
                     <Image 
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/home/home_3.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
                     />
-                    <div className={ `${styles.imagen} navigation-wrapper` }>
+                    <div className={ `${imgTodoStyles.imagen} navigation-wrapper` }>
                         <div ref={sliderRef} className="keen-slider">
                             <div className="keen-slider__slide">
                                 <Image
@@ -142,7 +143,7 @@ export default function MuchaMierda(){
                     <div id={styles.contra_impresora}>
                         <div>
                             <Image 
-                                className= { styles.imagen }
+                                className= { imgTodoStyles.imagen }
                                 priority
                                 src="/images/mucha-mierda/contraportada.jpg"
                                 width={ 1600 }
@@ -152,7 +153,7 @@ export default function MuchaMierda(){
                         </div>
                         <div>
                             <Image
-                                className= { styles.imagen }
+                                className= { imgTodoStyles.imagen }
                                 priority
                                 src="/images/mucha-mierda/impresion.png"
                                 width={ 1600 }
@@ -162,7 +163,7 @@ export default function MuchaMierda(){
                         </div>
                     </div>
                     <Image 
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/mucha-mierda/revista_entera.jpg"
                         width={ 1600 }

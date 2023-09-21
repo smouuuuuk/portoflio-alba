@@ -2,12 +2,13 @@ import Layout from "../../components/layout";
 import Image from "next/image";
 import styles from '../../styles/Meneo.module.css';
 import textStyles from '../../styles/Textos.module.css';
+import imgTodoStyles from '../../styles/TodoImgs.module.css';
 
 
 export default function Meneo(){
     return(
         <Layout donde="proyecto">
-             <div id={styles.todo}>
+             <div id={imgTodoStyles.todo}>
 
                 <div id={ textStyles.textos }>
                     <div id={ textStyles.textos_izq }>
@@ -31,9 +32,9 @@ export default function Meneo(){
                     </div>
                 </div>
 
-                <div id={ styles.imagenes }>
+                <div id={ imgTodoStyles.imagenes }>
                     <Image 
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/home/home_6.jpg"
                         width={ 1600 }
@@ -41,7 +42,7 @@ export default function Meneo(){
                         alt="Todos los estuches de conservas"
                     />
                     <Image 
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/meneo/etiquetas.jpg"
                         width={ 1600 }
@@ -51,7 +52,7 @@ export default function Meneo(){
                     <div id={styles.tote_botella}>
                         <div>
                             <Image 
-                                className= { styles.imagen }
+                                className= { imgTodoStyles.imagen }
                                 priority
                                 src="/images/meneo/mano_botella.jpg"
                                 width={ 1600 }
@@ -61,7 +62,7 @@ export default function Meneo(){
                         </div>
                         <div>
                             <Image
-                                className= { styles.imagen }
+                                className= { imgTodoStyles.imagen }
                                 priority
                                 src="/images/meneo/etiqueta_zoom.jpg"
                                 width={ 1600 }

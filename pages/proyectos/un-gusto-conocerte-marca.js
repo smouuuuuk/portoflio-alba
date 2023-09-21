@@ -2,6 +2,7 @@ import Image from "next/image";
 import Layout from "../../components/layout";
 import styles from '../../styles/UGC-Marca.module.css';
 import textStyles from '../../styles/Textos.module.css';
+import imgTodoStyles from '../../styles/TodoImgs.module.css';
 import React, { useEffect, useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
@@ -9,7 +10,7 @@ import "keen-slider/keen-slider.min.css"
 export default function UnGustoConocerteMarca() {
     return(
         <Layout donde="proyecto">
-            <div id={styles.todo}>
+            <div id={imgTodoStyles.todo}>
 
                 <div id={ textStyles.textos }>
                     <div id={ textStyles.textos_izq }>
@@ -36,10 +37,10 @@ export default function UnGustoConocerteMarca() {
                     </div>
                 </div>
 
-                <div id={ styles.imagenes }>
+                <div id={ imgTodoStyles.imagenes }>
                     <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }}><source src="/images/home/home_2.mp4" type="video/mp4"/></video>
                     <Image
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/un-gusto-conocerte-marca/colores.svg"
                         width={ 1600 }
@@ -49,7 +50,7 @@ export default function UnGustoConocerteMarca() {
                     <div id={styles.tote_gif}>
                         <div>
                             <Image 
-                                className= { styles.imagen }
+                                className= { imgTodoStyles.imagen }
                                 priority
                                 src="/images/un-gusto-conocerte-marca/tote-1.jpg"
                                 width={ 1600 }
@@ -59,7 +60,7 @@ export default function UnGustoConocerteMarca() {
                         </div>
                         <div>
                             <Image
-                                className= { styles.imagen }
+                                className= { imgTodoStyles.imagen }
                                 priority
                                 src="/images/un-gusto-conocerte-marca/manos.gif"
                                 width={ 1600 }
@@ -69,7 +70,7 @@ export default function UnGustoConocerteMarca() {
                         </div>
                     </div>
                     <Image
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/un-gusto-conocerte-marca/camiseta.jpg"
                         width={ 1600 }
@@ -77,7 +78,7 @@ export default function UnGustoConocerteMarca() {
                         alt="Todos los estuches de conservas"
                     />
                     <Image
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/un-gusto-conocerte-marca/manual.jpg"
                         width={ 1600 }
@@ -85,7 +86,7 @@ export default function UnGustoConocerteMarca() {
                         alt="Todos los estuches de conservas"
                     />
                     <Image
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/un-gusto-conocerte-marca/libro+marcapaginas.jpg"
                         width={ 1600 }
@@ -93,7 +94,7 @@ export default function UnGustoConocerteMarca() {
                         alt="Todos los estuches de conservas"
                     />
                     <Image
-                        className= { styles.imagen }
+                        className= { imgTodoStyles.imagen }
                         priority
                         src="/images/un-gusto-conocerte-marca/instagram_feed.jpg"
                         width={ 1600 }

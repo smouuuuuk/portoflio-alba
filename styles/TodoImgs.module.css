@@ -1,0 +1,15 @@
+#todo {
+    padding: 0 2em;
+}
+
+#imagenes {
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+}
+
+.imagen {
+    border-radius: 40px;
+}
