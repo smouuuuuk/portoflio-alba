@@ -40,6 +40,7 @@ export default function Meneo(){
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
                     />
                     <Image 
                         className= { imgTodoStyles.imagen }
@@ -48,8 +49,9 @@ export default function Meneo(){
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
                     />
-                    <div id={styles.tote_botella}>
+                    <div id={styles.tote_botella} data-aos="fade-up">
                         <div>
                             <Image 
                                 className= { imgTodoStyles.imagen }

@@ -40,8 +40,9 @@ export default function Fos(){
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
                     />
-                    <div id={styles.lamp_tarj}>
+                    <div id={styles.lamp_tarj} data-aos="fade-up">
                         <div>
                             <Image 
                                 className= { imgTodoStyles.imagen }
@@ -63,7 +64,7 @@ export default function Fos(){
                                 />
                         </div>
                     </div>
-                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }}><source src="/images/fos/animacion_logo.mp4" type="video/mp4"/></video>
+                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }} data-aos="fade-up"><source src="/images/fos/animacion_logo.mp4" type="video/mp4"/></video>
                 </div>
 
             </div>

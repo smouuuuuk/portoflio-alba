@@ -69,8 +69,9 @@ export default function MuchaMierda(){
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
                     />
-                    <div className={ `${imgTodoStyles.imagen} navigation-wrapper` }>
+                    <div className={ `${imgTodoStyles.imagen} navigation-wrapper` } data-aos="fade-up">
                         <div ref={sliderRef} className="keen-slider">
                             <div className="keen-slider__slide">
                                 <Image
@@ -140,7 +141,7 @@ export default function MuchaMierda(){
                         </>
                         )}
                     </div>
-                    <div id={styles.contra_impresora}>
+                    <div id={styles.contra_impresora} data-aos="fade-up">
                         <div>
                             <Image 
                                 className= { imgTodoStyles.imagen }
@@ -169,6 +170,7 @@ export default function MuchaMierda(){
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
                     />
                 </div>
 

@@ -38,7 +38,7 @@ export default function UnGustoConocerteMarca() {
                 </div>
 
                 <div id={ imgTodoStyles.imagenes }>
-                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }}><source src="/images/home/home_2.mp4" type="video/mp4"/></video>
+                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }} data-aos="fade-up"><source src="/images/home/home_2.mp4" type="video/mp4"/></video>
                     <Image
                         className= { imgTodoStyles.imagen }
                         priority
@@ -46,8 +46,9 @@ export default function UnGustoConocerteMarca() {
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
                     />
-                    <div id={styles.tote_gif}>
+                    <div id={styles.tote_gif} data-aos="fade-up">
                         <div>
                             <Image 
                                 className= { imgTodoStyles.imagen }
@@ -76,6 +77,7 @@ export default function UnGustoConocerteMarca() {
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
                     />
                     <Image
                         className= { imgTodoStyles.imagen }
@@ -84,6 +86,7 @@ export default function UnGustoConocerteMarca() {
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
                     />
                     <Image
                         className= { imgTodoStyles.imagen }
@@ -92,6 +95,7 @@ export default function UnGustoConocerteMarca() {
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
                     />
                     <Image
                         className= { imgTodoStyles.imagen }
@@ -100,8 +104,9 @@ export default function UnGustoConocerteMarca() {
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
                     />
-                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }}><source src="/images/un-gusto-conocerte-marca/rrss_video.mp4" type="video/mp4"/></video>
+                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }} data-aos="fade-up"><source src="/images/un-gusto-conocerte-marca/rrss_video.mp4" type="video/mp4"/></video>
 
                 </div>
 

@@ -63,14 +63,15 @@ export default function Catalalata() {
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
                     />
-                    <div id={ styles.animaciones }>
+                    <div id={ styles.animaciones } data-aos="fade-up">
                         <div>
                             <video className={ styles.animacion } autoPlay={true} loop={true} muted={true} playsInline={true} ><source src="/images/catalalata/sardinillas_animar.mp4" type="video/mp4"/></video>
                             <video className={ styles.animacion } autoPlay={true} loop={true} muted={true} playsInline={true} ><source src="/images/catalalata/berberechos_animar.mp4" type="video/mp4"/></video>
                         </div>
                     </div>
-                    <div className={ `${imgTodoStyles.imagen} navigation-wrapper` }>
+                    <div className={ `${imgTodoStyles.imagen} navigation-wrapper` } data-aos="fade-up">
                         <div ref={sliderRef} className="keen-slider">
                             <div className="keen-slider__slide">
                                 <Image
@@ -156,7 +157,8 @@ export default function Catalalata() {
                             width={ 1600 }
                             height={ 1600 }
                             alt="Todos los estuches de conservas"
-                            />
+                            data-aos="fade-up"
+                        />
                 </div>
             </div>
 
