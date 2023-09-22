@@ -15,3 +15,7 @@
     width: auto;
     height: 100%;
 }
+
+#videofos {
+    max-width: (1em, 1600px, calc(100vw - 4em));
+}
