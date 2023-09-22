@@ -15,7 +15,7 @@ export default function Fotos (){
         setTimeout(() => {
             document.getElementById(styles.foto_grande).style.pointerEvents = "all";
             document.getElementById(styles.foto_grande).style.opacity = "1";
-        }, 10);
+        }, 100);
 
     }
     

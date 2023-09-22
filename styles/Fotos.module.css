@@ -23,7 +23,7 @@
     z-index: 100;
     display: grid;
     opacity: 0;
-    transition: opacity .25s ease;
+    transition: opacity .5s ease-in;
     place-items: center;
     background-color: rgba(0, 0, 0, 0.9);
     pointer-events: none;
