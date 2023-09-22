@@ -48,27 +48,25 @@ export default function UnGustoConocerteMarca() {
                         alt="Todos los estuches de conservas"
                         data-aos="fade-up"
                     />
-                    <div id={styles.tote_gif} data-aos="fade-up">
-                        <div>
-                            <Image 
-                                className= { imgTodoStyles.imagen }
-                                priority
-                                src="/images/un-gusto-conocerte-marca/tote-1.jpg"
-                                width={ 1600 }
-                                height={ 1600 }
-                                alt="Todos los estuches de conservas"
-                            />
-                        </div>
-                        <div>
-                            <Image
-                                className= { imgTodoStyles.imagen }
-                                priority
-                                src="/images/un-gusto-conocerte-marca/manos.gif"
-                                width={ 1600 }
-                                height={ 1600 }
-                                alt="Todos los estuches de conservas"
-                                />
-                        </div>
+                    <div id={styles.tote_gif}>
+                        <Image 
+                            className= { imgTodoStyles.imagen }
+                            priority
+                            src="/images/un-gusto-conocerte-marca/tote-1.jpg"
+                            width={ 1600 }
+                            height={ 1600 }
+                            alt="Todos los estuches de conservas"
+                            data-aos="fade-right"
+                        />
+                        <Image
+                            className= { imgTodoStyles.imagen }
+                            priority
+                            src="/images/un-gusto-conocerte-marca/manos.gif"
+                            width={ 1600 }
+                            height={ 1600 }
+                            alt="Todos los estuches de conservas"
+                            data-aos="fade-left"
+                        />
                     </div>
                     <Image
                         className= { imgTodoStyles.imagen }

@@ -1,0 +1,40 @@
+#fotos {
+    padding: 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.foto {
+    max-width: calc(20vw);
+    height: 100%;
+}
+
+.foto:hover {
+    cursor: pointer;
+}
+
+#foto_grande {
+    height: 100vh;
+    width: 100vw;
+    padding: 2em;
+    position: fixed;
+    z-index: 100;
+    display: none;
+    opacity: 0;
+    transition: opacity .25s ease;
+    place-items: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+#cont_grande {
+    display: grid;
+    place-items: center;
+    max-height: 90vh;
+}
+
+#img_grande {
+    height: 90vh;
+    object-fit: contain;
+}

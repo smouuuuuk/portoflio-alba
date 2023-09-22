@@ -1,21 +1,17 @@
 #lamp_tarj {
     max-width: 1600px;
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 48.6738117% 2em 49.3571883%;
 }
 
-#lamp_tarj > div {
-    max-width: 100%;
+#lamp_tarj img:first-child {
+    grid-column: 1/2;
 }
 
-#lamp_tarj > div img {
-    display: block;
-    width: auto;
-    height: 100%;
+#lamp_tarj img:nth-child(2) {
+    grid-column: 3/4;
 }
 
 #videofos {
-    max-width: (1em, 1600px, calc(100vw - 4em));
+    max-width: clamp(1em, 1600px, calc(100vw - 4em));
 }

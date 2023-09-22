@@ -17,13 +17,13 @@ export default function Layout({ children, donde }) {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <header>
-                <nav id={ styles.navegacion }>
-                    <Link href="/">ALBA CASTRO</Link>
-                    <div id={ styles.links } className={ clsx({
-                        [styles.work]: donde=="work",
+                <nav id={ styles.navegacion } className={ clsx({
+                        [styles.work]: donde=="work" ||  donde=="proyecto",
                         [styles.photo]: donde=="photo",
                         [styles.about]: donde=="about"
                     }) }>
+                    <Link href="/">ALBA CASTRO</Link>
+                    <div id={ styles.links } >
                         <Link href="/">WORK</Link>
                         <Link href="/fotos">PHOTO</Link>
                         <Link href="/about">ABOUT</Link>
@@ -36,7 +36,7 @@ export default function Layout({ children, donde }) {
                             <Image
                                 id={ styles.flecha_atras }
                                 priority
-                                src="/images/arrow-left.svg"
+                                src="/images/arrow-right.svg"
                                 width={ 40 }
                                 height={ 40 }
                                 alt="Volver al inicio"
@@ -52,7 +52,10 @@ export default function Layout({ children, donde }) {
             </header>
             { children }
             <div id={ styles.footer_filler }></div>
-            <footer id={ styles.footer }>
+            <footer id={ styles.footer } className={ clsx({
+                    [styles.photo]: donde=="photo",
+                    [styles.resto]: donde!="photo"
+                }) }>
                 © 2023, Alba Castro. All rights reserved. 
             </footer>
         </div>

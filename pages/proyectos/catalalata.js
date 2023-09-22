@@ -75,12 +75,12 @@ export default function Catalalata() {
                         <div ref={sliderRef} className="keen-slider">
                             <div className="keen-slider__slide">
                                 <Image
-                                        priority
-                                        src="/images/catalalata/atun.jpg"
-                                        width={ 1600 }
-                                        height={ 1600 }
-                                        alt="Todos los estuches de conservas"
-                                        />
+                                    priority
+                                    src="/images/catalalata/atun.jpg"
+                                    width={ 1600 }
+                                    height={ 1600 }
+                                    alt="Todos los estuches de conservas"
+                                />
                             </div>
                             <div className="keen-slider__slide">
                                 <Image 

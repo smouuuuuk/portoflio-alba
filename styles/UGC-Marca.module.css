@@ -15,18 +15,14 @@
 
 #tote_gif {
     max-width: 1600px;
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 41.37% 2em 56.15%;
 }
 
-#tote_gif > div {
-    max-width: 100%;
+#tote_gif img:first-child {
+    grid-column: 1/2;
 }
 
-#tote_gif > div img {
-    display: block;
-    width: auto;
-    height: 100%;
+#tote_gif img:nth-child(2) {
+    grid-column: 3/4;
 }
