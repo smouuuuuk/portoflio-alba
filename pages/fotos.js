@@ -13,9 +13,7 @@ export default function Fotos (){
         console.log("foto_"+num);
         document.getElementById(styles.img_grande).setAttribute("src", "/images/galeria/"+num+".jpg");
         setTimeout(() => {
-            document.getElementById(styles.foto_grande).style.display = "grid";
-        }, 1);
-        setTimeout(() => {
+            document.getElementById(styles.foto_grande).style.pointerEvents = "all";
             document.getElementById(styles.foto_grande).style.opacity = "1";
         }, 10);
 
@@ -23,10 +21,8 @@ export default function Fotos (){
     
     function cierraImagen(){
         console.log("Cerrando...");
+        document.getElementById(styles.foto_grande).style.pointerEvents = "none";
         document.getElementById(styles.foto_grande).style.opacity = "0";
-        setTimeout(() => {
-            document.getElementById(styles.foto_grande).style.display = "none";
-        }, 1000);
     }
 
     return(
@@ -36,14 +32,13 @@ export default function Fotos (){
                 background-color: black;
             }
             `}</style>
-            <div id={ styles.foto_grande}>
+            <div id={ styles.foto_grande} onClick={() => { cierraImagen() }}>
                 <div id={styles.cont_grande}>
                     <img
                         src={`/images/galeria/1.jpg`}
                         width={ 1600 }
                         height={ 1600 }
                         id={ styles.img_grande}
-                        onClick={() => { cierraImagen() }}
                     />
                 </div>
             </div>
