@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import Image from 'next/image';
 import styles from '../styles/Fotos.module.css';
+import { useState } from "react";
 
 const array = [...Array(28)];
 for (let i=0; i<28; i++){
@@ -9,7 +10,10 @@ for (let i=0; i<28; i++){
 
 export default function Fotos (){
 
+    const [imageIndex, setImageIndex] = useState(0);
+
     function imagenGrande(num){
+        setImageIndex(num);
         console.log("foto_"+num);
         document.getElementById(styles.img_grande).setAttribute("src", "/images/galeria/"+num+".jpg");
         setTimeout(() => {
@@ -25,6 +29,7 @@ export default function Fotos (){
         document.getElementById(styles.foto_grande).style.opacity = "0";
     }
 
+
     return(
         <div>
             <style jsx global>{`
@@ -34,12 +39,13 @@ export default function Fotos (){
             `}</style>
             <div id={ styles.foto_grande} onClick={() => { cierraImagen() }}>
                 <div id={styles.cont_grande}>
-                    <img
-                        src={`/images/galeria/1.jpg`}
+                    <Image
+                        src={ `/images/galeria/${imageIndex}.jpg` } 
                         width={ 1600 }
                         height={ 1600 }
                         id={ styles.img_grande}
                     />
+
                 </div>
             </div>
             <Layout donde="photo">
