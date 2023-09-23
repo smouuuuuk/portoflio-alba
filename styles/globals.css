@@ -65,6 +65,9 @@ button {
 .arrow--left {
   left: 25px;
   transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform-origin: 50% 25%;
+  -webkit-transform-origin: 50% 25%;
 }
 
 .arrow--right {
@@ -76,4 +79,16 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@media (max-width: 400px) {
+
+  .arrow--right {
+    right: 10px;
+  }
+  
+  .arrow--left {
+    left: 10px;
+  }
+
 }

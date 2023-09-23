@@ -1,5 +1,6 @@
 #todo {
     padding: 0 2em;
+    overflow: hidden;
 }
 
 #imagenes {
@@ -16,8 +17,16 @@
 
 @media (max-width: 400px) {
 
+    #imagenes {
+        gap: 1em;
+    }
+
     .imagen {
         border-radius: 15px;
+    }
+
+    .arrow.arrow--right {
+        right: 10px;
     }
 
 }

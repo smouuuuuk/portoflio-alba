@@ -36,9 +36,9 @@ export default function Layout({ children, donde }) {
                     <Image id={ styles.hamburger } src="/images/hamburger-menu.svg" height={ 20 } width={ 20 } onClick={() => { openMenu() }} />
                     <div id={ styles.links } >
                         <Image id={ styles.close_menu } src="/images/close.svg" height={ 25 } width={ 25 } onClick={() => { closeMenu() }} />
-                        <Link href="/">WORK</Link>
-                        <Link href="/fotos">PHOTO</Link>
-                        <Link href="/about">ABOUT</Link>
+                        <Link href="/"><p>WORK</p></Link>
+                        <Link href="/fotos"><p>PHOTO</p></Link>
+                        <Link href="/about"><p>ABOUT</p></Link>
                     </div>
                 </nav>
                 <div id={ styles.nav_filler }>
