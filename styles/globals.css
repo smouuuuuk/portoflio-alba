@@ -81,7 +81,7 @@ button {
   justify-content: center;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
 
   .arrow--right {
     right: 10px;

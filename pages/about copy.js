@@ -7,19 +7,18 @@ export default function About(){
     
     return(
         <Layout donde="about">
-            <Draggable id={ styles.drag } defaultPosition={{x: 725, y: 225}} bounds="parent">
-                <div id={ styles.div_img}>
-                    <Image
-                        priority
-                        src="/images/alba.jpg"
-                        width={ 350 }
-                        height={ 350 }
-                        alt="Alba"
-                    />
-                </div>
-            </Draggable>
             <div id={ styles.todo }>
-                
+                <Draggable id={ styles.drag } defaultPosition={{x: 25, y: 25}}>
+                    <div id={ styles.div_img}>
+                        <Image
+                            priority
+                            src="/images/alba.jpg"
+                            width={ 600 }
+                            height={ 600 }
+                            alt="Alba"
+                        />
+                    </div>
+                </Draggable>
                 <div id={ styles.presentacion }>
                     <div>
                         <p>¡Hola! Encantada de conocerte.</p>
@@ -50,7 +49,7 @@ export default function About(){
                         <h2>AWARDS</h2>
                         <a href="https://www.adg-fad.org/es/laus/proyecto/mucha-mierda-0" target="_blank">ADG Laus Bronce, 2023</a>
                         <a href="https://drive.google.com/file/d/1GaPmNoYKAeOYOL1w2wlrfLFMuWwHIoou/view" target="_blank">Winner CataLaLata</a>
-                        <a href="https://drive.google.com/file/d/1GaPmNoYKAeOYOL1w2wlrfLFMuWwHIoou/view" target="_blank">ANFACO-Fundación Banco Sabadell, 2023</a>
+                        <p>ANFACO-Fundación Banco Sabadell, 2023</p>
                         <a href="https://www.oneclub.org/awards/youngones/-award/46754/blood-calls-to-blood" target="_blank">Young Ones Students Awards, Plata, 2023</a>
                         <a href="https://www.oneclub.org/awards/youngones/-award/46755/this-is-a-library" target="_blank">Young Ones Students Awards, Merit, 2023</a>
                     </div>

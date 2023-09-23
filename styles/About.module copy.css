@@ -1,6 +1,6 @@
 #todo {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: calc(600px + 4rem) 1fr 520px;
 }
 
 #div_img{
@@ -16,18 +16,17 @@
     border-radius: 40px;
     justify-self: center;
     pointer-events: none;
-    transform: rotate(-5deg);
 }
 
 #presentacion {
     padding: 0 2em;
-    font-size: 1.5em;
+    font-size: 1.25em;
     display: flex;
     justify-content: center;
 }
 
 #presentacion div {
-    max-width: 750px;
+    max-width: 600px;
 }
 
 #presentacion p:nth-child(-n+2) {
@@ -35,17 +34,22 @@
     position: relative;
 }
 
+/* #presentacion p:first-child::after {
+    content: url("/images/handshake-emoji.png");
+    position: absolute;
+    left: 290px;
+    top: -10px;
+} */
+
 #datos {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 6em;
 }
 
 .seccion_datos {
     display: flex;
     flex-direction: column;
-    margin-bottom: 2em;
 }
 
 .seccion_datos h2 {
@@ -84,6 +88,10 @@
 
     #datos {
         align-self: flex-start;
+    }
+
+    .seccion_datos {
+        margin-bottom: 2em;
     }
 
     .seccion_datos h2 {
