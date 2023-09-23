@@ -112,6 +112,14 @@
     #navegacion > a {
         font-size: 1.25em;
     }
+
+    /* #navegacion.photo a {
+        color: black;
+    }
+
+    .photo #links a:nth-child(3) p::after {
+        background-color: black;
+    } */
     
     #links {
         left: 100vw;
@@ -125,6 +133,14 @@
         top: 0;
         background-color: #B6B6B6;
         transition: left 1s ease;
+    }
+
+    .photo #links {
+        background-color: black;
+    }
+
+    .photo #links a:nth-child(-n+3) {
+        border-bottom: 1px solid white;
     }
 
     #links a {

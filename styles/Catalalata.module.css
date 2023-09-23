@@ -18,3 +18,11 @@
 .animacion {
     width: 100%;
 }
+
+@media (max-width: 400px) {
+
+    #animaciones {
+        border-radius: 15px;
+    }
+
+}

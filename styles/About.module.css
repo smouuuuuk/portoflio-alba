@@ -56,3 +56,42 @@
 .seccion_datos p {
     font-size: 1.25em;
 }
+
+@media (max-width: 400px) {
+    
+    #todo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+        padding: 0 2em;
+    }
+
+    #todo img {
+        border-radius: 15px;
+    }
+
+    #presentacion {
+        padding: 0;
+        font-size: 0.75em;
+    }
+
+    #datos {
+        align-self: flex-start;
+    }
+
+    .seccion_datos {
+        margin-bottom: 2em;
+    }
+
+    .seccion_datos h2 {
+        margin-bottom: 0.5em;
+        font-size: 1em;
+    }
+    
+    .seccion_datos a,
+    .seccion_datos p {
+        font-size: 0.75em;
+    }
+
+}
