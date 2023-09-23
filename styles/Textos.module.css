@@ -43,3 +43,24 @@
     justify-content: center;
     align-items: center;
 }
+
+
+@media (max-width: 400px) {
+
+    #textos {
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2em;
+        font-size: .75em;
+    }
+
+    #categorias {
+        gap: .25em;
+    }
+
+    .texto_drch {
+        margin-bottom: 1em;
+    }
+
+
+}

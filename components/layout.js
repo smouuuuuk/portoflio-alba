@@ -7,9 +7,19 @@ import { clsx } from 'clsx';
 import Image from 'next/image';
 
 export default function Layout({ children, donde }) {
+
+    function openMenu(){
+        document.getElementById( styles.links ).style.left = "0";
+    }
+    
+    function closeMenu(){
+        document.getElementById( styles.links ).style.left = "100vw";
+    }
+
     useEffect(() => {
         setTimeout(() => {AOS.refresh()}, 500);
      }, [])
+
     return(
         <div id={ styles.todo }>
             <Head>
@@ -23,7 +33,9 @@ export default function Layout({ children, donde }) {
                         [styles.about]: donde=="about"
                     }) }>
                     <Link href="/">ALBA CASTRO</Link>
+                    <Image id={ styles.hamburger } src="/images/hamburger-menu.svg" height={ 20 } width={ 20 } onClick={() => { openMenu() }} />
                     <div id={ styles.links } >
+                        <Image id={ styles.close_menu } src="/images/close.svg" height={ 25 } width={ 25 } onClick={() => { closeMenu() }} />
                         <Link href="/">WORK</Link>
                         <Link href="/fotos">PHOTO</Link>
                         <Link href="/about">ABOUT</Link>
