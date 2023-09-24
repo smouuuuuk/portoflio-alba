@@ -5,14 +5,24 @@
     background-color: black;
     border-radius: 40px;
     display: flex;
-    gap: 7.5%;
     justify-content: center;
     aspect-ratio: 58/41;
+    gap: 7.5%;
+}
+
+#animaciones div {
+    width: 46.25%;
+    display: flex;
+    justify-content: flex-start;
 }
 
 .animacion {
     height: 100%;
-    width: auto;
+    width: auto;    
+}
+
+#animaciones div:first-child {
+    justify-content: flex-end;
 }
 
 @media (min-width: 1600px) {
