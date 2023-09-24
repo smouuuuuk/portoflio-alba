@@ -3,20 +3,32 @@
     justify-content: space-between;
 }
 
-#div_img{
+#todo_about {
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+.div_img{
     z-index: 100;
     position: absolute;
 }
 
-#div_img:hover {
-    cursor: pointer;
+.div_img:hover {
+    cursor: move;
 }
 
-#div_img img {
+.div_img img {
     border-radius: 40px;
     justify-self: center;
     pointer-events: none;
+}
+
+#alba img {
     transform: rotate(-5deg);
+}
+
+#tulipan img {
+    transform: rotate(10deg);
 }
 
 #presentacion {
