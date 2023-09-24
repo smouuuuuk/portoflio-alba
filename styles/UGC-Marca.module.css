@@ -31,4 +31,8 @@
         border-radius: 15px;
     }
 
+    #tote_gif {
+        gap: 1em;
+    }
+
 }

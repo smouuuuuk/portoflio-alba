@@ -88,7 +88,9 @@ export default function Layout({ children, donde }) {
                     [styles.photo]: donde=="photo",
                     [styles.resto]: donde!="photo"
                 }) }>
-                © 2023, Alba Castro. All rights reserved. 
+                <p>
+                    © 2023, Alba Castro. All rights reserved. 
+                </p>
             </footer>
         </div>
     )

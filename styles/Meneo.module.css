@@ -3,7 +3,16 @@
     display: flex;
     gap: 2em;
 }
+
 #tote_botella img {
     height: auto;
     width: 100%;
+}
+
+@media (max-width: 400px) {
+
+    #tote_botella {
+        gap: 1em;
+    }
+
 }

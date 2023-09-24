@@ -3,6 +3,7 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 6em;
+    font-size: 1.25em;
 }
 
 #textos_izq {
@@ -50,6 +51,27 @@
 
 .small {
     font-size: .75em;
+}
+
+.ver_link {
+    text-decoration: underline;
+}
+
+.ver_link img {
+    transform: translate(5px, 4px);
+}
+
+@media (min-width: 1080px) {
+
+    #textos {
+        position: fixed;
+        flex-direction: column;
+        justify-content: initial;
+        max-width: 600px;
+        gap: 4em;
+    }
+
+
 }
 
 

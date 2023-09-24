@@ -6,6 +6,7 @@ import imgTodoStyles from '../../styles/TodoImgs.module.css';
 import React, { useEffect, useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
+import Link from "next/link";
 
 export default function UnGustoConocerteMarca() {
     return(
@@ -33,7 +34,7 @@ export default function UnGustoConocerteMarca() {
                     <div id={ textStyles.textos_drch }>
                         <p className={ textStyles.texto_drch }>“Un gusto conocerte” es una iniciativa sin ánimo de lucro que surge con el objetivo de eliminar todos aquellos estigmas presentes en la sociedad hacia las personas con síndrome de Down, a través de los aspectos que les hacen singulares más allá de la etiqueta diagnóstica.</p>
                         <p className={ textStyles.texto_drch }>Se dirige principalmente a las personas con síndrome de Down por loque se busca que toda su imagen y aplicaciones sean lo más claras yaccesibles posible. Para ello, se crea una marca cercana y amigable atendiendo a las directrices de la Lectura Fácil. Partimos de un namingdirecto, autoexplicativo y notorio, creando un universo visual que gira en torno a la mano comoelemento representativo del momento de conocer a alguien.</p>
-                        <a href="">VER PRODUCTO</a> 
+                        <Link className={ textStyles.ver_link } href="/proyectos/un-gusto-conocerte">VER PRODUCTO<Image src="/images/arrow-right-top.svg" width={ 22 } height={ 22 }/></Link>  
                     </div>
                 </div>
 

@@ -6,6 +6,7 @@ import imgTodoStyles from '../../styles/TodoImgs.module.css';
 import React, { useEffect, useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
+import Link from "next/link";
 
 
 export default function UnGustoConocerteLibro() {
@@ -54,7 +55,7 @@ export default function UnGustoConocerteLibro() {
                     <div id={ textStyles.textos_drch }>
                         <p className={ textStyles.texto_drch }>“Un gusto conocerte” es una iniciativa sin ánimo de lucro que surge con el objetivo de eliminar todos aquellos estigmas presentes en la sociedad hacia las personas con síndrome de Down, a través de los aspectos que les hacen singulares más allá de la etiqueta diagnóstica.</p>
                         <p className={ textStyles.texto_drch }>El proyecto plantea una publicación redactada empleando el método de lectura fácil en la que el protagonista es una persona concreta con síndrome de Down. Con una mirada intimista, el libro se desarrolla como un recorrido a través de las cosas cotidianas que han sido o son relevantes en la vida de la persona. El proyecto se completa gracias al planteamiento de una colección periódica, un libro al año, con un o una protagonista diferente cada vez, además de la creación de un pack de lanzamiento que incluye un pequeño objeto representativo de la persona junto a su libro.</p>
-                        <a href="">VER BRANDING</a> 
+                        <Link className={ textStyles.ver_link } href="/proyectos/un-gusto-conocerte-marca">VER BRANDING<Image src="/images/arrow-right-top.svg" width={ 22 } height={ 22 }/></Link> 
                     </div>
                 </div>
                 <div id={ imgTodoStyles.imagenes }>
