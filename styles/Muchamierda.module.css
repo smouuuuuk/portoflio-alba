@@ -1,13 +1,10 @@
 #contra_impresora {
     max-width: 1600px;
-    display: grid;
-    grid-template-columns: 61.5% 2em 35.5%;
+    gap: 2em;
+    display: flex;
 }
 
-#contra_impresora img:first-child {
-    grid-column: 1/2;
-}
-
-#contra_impresora img:nth-child(2) {
-    grid-column: 3/4;
+#contra_impresora img{
+    height: auto;
+    width: 100%;
 }

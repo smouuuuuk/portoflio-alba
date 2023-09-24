@@ -43,24 +43,28 @@ export default function Fos(){
                         data-aos="fade-up"
                     />
                     <div id={styles.lamp_tarj}>
-                        <Image 
-                            className= { imgTodoStyles.imagen }
-                            priority
-                            src="/images/fos/fos_1.jfif"
-                            width={ 1600 }
-                            height={ 1600 }
-                            alt="Todos los estuches de conservas"
-                            data-aos="fade-right"
-                        />
-                        <Image
-                            className= { imgTodoStyles.imagen }
-                            priority
-                            src="/images/fos/tarjetas.jpg"
-                            width={ 1600 }
-                            height={ 1600 }
-                            alt="Todos los estuches de conservas"
-                            data-aos="fade-left"
-                        />
+                        <div>
+                            <Image 
+                                className= { imgTodoStyles.imagen }
+                                priority
+                                src="/images/fos/fos_1.jfif"
+                                width={ 1600 }
+                                height={ 1600 }
+                                alt="Todos los estuches de conservas"
+                                data-aos="fade-right"
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                className= { imgTodoStyles.imagen }
+                                priority
+                                src="/images/fos/tarjetas.jpg"
+                                width={ 1600 }
+                                height={ 1600 }
+                                alt="Todos los estuches de conservas"
+                                data-aos="fade-left"
+                            />
+                        </div>
                     </div>
                     <video id={ styles.videofos } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }} data-aos="fade-up"><source src="/images/fos/animacion_logo.mp4" type="video/mp4"/></video>
                 </div>

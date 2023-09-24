@@ -142,24 +142,28 @@ export default function MuchaMierda(){
                         )}
                     </div>
                     <div id={styles.contra_impresora}>
-                        <Image 
-                            className= { imgTodoStyles.imagen }
-                            priority
-                            src="/images/mucha-mierda/contraportada.jpg"
-                            width={ 1600 }
-                            height={ 1600 }
-                            alt="Todos los estuches de conservas"
-                            data-aos="fade-right"
-                        />
-                        <Image
-                            className= { imgTodoStyles.imagen }
-                            priority
-                            src="/images/mucha-mierda/impresora.jpg"
-                            width={ 1600 }
-                            height={ 1600 }
-                            alt="Todos los estuches de conservas"
-                            data-aos="fade-left"
-                        />
+                        <div>
+                            <Image 
+                                className= { imgTodoStyles.imagen }
+                                priority
+                                src="/images/mucha-mierda/contraportada.jpg"
+                                width={ 1600 }
+                                height={ 1600 }
+                                alt="Todos los estuches de conservas"
+                                data-aos="fade-right"
+                            />
+                        </div>
+                        <div>
+                            <Image
+                                className= { imgTodoStyles.imagen }
+                                priority
+                                src="/images/mucha-mierda/impresora.jpg"
+                                width={ 1600 }
+                                height={ 1600 }
+                                alt="Todos los estuches de conservas"
+                                data-aos="fade-left"
+                            />
+                        </div>
                     </div>
                     <Image 
                         className= { imgTodoStyles.imagen }

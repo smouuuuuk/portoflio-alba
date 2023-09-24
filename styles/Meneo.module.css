@@ -1,17 +1,9 @@
 #tote_botella {
     max-width: 1600px;
     display: flex;
-    flex-direction: row;
     gap: 2em;
+}
+#tote_botella img {
+    height: auto;
     width: 100%;
-}
-
-#tote_botella > div {
-    max-width: 100%;
-}
-
-#tote_botella > div img {
-    display: block;
-    width: auto;
-    height: 100%;
 }
