@@ -68,6 +68,8 @@ export default function Catalalata() {
                     <div id={ styles.animaciones } data-aos="fade-up">
                         <div>
                             <video className={ styles.animacion } autoPlay={true} loop={true} muted={true} playsInline={true} ><source src="/images/catalalata/sardinillas_animar.mp4" type="video/mp4"/></video>
+                        </div>
+                        <div>
                             <video className={ styles.animacion } autoPlay={true} loop={true} muted={true} playsInline={true} ><source src="/images/catalalata/berberechos_animar.mp4" type="video/mp4"/></video>
                         </div>
                     </div>
