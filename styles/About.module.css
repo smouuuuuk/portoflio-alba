@@ -169,8 +169,10 @@
 
 @media (max-width: 670px) {
 
-    #premios, #prensa {
-        grid-column: 1/2;
+    #datos {
+        display: flex;
+        width: auto;
+        margin-right: 0;
     }
 
 }
