@@ -23,10 +23,10 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 650px) {
 
     #animaciones {
-        border-radius: 15px;
+        border-radius: 20px;
     }
 
 }
