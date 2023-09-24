@@ -14,7 +14,6 @@ export default function Fotos (){
 
     function imagenGrande(num){
         setImageIndex(num);
-        console.log("foto_"+num);
         document.getElementById(styles.img_grande).setAttribute("src", "/images/galeria/"+num+".jpg");
         setTimeout(() => {
             document.getElementById(styles.foto_grande).style.pointerEvents = "all";
@@ -24,7 +23,6 @@ export default function Fotos (){
     }
     
     function cierraImagen(){
-        console.log("Cerrando...");
         document.getElementById(styles.foto_grande).style.pointerEvents = "none";
         document.getElementById(styles.foto_grande).style.opacity = "0";
     }

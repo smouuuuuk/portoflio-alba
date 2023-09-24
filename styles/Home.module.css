@@ -101,10 +101,19 @@
   height: 1em;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
+
   .grid {
     width: 100%;
     flex-direction: column;
+  }
+
+  #proyectos {
+    gap: 1em;
+  }
+
+  #videougc {
+    border-radius: 25px;
   }
 }
 
@@ -112,13 +121,5 @@
 
 
 @media (max-width: 400px) {
-
-  #proyectos {
-    gap: 1em;
-  }
-
-  #videougc {
-    border-radius: 15px;
-  }
 
 }

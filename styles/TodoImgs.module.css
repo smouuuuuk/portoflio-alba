@@ -15,7 +15,7 @@
     border-radius: 40px;
 }
 
-@media (min-width: 1080px) {
+@media (min-width: 1600px) {
 
     #todo {
         display: flex;
@@ -36,14 +36,14 @@
 
 }
 
-@media (max-width: 400px) {
+@media (max-width: 650px) {
 
     #imagenes {
         gap: 1em;
     }
 
     .imagen {
-        border-radius: 15px;
+        border-radius: 20px;
     }
 
     .arrow.arrow--right {
