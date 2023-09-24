@@ -5,7 +5,7 @@
 
 #todo_about {
     overflow: hidden;
-    min-height: 100vh;
+    max-height: 100vh;
 }
 
 .div_img{
@@ -32,7 +32,7 @@
 }
 
 #presentacion {
-    padding: 0 2em;
+    padding: 0 2rem;
     font-size: 1.5em;
     display: flex;
     justify-content: center;
@@ -75,13 +75,110 @@
     font-size: 1.25em;
 }
 
-@media (max-width: 400px) {
-    
+#contacto p {
+    display: inline-block;
+}
+
+@media (max-width: 1350px) {
+
     #todo {
         display: flex;
         flex-direction: column;
+    }
+
+    #presentacion {
+        justify-content: initial;
+    }
+
+    #datos {
+        margin-top: 4em;
+        padding: 0 2em;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+        justify-content: initial;
+        width: 1000px;
+        gap: 1em;
+    }
+
+    #tulipan {
+        width: 700px;
+    }
+
+    #alba {
+        width: 300px;
+    }
+
+    .seccion_datos {
+        margin-bottom: 1em;
+    }
+
+    #contacto, #experiencia, #formacion {
+        grid-column: 1/2;
+    }
+
+    #premios, #prensa {
+        grid-column: 2/3;
+    }
+
+    #premios {
+        grid-row: 1/2;
+    }
+
+    #prensa {
+        grid-row: 2/3;
+    }
+
+}
+
+@media (max-width: 1100px) {
+
+    #alba, #tulipan {
+        display: none;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    #datos {
+        width: 810px;
+    }
+
+}
+
+@media (max-width: 790px) {
+
+    #presentacion {
+        font-size: 1.25em;
+    }
+
+    .seccion_datos h2 {
+        font-size: 1.2em;
+    }
+
+    .seccion_datos p, .seccion_datos a {
+        font-size: 1em;
+    }
+
+    #datos {
+        width: 710px;
+    }
+
+}
+
+@media (max-width: 670px) {
+
+    #premios, #prensa {
+        grid-column: 1/2;
+    }
+
+}
+
+@media (max-width: 400px) {
+    
+    #todo {
         align-items: center;
-        gap: 2em;
         padding: 0 2em;
     }
 
@@ -91,11 +188,12 @@
 
     #presentacion {
         padding: 0;
-        font-size: 0.75em;
+        font-size: 1em;
     }
 
     #datos {
         align-self: flex-start;
+        padding: 0;
     }
 
     .seccion_datos h2 {
@@ -105,7 +203,7 @@
     
     .seccion_datos a,
     .seccion_datos p {
-        font-size: 0.75em;
+        font-size: 1em;
     }
 
 }

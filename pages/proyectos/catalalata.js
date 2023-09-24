@@ -153,7 +153,7 @@ export default function Catalalata() {
                         <Image 
                             className= { imgTodoStyles.imagen }
                             priority
-                            src="/images/catalalata/foto.jpg"
+                            src="/images/catalalata/sardinas.jpg"
                             width={ 1600 }
                             height={ 1600 }
                             alt="Todos los estuches de conservas"

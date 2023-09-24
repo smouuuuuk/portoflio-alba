@@ -8,7 +8,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     padding: 2em;
     display: flex;
     flex-direction: row;
@@ -114,11 +114,11 @@
         position: fixed;
     }
 
-    #footer {
+    .project#footer {
         position: fixed;
     }
 
-    #footer p {
+    .project#footer p {
         position: absolute;        
         left: 2em;
     }

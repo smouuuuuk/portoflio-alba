@@ -11,6 +11,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "clsx": "^2.0.0",
+    "jquey": "^0.0.1-security",
     "keen-slider": "^6.8.6",
     "next": "latest",
     "react": "18.2.0",

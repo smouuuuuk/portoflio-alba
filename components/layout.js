@@ -35,9 +35,9 @@ export default function Layout({ children, donde }) {
                         [styles.about]: donde=="about"
                     }) }>
                     <Link href="/">ALBA CASTRO</Link>
-                    <span id={ styles.hamburger } class="material-symbols-rounded md-48" onClick={() => { openMenu() }}>menu</span>
+                    <span id={ styles.hamburger } className="material-symbols-rounded md-48" onClick={() => { openMenu() }}>menu</span>
                     <div id={ styles.links } >
-                        <span id={ styles.close_menu } class="material-symbols-rounded" onClick={() => { closeMenu() }} >close</span>
+                        <span id={ styles.close_menu } className="material-symbols-rounded" onClick={() => { closeMenu() }} >close</span>
                         <Link className={ styles.link } href="/"><p>WORK</p></Link>
                         <Link className={ styles.link } href="/fotos"><p>PHOTO</p></Link>
                         <Link className={ styles.link } href="/about"><p>ABOUT</p></Link>
@@ -68,7 +68,8 @@ export default function Layout({ children, donde }) {
             <div id={ styles.footer_filler }></div>
             <footer id={ styles.footer } className={ clsx({
                     [styles.photo]: donde=="photo",
-                    [styles.resto]: donde!="photo"
+                    [styles.project]: donde=="proyecto",
+                    [styles.resto]: donde!="photo" || donde!="proyecto"
                 }) }>
                 <p>
                     © 2023, Alba Castro. All rights reserved. 
