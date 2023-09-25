@@ -11,7 +11,7 @@ export default function Home() {
           <Proyecto props={{ href:"/proyectos/un-gusto-conocerte", src:"/images/home/home_1.jpg", alt:"Un Gusto Conocerte Libro" }}></Proyecto>
           {/* <Proyecto props={{ href:"/proyectos/un-gusto-conocerte-identidad", src:"/videos/logo.mp4", alt:"Un Gusto Conocerte Marca" }}></Proyecto> */}
           <Link href="/proyectos/un-gusto-conocerte-marca" data-aos="fade-up">
-            <video id={ styles.videougc} width="1600" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/home/home_2.mp4" type="video/mp4"/></video>
+            <video hoverable="true" id={ styles.videougc} width="1600" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/home/home_2.mp4" type="video/mp4"/></video>
           </Link>
           <Proyecto props={{ href:"/proyectos/mucha-mierda", src:"/images/home/home_3.jpg", alt:"Mucha Mierda" }}></Proyecto>
           <Proyecto props={{ href:"/proyectos/catalalata", src:"/images/home/home_4.jpg", alt:"Catalalata" }}></Proyecto>
