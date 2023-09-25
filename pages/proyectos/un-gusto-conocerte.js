@@ -55,7 +55,7 @@ export default function UnGustoConocerteLibro() {
                     <div id={ textStyles.textos_drch }>
                         <p className={ textStyles.texto_drch }>“Un gusto conocerte” es una iniciativa sin ánimo de lucro que surge con el objetivo de eliminar todos aquellos estigmas presentes en la sociedad hacia las personas con síndrome de Down, a través de los aspectos que les hacen singulares más allá de la etiqueta diagnóstica.</p>
                         <p className={ textStyles.texto_drch }>El proyecto plantea una publicación redactada empleando el método de lectura fácil en la que el protagonista es una persona concreta con síndrome de Down. Con una mirada intimista, el libro se desarrolla como un recorrido a través de las cosas cotidianas que han sido o son relevantes en la vida de la persona. El proyecto se completa gracias al planteamiento de una colección periódica, un libro al año, con un o una protagonista diferente cada vez, además de la creación de un pack de lanzamiento que incluye un pequeño objeto representativo de la persona junto a su libro.</p>
-                        <Link className={ textStyles.ver_link } href="/proyectos/un-gusto-conocerte-marca">VER BRANDING<span class="material-symbols-rounded">arrow_outward</span></Link> 
+                        <Link hoverable="true" className={ textStyles.ver_link } href="/proyectos/un-gusto-conocerte-marca">VER BRANDING<span hoverable="true" class="material-symbols-rounded">arrow_outward</span></Link> 
                     </div>
                 </div>
                 <div id={ imgTodoStyles.imagenes }>
@@ -199,21 +199,6 @@ export default function UnGustoConocerteLibro() {
 function Arrow(props) {
     const disabeld = props.disabled ? " arrow--disabled" : ""
     return (
-    //     <svg
-    //     onClick={props.onClick}
-    //     className={`arrow ${
-    //         props.left ? "arrow--left" : "arrow--right"
-    //     }`}
-    //     xmlns="http://www.w3.org/2000/svg"
-    //     viewBox="0 0 24 24"
-    //     >
-    //     {props.left && (
-    //         <path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z" />
-    //     )}
-    //     {!props.left && (
-    //       <path d="M5 3l3.057-3 11.943 12-11.943 12-3.057-3 9-9z" />
-    //     )}
-    //   </svg>
         <Image
             onClick={props.onClick}
             priority

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Image from "next/image";
 
 // This functional component represents a custom cursor with a flare effect.
 function FlareCursor() {
@@ -7,6 +8,8 @@ function FlareCursor() {
 
   // State to track whether the cursor is over a clickable element.
   const [isPointer, setIsPointer] = useState(false);
+
+  const [isHover, setIsHover] = useState(false);
 
   // Event handler for the mousemove event.
   const handleMouseMove = (e) => {
@@ -18,10 +21,15 @@ function FlareCursor() {
 
     // Check if the cursor is over a clickable element by inspecting the cursor style.
     setIsPointer(
+      window.getComputedStyle(target).getPropertyValue("cursor") === "move" ||
       window.getComputedStyle(target).getPropertyValue("cursor") === "pointer"
     );
-  };
 
+    setIsHover(
+      target.getAttribute("hoverable") === "true"
+    );
+
+  };
   // Set up an effect to add and remove the mousemove event listener.
   useEffect(() => {
     window.addEventListener("mousemove", handleMouseMove);
@@ -38,8 +46,9 @@ function FlareCursor() {
 
   // Render the custom cursor element with dynamic styles based on cursor state.
   return (
-    <div
-      className={`flare ${isPointer ? "pointer" : ""}`}
+
+    <Image
+      className={`flare ${isPointer ? "pointer" : ""} ${isHover ? "hoverable" : ""}`}
       style={{
         ...cursorStyle,
         left: `${position.x}px`,
@@ -47,7 +56,10 @@ function FlareCursor() {
         width: `${flareSize}px`,
         height: `${flareSize}px`,
       }}
-    ></div>
+      src="/cursor.svg"
+      height={50}
+      width={50}/>
+
   );
 }
 

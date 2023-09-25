@@ -4,8 +4,9 @@ import styles from "./proyecto.module.css";
 
 export default function Proyecto({ props }) {
     return(
-        <Link href={ props.href }>
+        <Link href={ props.href } >
             <Image
+              hoverable="true"
               className={ styles.image }
               priority
               src={ props.src }

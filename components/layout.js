@@ -35,13 +35,13 @@ export default function Layout({ children, donde }) {
                         [styles.photo]: donde=="photo",
                         [styles.about]: donde=="about"
                     }) }>
-                    <Link href="/">ALBA CASTRO</Link>
+                    <Link hoverable="true" href="/">ALBA CASTRO</Link>
                     <span id={ styles.hamburger } className="material-symbols-rounded md-48" onClick={() => { openMenu() }}>menu</span>
                     <div id={ styles.links } >
                         <span id={ styles.close_menu } className="material-symbols-rounded" onClick={() => { closeMenu() }} >close</span>
-                        <Link className={ styles.link } href="/"><p>WORK</p></Link>
-                        <Link className={ styles.link } href="/fotos"><p>PHOTO</p></Link>
-                        <Link className={ styles.link } href="/about"><p>ABOUT</p></Link>
+                        <Link className={ styles.link } href="/" ><p hoverable="true">WORK</p></Link>
+                        <Link className={ styles.link } href="/fotos"><p hoverable="true">PHOTO</p></Link>
+                        <Link className={ styles.link } href="/about"><p hoverable="true">ABOUT</p></Link>
                     </div>
                 </nav>
                 <div id={ styles.nav_filler }>
@@ -49,6 +49,7 @@ export default function Layout({ children, donde }) {
                         <>
                         <Link href="/">
                             <Image
+                                hoverable="true"
                                 id={ styles.flecha_atras }
                                 priority
                                 src="/images/arrow-right.svg"
