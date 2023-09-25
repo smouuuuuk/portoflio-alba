@@ -122,7 +122,8 @@ button {
 @media (min-width: 1600px) {
 
   .navigation-wrapper {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1600px;
   }
 
 }

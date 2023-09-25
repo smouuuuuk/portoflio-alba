@@ -1,7 +1,7 @@
 #animaciones {
     padding: 7.5% 0;
-    width: 1600px;
-    max-width: clamp(1em, 1600px, calc(100vw -  4em));
+    width: 100%;
+    max-width: 1600px;
     background-color: black;
     border-radius: 40px;
     display: flex;
@@ -11,14 +11,13 @@
 }
 
 #animaciones div {
-    width: 46.25%;
     display: flex;
     justify-content: flex-start;
 }
 
 .animacion {
     height: 100%;
-    width: auto;    
+    max-width: 85%;    
 }
 
 #animaciones div:first-child {
@@ -27,9 +26,6 @@
 
 @media (min-width: 1600px) {
 
-    #animaciones {
-        max-width: clamp(1em, 1600px, calc(100vw -  4em - 600px - 4em));
-    }
 
 }
 
