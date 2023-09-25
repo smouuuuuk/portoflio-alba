@@ -6,7 +6,7 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif; */
   background-color: #B6B6B6;
   font-family: var(--helvetica-neue), Segoe UI;
-  cursor: none !important;
+  /* cursor: none !important; */
 }
 
 a {
@@ -14,8 +14,8 @@ a {
   text-decoration: none;
 }
 
-a:hover {
-  cursor: none;
+*:hover {
+  cursor: none !important;
 }
 
 * {
@@ -89,15 +89,14 @@ button {
 .flare {
   position: fixed;
   pointer-events: none;
-  transform: translate(-30%, -30%);
+  transform: translate(-45%, -45%);
   z-index: 999999 !important ;
-  backdrop-filter: blur(1px);
   transition: width 0.2s ease-in-out, height 0.2s ease-in-out;
   cursor: none !important; /* Let's hide the default cursor so it looks way better */
 }
 
 .flare::after {
-  content: url("/cursor.png");
+  content: url("/cursor.svg");
 }
 
 /* We need to remove this custom cursor in mobile devices */
