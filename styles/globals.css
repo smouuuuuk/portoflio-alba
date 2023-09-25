@@ -23,6 +23,16 @@ a {
   box-sizing: border-box;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #b6b6b6;
+  background: black;
+}
+
+::selection {
+  color: #b6b6b6;
+  background: black;
+}
+
 img {
   max-width: 100%;
   height: auto;
