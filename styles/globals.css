@@ -6,16 +6,17 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif; */
   background-color: #B6B6B6;
   font-family: var(--helvetica-neue), Segoe UI;
-  /* cursor: none !important; */
+  cursor: none !important;
 }
 
 a {
   color: black;
   text-decoration: none;
+  cursor: none;
 }
 
 *:hover {
-  cursor: none !important;
+  cursor: none;
 }
 
 * {
