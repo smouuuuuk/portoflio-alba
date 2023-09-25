@@ -109,7 +109,7 @@ export default function UnGustoConocerteMarca() {
                         alt="Todos los estuches de conservas"
                         data-aos="fade-up"
                     />
-                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} data-aos="fade-up"><source src="/images/un-gusto-conocerte-marca/rrss_video.mp4" type="video/mp4"/></video>
+                    <video hoverable="true" id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} controls={true} data-aos="fade-up"><source src="/images/un-gusto-conocerte-marca/rrss_video.mp4" type="video/mp4"/></video>
 
                 </div>
 
