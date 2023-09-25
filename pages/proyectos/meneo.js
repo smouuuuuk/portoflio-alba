@@ -54,7 +54,7 @@ export default function Meneo(){
                     <div id={styles.tote_botella}>
                         <div>
                             <Image
-                                data-aos="fade-up"
+                                data-aos="fade-right"
                                 className= { imgTodoStyles.imagen }
                                 priority
                                 src="/images/meneo/mano_botella.jpg"
@@ -65,7 +65,7 @@ export default function Meneo(){
                         </div>
                         <div>
                             <Image
-                                data-aos="fade-up"
+                                data-aos="fade-left"
                                 className= { imgTodoStyles.imagen }
                                 priority
                                 src="/images/meneo/etiqueta_zoom.jpg"
