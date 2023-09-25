@@ -52,7 +52,7 @@ export default function Fos(){
                                 height={ 1600 }
                                 alt="Todos los estuches de conservas"
                                 data-aos="fade-right"
-                            />
+                                />
                         </div>
                         <div>
                             <Image
@@ -63,7 +63,7 @@ export default function Fos(){
                                 height={ 1600 }
                                 alt="Todos los estuches de conservas"
                                 data-aos="fade-left"
-                            />
+                                />
                         </div>
                     </div>
                     <video id={ styles.videofos } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }} data-aos="fade-up"><source src="/images/fos/animacion_logo.mp4" type="video/mp4"/></video>

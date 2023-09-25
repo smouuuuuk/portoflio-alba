@@ -5,6 +5,7 @@ import styles from './layout.module.css';
 import Head from 'next/head';
 import { clsx } from 'clsx';
 import Image from 'next/image';
+import CustomCursor from './cursor';
 
 export default function Layout({ children, donde }) {
 

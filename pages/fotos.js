@@ -50,6 +50,7 @@ export default function Fotos (){
                 <div id={ styles.fotos }>
                     {array.map((num) => (
                         <Image
+                            key={num}
                             src={`/images/galeria/${num}.jpg`}
                             width={ 1600 }
                             height={ 1600 }

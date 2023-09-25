@@ -2,6 +2,7 @@ import { React, useEffect } from 'react'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../styles/globals.css';
+import CustomCursor from '../components/cursor';
 
 import localFont from 'next/font/local';
 const helvetica_neue = localFont({
@@ -22,13 +23,14 @@ export default function App({ Component, pageProps }) {
      }, [])
     return(
         <>
-            <style jsx global>{`
-                :root {
-                /* ... */
-                --helvetica-neue: ${helvetica_neue.style.fontFamily};
-                }
-            `}</style>
-            <Component {...pageProps} />
+          <CustomCursor />
+          <style jsx global>{`
+              :root {
+              /* ... */
+              --helvetica-neue: ${helvetica_neue.style.fontFamily};
+              }
+          `}</style>
+          <Component {...pageProps} />
         </>
     ) 
 }

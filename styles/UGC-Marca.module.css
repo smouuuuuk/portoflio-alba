@@ -15,13 +15,18 @@
 }
 
 #tote_gif {
+    width: 100%;
     max-width: 1600px;
     gap: 2em;
     display: flex;
 }
 
+#tote_gif div {
+    flex-grow: 1;
+}
+
 #tote_gif img {
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 

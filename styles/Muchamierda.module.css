@@ -1,11 +1,16 @@
 #contra_impresora {
+    width: 100%;
     max-width: 1600px;
     gap: 2em;
     display: flex;
 }
 
+#contra_impresora div {
+    flex-grow: 1;
+}
+
 #contra_impresora img{
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 

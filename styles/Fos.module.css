@@ -1,16 +1,21 @@
 #lamp_tarj {
+    width: 100%;
     max-width: 1600px;
-    gap: 2em;
     display: flex;
+    gap: 2em;
 }
 
-#lamp_tarj img {
-    height: auto;
+#lamp_tarj div {
+    flex-grow: 1;
+}
+
+#lamp_tarj img{
+    height: 100%;
     width: 100%;
 }
 
 #videofos {
-    max-width: clamp(1em, 1600px, calc(100vw - 4em));
+    max-width: 100%;
 }
 
 @media (max-width: 400px) {

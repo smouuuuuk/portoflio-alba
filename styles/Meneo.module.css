@@ -1,11 +1,16 @@
 #tote_botella {
+    width: 100%;
     max-width: 1600px;
     display: flex;
     gap: 2em;
 }
 
+#tote_botella div {
+    flex-grow: 1;
+}
+
 #tote_botella img {
-    height: auto;
+    height: 100%;
     width: 100%;
 }
 
