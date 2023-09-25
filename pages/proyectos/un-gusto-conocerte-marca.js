@@ -42,7 +42,7 @@ export default function UnGustoConocerteMarca() {
                     <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }} data-aos="fade-up"><source src="/images/home/home_2.mp4" type="video/mp4"/></video>
                     <Image
                         className= { imgTodoStyles.imagen }
-                        priority
+                        priority={true}
                         src="/images/un-gusto-conocerte-marca/colores.svg"
                         width={ 1600 }
                         height={ 1600 }

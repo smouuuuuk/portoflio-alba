@@ -58,7 +58,7 @@ export default function Catalalata() {
                 <div id={ imgTodoStyles.imagenes }>
                     <Image 
                         className= { imgTodoStyles.imagen }
-                        priority
+                        priority={true}
                         src="/images/catalalata/todas.jpg"
                         width={ 1600 }
                         height={ 1600 }

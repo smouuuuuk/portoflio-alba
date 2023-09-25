@@ -62,7 +62,7 @@ export default function UnGustoConocerteLibro() {
 
                     <Image
                         className= { imgTodoStyles.imagen }
-                        priority
+                        priority={true}
                         src="/images/home/home_1.jpg"
                         width={ 1600 }
                         height={ 1600 }

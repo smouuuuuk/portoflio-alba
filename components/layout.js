@@ -5,7 +5,6 @@ import styles from './layout.module.css';
 import Head from 'next/head';
 import { clsx } from 'clsx';
 import Image from 'next/image';
-import CustomCursor from './cursor';
 
 export default function Layout({ children, donde }) {
 
@@ -18,7 +17,7 @@ export default function Layout({ children, donde }) {
     }
 
     useEffect(() => {
-        setTimeout(() => {AOS.refresh()}, 500);
+        setInterval(() => {AOS.refresh()}, 500);
      }, [])
 
     return(

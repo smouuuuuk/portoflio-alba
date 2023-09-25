@@ -52,6 +52,7 @@ export default function Fotos (){
                     {array.map((num) => (
                         <Image
                             key={num}
+                            priority={num < 9 ? true : ""}
                             src={`/images/galeria/${num}.jpg`}
                             width={ 1600 }
                             height={ 1600 }

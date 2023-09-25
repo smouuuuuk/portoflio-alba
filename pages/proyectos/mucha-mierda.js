@@ -64,7 +64,7 @@ export default function MuchaMierda(){
                 <div id={ imgTodoStyles.imagenes }>
                     <Image 
                         className= { imgTodoStyles.imagen }
-                        priority
+                        priority={true}
                         src="/images/home/home_3.jpg"
                         width={ 1600 }
                         height={ 1600 }
