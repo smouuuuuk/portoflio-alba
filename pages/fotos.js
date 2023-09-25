@@ -10,7 +10,7 @@ for (let i=0; i<28; i++){
 
 export default function Fotos (){
 
-    const [imageIndex, setImageIndex] = useState(0);
+    const [imageIndex, setImageIndex] = useState(1);
 
     function imagenGrande(num){
         setImageIndex(num);
@@ -42,6 +42,7 @@ export default function Fotos (){
                         width={ 1600 }
                         height={ 1600 }
                         id={ styles.img_grande}
+                        alt={`foto de la galería número ${imageIndex}`}
                     />
 
                 </div>
@@ -58,6 +59,7 @@ export default function Fotos (){
                             className={ styles.foto }
                             data-aos="fade-up"
                             onClick={() => { imagenGrande(num) }}
+                            alt={`foto de la galería número ${num}`}
                         />
                     ))}
                 </div>  
