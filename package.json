@@ -11,11 +11,12 @@
   "dependencies": {
     "aos": "^2.3.4",
     "clsx": "^2.0.0",
+    "eslint-config-next": "^13.5.4",
     "jquey": "^0.0.1-security",
     "keen-slider": "^6.8.6",
-    "next": "latest",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "next": "^13.5.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-draggable": "^4.4.5",
     "sharp": "^0.32.6"
   }

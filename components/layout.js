@@ -5,6 +5,7 @@ import styles from './layout.module.css';
 import Head from 'next/head';
 import { clsx } from 'clsx';
 import Image from 'next/image';
+import Script from 'next/script';
 
 export default function Layout({ children, donde }) {
 
@@ -23,6 +24,16 @@ export default function Layout({ children, donde }) {
     return(
         <div id={ styles.todo }>
             <Head>
+	    	<Script src="https://www.googletagmanager.com/gtag/js?id=G-MQYVFMZXKF" />
+	    	<Script id="google-analytics">
+		        {`
+			        window.dataLayer = window.dataLayer || [];
+			        function gtag(){dataLayer.push(arguments);}
+			        gtag('js', new Date());
+ 
+        			gtag('config', 'G-MQYVFMZXKF');
+	        	`}
+		</Script>
                 <title>Alba Castro</title>
                 <link rel="icon" href="/favicon.ico" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,100,0,0" />

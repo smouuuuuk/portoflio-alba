@@ -47,7 +47,7 @@ export default function About(){
                                 <a hoverable="true" href="mailto:albacastrog@gmail.com">Email</a><p>&nbsp;- albacastrog@gmail.com</p>
                             </div>
                             <div>
-                                <a hoverable="true" href="https://instagram.com/albis_cg" target="_blank">Instagram</a><p>&nbsp;- @albis_cg</p>
+                                <a hoverable="true" href="https://instagram.com/albacastro.g" target="_blank">Instagram</a><p>&nbsp;- @albacastro.g</p>
                             </div>
                             <div>
                                 <a hoverable="true" href="https://linkedin.com/in/alba-castro-garcía-25169120a/" target="_blank">Linkedin</a><p>&nbsp;- Alba Castro</p>
