@@ -1,5 +1,7 @@
 .image {
-    border-radius: 40px;
+    border-radius: var(--project-border-radius);
+    max-height: 80vh;
+    width: auto;
 }
 
 @media (max-width: 650px) {

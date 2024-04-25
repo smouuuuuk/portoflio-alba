@@ -23,11 +23,11 @@
     pointer-events: none;
 }
 
-#alba img {
+#alba {
     transform: rotate(-5deg);
 }
 
-#tulipan img {
+#tulipan {
     transform: rotate(10deg);
 }
 
@@ -107,6 +107,8 @@
 
     #alba {
         width: 300px;
+        transform: rotate(-5deg);
+
     }
 
     .seccion_datos {

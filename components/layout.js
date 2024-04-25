@@ -29,6 +29,11 @@ export default function Layout({ children, donde }) {
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,250,0,0" />
             </Head>
             <header>
+                <div id={ styles.idioma }>
+                    <Link className={ styles.link } href="/">EN</Link>
+                    <p>/</p>
+                    <Link className={ styles.link } href="/es">ES</Link>
+                </div>
                 <nav id={ styles.navegacion } className={ clsx({
                         [styles.work]: donde=="work" ||  donde=="proyecto",
                         [styles.photo]: donde=="photo",
@@ -73,7 +78,10 @@ export default function Layout({ children, donde }) {
                     [styles.resto]: donde!="photo" || donde!="proyecto"
                 }) }>
                 <p>
-                    © 2023, Alba Castro. All rights reserved. 
+                    Last update: April 2024
+                </p>
+                <p>
+                    © 2024, Alba Castro. All rights reserved. 
                 </p>
             </footer>
         </div>

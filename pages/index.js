@@ -14,9 +14,9 @@ export default function Home() {
             <video hoverable="true" id={ styles.videougc} width="1600" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/home/home_2.mp4" type="video/mp4"/></video>
           </Link>
           <Proyecto props={{ href:"/proyectos/mucha-mierda", src:"/images/home/home_3.jpg", alt:"Mucha Mierda" }}></Proyecto>
+          <Proyecto props={{ href:"/proyectos/meneo", src:"/images/home/home_6.jpg", alt:"Meneo" }}></Proyecto>
           <Proyecto props={{ href:"/proyectos/catalalata", src:"/images/home/home_4.jpg", alt:"Catalalata" }}></Proyecto>
           <Proyecto props={{ href:"/proyectos/fos", src:"/images/home/home_5.jpg", alt:"Fos" }}></Proyecto>
-          <Proyecto props={{ href:"/proyectos/meneo", src:"/images/home/home_6.jpg", alt:"Meneo" }}></Proyecto>
         </div>
       </Layout>
     </div>

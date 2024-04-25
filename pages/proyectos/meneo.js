@@ -1,11 +1,11 @@
 import Layout from "../../components/layout";
 import Image from "next/image";
-import styles from '../../styles/Meneo.module.css';
+import styles from '../../styles/Micenico.module.css';
 import textStyles from '../../styles/Textos.module.css';
 import imgTodoStyles from '../../styles/TodoImgs.module.css';
 
 
-export default function Meneo(){
+export default function Micenico(){
     return(
         <Layout donde="proyecto">
              <div id={imgTodoStyles.todo}>
@@ -13,22 +13,25 @@ export default function Meneo(){
                 <div id={ textStyles.textos }>
                     <div id={ textStyles.textos_izq }>
                         <div id={ textStyles.titulo }>
-                            <h2>MENEO</h2>
+                            <h2>MICÉNICO</h2>
                         </div>
                         <div id={ textStyles.fecha }>
-                            <p>2020</p>
+                            <p>2024</p>
                         </div>
                         <div id={ textStyles.mencion }>
-                            <p>Proyecto universitario</p>
+                            <p>Client: El Griego</p>
+                            <p>3D: Rodrigo Salas</p>
                         </div>
                         <div id={ textStyles.categorias }>
-                            <div className={ textStyles.categoria }>Identidad visual</div>
-                            <div className={ textStyles.categoria }>Packaging</div>
-                            <div className={ textStyles.categoria }>Ilustración</div>
+                            <div className={ textStyles.categoria }>Dirección creativa</div>
+                            <div className={ textStyles.categoria }>Conceptualización</div>
+                            <div className={ textStyles.categoria }>Animación</div>
+                            <div className={ textStyles.categoria }>Branding</div>
                         </div>
                     </div>
                     <div id={ textStyles.textos_drch }>
-                        <p className={ textStyles.texto_drch }>Meneo, es una propuesta de vinos para gente joven. Apuesta por una imagen diferente a los vinos convencionales con el objetivo de posicionarlo como competidor de las cañas o el vermut.</p>
+                        <p className={ textStyles.texto_drch }>Branding and design of the new album of the emerging artist ‘El Griego’. A personal brand was created for the artist, taking references to Ancient Greece as a conceptual axis.  An object from Greek mythology was associated with each of the 9 song’s covers that make up the album, taking into account the storytelling of each of them.</p>
+                        <p className={ textStyles.texto_drch }> The challenge consisted in bringing all that antiquity to a contemporary panorama. To do so, we had a 3D artist who developed the different objects with a language that moves between luxury and extravagance.</p>
                     </div>
                 </div>
 

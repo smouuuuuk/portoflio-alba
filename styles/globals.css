@@ -4,7 +4,7 @@ body {
   margin: 0;
   /* font-family:  Helvetica Neue, Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, sans-serif; */
-  background-color: #B6B6B6;
+  background-color: var(--gris-coorporativo);
   font-family: var(--helvetica-neue), Segoe UI;
   cursor: none !important;
 }
@@ -24,12 +24,12 @@ a {
 }
 
 ::-moz-selection { /* Code for Firefox */
-  color: #b6b6b6;
+  color: var(--gris-coorporativo);
   background: black;
 }
 
 ::selection {
-  color: #b6b6b6;
+  color: var(--gris-coorporativo);
   background: black;
 }
 
