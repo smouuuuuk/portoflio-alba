@@ -30,6 +30,22 @@
     width: 100%;
 }
 
+#gifManos {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    aspect-ratio: 182/100;
+    overflow: hidden;
+    background-color: white;
+    border-radius: var(--project-border-radius);
+    max-width: 1600px;
+}
+
+#gifMano {
+    height: 130%;
+    width: auto;
+}
+
 @media (max-width: 400px) {
 
     #videougc {

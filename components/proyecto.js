@@ -10,8 +10,8 @@ export default function Proyecto({ props }) {
               className={ styles.image }
               priority
               src={ props.src }
-              width={ 1600 }
-              height={ 1600 }
+              width={ 1400 }
+              height={ 1400 }
               alt={ props.alt }
               data-aos="fade-up"
               />

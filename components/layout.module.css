@@ -30,7 +30,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    gap: 3em;
+    gap: 110px;
 }
 
 #links p {
@@ -42,15 +42,18 @@
 }
 
 #idioma {
+    background-color: var(--gris-coorporativo);
     padding: 10px;
-    border: 2px solid black;
-    border-radius: 16px;
+    border: var(--ancho-borde) solid black;
+    border-radius: 30px;
     position: fixed;
-    bottom: 20px;
-    left: 20px;
+    bottom: 50px;
+    left: 50px;
     display: flex;
-    gap: 3px;
+    gap: 1px;
     font-size: 1.5em;
+    z-index: 99;
+    /* display: none; */
 }
 
 #idioma p {
@@ -60,7 +63,7 @@
 .link::after {
     content: "";
     position: absolute;
-    height: 2px;
+    height: var(--ancho-borde);
     background-color: black;
     bottom: 0;
     left: 0;
@@ -78,7 +81,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: var(--ancho-borde);
     background-color: black;
 }
 
@@ -88,7 +91,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: var(--ancho-borde);
     background-color: white;
 }
 
@@ -98,18 +101,18 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 2px;
+    height: var(--ancho-borde);
     background-color: black;
 }
 
 .link:hover::after {
-    height: 2px;
+    height: var(--ancho-borde);
     width: 100%;
 }
 
 #nav_filler {
     width: 100%;
-    height: 150px;
+    height: 180px;
 }
 
 #footer {
@@ -118,7 +121,7 @@
     bottom: 0;
     width: 100%;
     padding: 0 50px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;

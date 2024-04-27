@@ -3,5 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/fotos": "pages/fotos.js"
+  "/fotos": "pages/fotos.js",
+  "/proyectos/un-gusto-conocerte": "pages/proyectos/un-gusto-conocerte.js"
 }

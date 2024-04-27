@@ -1,0 +1,43 @@
+{
+    "CATEGORIA_EDITORIAL": "Editorial",
+    "CATEGORIA_DIRECCION_ARTE": "Dirección de arte",
+    "CATEGORIA_FOTOGRAFIA": "Fotografía analógica",
+    "CATEGORIA_ILUSTRACION": "Ilustración",
+    "CATEGORIA_IDENTIDAD_VISUAL": "Identidad visual",
+    "CATEGORIA_PAPELERIA": "Papelería",
+    "CATEGORIA_CONCEPTUALIZACION": "Conceptualización",
+    "CATEGORIA_DIRECCION_CREATIVA": "Dirección creativa",
+
+    "UGC_TFG": "Final Degree Project",
+
+    "UGC_LIBRO_PAGINAS": "106 páginas",
+    "UGC_LIBRO_TEXTO_1": "“Un gusto conocerte” es una iniciativa sin ánimo de lucro que surge con el objetivo de eliminar todos aquellos estigmas presentes en la sociedad hacia las personas con síndrome de Down, a través de los aspectos que les hacen singulares más allá de la etiqueta diagnóstica.",
+    "UGC_LIBRO_TEXTO_2": "El proyecto plantea una publicación redactada empleando el método de lectura fácil en la que el protagonista es una persona concreta con síndrome de Down. Con una mirada intimista, el libro se desarrolla como un recorrido a través de las cosas cotidianas que han sido o son relevantes en la vida de la persona.",
+    "UGC_LIBRO_TEXTO_3": "El proyecto se completa gracias al planteamiento de una colección periódica, un libro al año, con un o una protagonista diferente cada vez, además de la creación de un pack de lanzamiento que incluye un pequeño objeto representativo de la persona junto a su libro.",
+    "UGC_LIBRO_BRANDING": "VER BRANDING",
+
+    "UGC_MARCA_TEXTO_1": "“Un gusto conocerte” es una iniciativa sin ánimo de lucro que surge con el objetivo de eliminar todos aquellos estigmas presentes en la sociedad hacia las personas con síndrome de Down, a través de los aspectos que les hacen singulares más allá de la etiqueta diagnóstica.",
+    "UGC_MARCA_TEXTO_2": "Se dirige principalmente a las personas con síndrome de Down por loque se busca que toda su imagen y aplicaciones sean lo más claras yaccesibles posible. Para ello, se crea una marca cercana y amigable atendiendo a las directrices de la Lectura Fácil. Partimos de un namingdirecto, autoexplicativo y notorio, creando un universo visual que gira en torno a la mano comoelemento representativo del momento de conocer a alguien.",
+    "UGC_MARCA_PRODUCTO": "VER PRODUCTO",
+
+    "MUCHA_MIERDA_TEXTO_1": "La revista explora el concepto de suerte en la vida cotidiana.",
+    "MUCHA_MIERDA_TEXTO_2": "Navega por diferentes temas para informar y entretener al lector, dejando paso a su subjetividad.",
+    "MUCHA_MIERDA_TEXTO_3": "Equipo: Inés Oliver, Hugo Morán, Sara Zaloña y Alba Castro.",
+
+    "CATALALATA_TEXTO_1": "Diseño de packaging para seis variedades de conservas. Además de mostrar el producto, aparece la figura humana que es clave en todo el proceso. Se diseñó un personaje neutro que interactúa de forma simpática con el producto. Por un lado, este personaje hace referencia a los pescadores y las mariscadoras gallegas y por otro lado, también hace un guiño al consumidor que disfruta del producto. Se buscaba que cualquiera pudiese sentirse identificado con el diseño, independientemente de su edad.",
+    "CATALALATA_TEXTO_2": "Se ha valorado la creatividad y la profesionalidad de ejecución del diseño en su conjunto. La limpieza del diseño, con un predominio del blanco y negro sobre el que contrasta una ingeniosa reinterpretación del logo-marca “Cata la Lata” aplicada en colores vivos. El tratamiento y la carga emotiva de las ilustraciones que representan a un pescador cariñoso en distintas situaciones, que utiliza con versatilidad, jugando con el frente y el reverso de los estuches. El resultado en su conjunto desarrolla una historia coherente, homogénea, que hace familia al integrar con destreza a las distintas categorías de producto - Jurado",
+
+    "MICENICO_TEXTO_1": "Branding y diseño del nuevo albúm del artista emergente “El Griego”. Se creó una marca personal para el artista, tomando referencias de la Antigua Grecia como eje conceptual.  Se asoció un objeto de la mitología Griega a cada una de las 9 portadas de las canciones que componen el álbum, teniendo en cuenta el storytelling de cada una de ellas.",
+    "MICENICO_TEXTO_2": "El reto consistió en traer toda esa antiguedad a un panorama actual. Para ello contamos con un artista 3D que desarrolló los diferentes objetos con un lenguaje que se mueve entre el lujo y la extravagancia.",
+
+    "FOS_TEXTO": "Creación de la identidad visual para Fos Estudio®, un proyecto de interiorismo y diseño llevado a cabo por Irina Ivanova enfocado a traducir la luz, los interiores y la simbiosis entre ambos mundos.",
+
+    "ABOUT_TEXTO_1": "¡Hola! Encantada de conocerte. Me llamo Alba (22) y soy una Diseñadora Gráfica e Ilustradora asturiana actualmente viviendo en Madrid.",
+    "ABOUT_TEXTO_2": "Me inspiran muchas cosas, pero especialmente: mi tío René, mis raíces, las personas y cómo se comportan.",
+    "ABOUT_TEXTO_3": "Me gusta explorar temas cotidianos para transformar problemas o cuestiones sociales a través del diseño. Busco llevar mi trabajo más allá de lo estético, a través de la sensibilidad, transmitir y provocar emociones.",
+    "ABOUT_CONTACTO": "CONTACTO",
+    "ABOUT_EXPERIENCIA": "EXPERIENCIA",
+    "ABOUT_PREMIOS": "PREMIOS",
+    "ABOUT_PRENSA": "PRENSA"
+
+}

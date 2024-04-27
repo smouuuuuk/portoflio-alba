@@ -8,7 +8,13 @@ import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 import Link from "next/link";
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
+
 export default function UnGustoConocerteMarca() {
+
+    const { t } = useTranslation();
+
     return(
         <Layout donde="proyecto">
             <div id={imgTodoStyles.todo}>
@@ -22,61 +28,58 @@ export default function UnGustoConocerteMarca() {
                             <p>2023</p>
                         </div>
                         <div id={ textStyles.mencion }>
-                            <p>Trabajo Fin de Grado</p>
+                            <p> {t("UGC_TFG")} </p>
                         </div>
                         <div id={ textStyles.categorias }>
                             <div className={ textStyles.categoria }>Brand guidelines</div>
-                            <div className={ textStyles.categoria }>Dirección de arte</div>
+                            <div className={ textStyles.categoria }> {t("CATEGORIA_DIRECCION_ARTE")} </div>
                             <div className={ textStyles.categoria }>Motion graphics</div>
-                            <div className={ textStyles.categoria }>Ilustración</div>
+                            <div className={ textStyles.categoria }> {t("CATEGORIA_ILUSTRACION")} </div>
                         </div>
                     </div>
                     <div id={ textStyles.textos_drch }>
-                        <p className={ textStyles.texto_drch }>“Un gusto conocerte” es una iniciativa sin ánimo de lucro que surge con el objetivo de eliminar todos aquellos estigmas presentes en la sociedad hacia las personas con síndrome de Down, a través de los aspectos que les hacen singulares más allá de la etiqueta diagnóstica.</p>
-                        <p className={ textStyles.texto_drch }>Se dirige principalmente a las personas con síndrome de Down por loque se busca que toda su imagen y aplicaciones sean lo más claras yaccesibles posible. Para ello, se crea una marca cercana y amigable atendiendo a las directrices de la Lectura Fácil. Partimos de un namingdirecto, autoexplicativo y notorio, creando un universo visual que gira en torno a la mano comoelemento representativo del momento de conocer a alguien.</p>
-                        <Link hoverable="true" className={ textStyles.ver_link } href="/proyectos/un-gusto-conocerte">VER PRODUCTO<span hoverable="true" class="material-symbols-rounded">arrow_outward</span></Link>  
+                        <p className={ textStyles.texto_drch }> {t("UGC_MARCA_TEXTO_1")} </p>
+                        <p className={ textStyles.texto_drch }> {t("UGC_MARCA_TEXTO_2")} </p>
+                        <Link hoverable="true" className={ textStyles.ver_link } href="/proyectos/un-gusto-conocerte"> {t("UGC_MARCA_PRODUCTO")} <span hoverable="true" class="material-symbols-rounded">arrow_outward</span></Link>  
                     </div>
                 </div>
 
                 <div id={ imgTodoStyles.imagenes }>
-                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }} data-aos="fade-up"><source src="/images/home/home_2.mp4" type="video/mp4"/></video>
+                    <video id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius: "16px" }} data-aos="fade-up"><source src="/images/home/home_2.mp4" type="video/mp4"/></video>
                     <Image
                         className= { imgTodoStyles.imagen }
                         priority={true}
-                        src="/images/un-gusto-conocerte-marca/colores.svg"
+                        src="/images/un-gusto-conocerte-marca/2.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
                         data-aos="fade-up"
                     />
-                    <div id={styles.tote_gif}>
-                        <div>
-                            <Image 
-                                className= { imgTodoStyles.imagen }
-                                priority
-                                src="/images/un-gusto-conocerte-marca/tote-1.jpg"
-                                width={ 1600 }
-                                height={ 1600 }
-                                alt="Todos los estuches de conservas"
-                                data-aos="fade-right"
-                            />
-                        </div>
-                        <div>
-                            <Image
-                                className= { imgTodoStyles.imagen }
-                                priority
-                                src="/images/un-gusto-conocerte-marca/manos.gif"
-                                width={ 1600 }
-                                height={ 1600 }
-                                alt="Todos los estuches de conservas"
-                                data-aos="fade-left"
-                            />
-                        </div>
+                    <Image
+                        className= { imgTodoStyles.imagen }
+                        priority
+                        src="/images/un-gusto-conocerte-marca/3.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
+                    />
+                    <div id={ styles.gifManos }>
+                        <Image
+                            className= { imgTodoStyles.imagen }
+                            id={ styles.gifMano }
+                            priority
+                            src="/images/un-gusto-conocerte-marca/4.gif"
+                            width={ 1600 }
+                            height={ 1600 }
+                            alt="Todos los estuches de conservas"
+                            data-aos="fade-up"
+                        />
                     </div>
                     <Image
                         className= { imgTodoStyles.imagen }
                         priority
-                        src="/images/un-gusto-conocerte-marca/camiseta.jpg"
+                        src="/images/un-gusto-conocerte-marca/5.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
@@ -85,35 +88,29 @@ export default function UnGustoConocerteMarca() {
                     <Image
                         className= { imgTodoStyles.imagen }
                         priority
-                        src="/images/un-gusto-conocerte-marca/manual.jpg"
+                        src="/images/un-gusto-conocerte-marca/6.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
                         data-aos="fade-up"
                     />
-                    <Image
-                        className= { imgTodoStyles.imagen }
-                        priority
-                        src="/images/un-gusto-conocerte-marca/libro+marcapaginas.jpg"
-                        width={ 1600 }
-                        height={ 1600 }
-                        alt="Todos los estuches de conservas"
-                        data-aos="fade-up"
-                    />
-                    <Image
-                        className= { imgTodoStyles.imagen }
-                        priority
-                        src="/images/un-gusto-conocerte-marca/instagram_feed.jpg"
-                        width={ 1600 }
-                        height={ 1600 }
-                        alt="Todos los estuches de conservas"
-                        data-aos="fade-up"
-                    />
-                    <video hoverable="true" id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} controls={true} data-aos="fade-up"><source src="/images/un-gusto-conocerte-marca/rrss_video.mp4" type="video/mp4"/></video>
+                    {/* <video hoverable="true" id={ styles.videougc } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} controls={true} data-aos="fade-up"><source src="/images/un-gusto-conocerte-marca/rrss_video.mp4" type="video/mp4"/></video> */}
 
                 </div>
 
             </div>
         </Layout>
     )
+}
+
+export async function getStaticProps(context) {
+    // extract the locale identifier from the URL
+    const { locale } = context
+
+    return {
+        props: {
+        // pass the translation props to the page component
+        ...(await serverSideTranslations(locale)),
+        },
+    }
 }

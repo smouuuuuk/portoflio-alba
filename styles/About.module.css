@@ -18,7 +18,7 @@
 }
 
 .div_img img {
-    border-radius: 40px;
+    border-radius: var(--project-border-radius);
     justify-self: center;
     pointer-events: none;
 }
@@ -32,8 +32,8 @@
 }
 
 #presentacion {
-    padding: 0 2rem;
-    font-size: 1.5em;
+    padding: 0 50px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
 }
@@ -51,7 +51,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-right: 6em;
+    margin-right: 50px;
+    max-width: 450px;
 }
 
 .seccion_datos {
@@ -75,8 +76,37 @@
     font-size: 1.25em;
 }
 
+#experiencia {
+    display: flex;
+    gap: 1em;
+}
+
+#experiencia h2 {
+    margin-bottom: 0;
+}
+
 #contacto p {
     display: inline-block;
+}
+
+#premios {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#premios h2 {
+    margin-bottom: 0;
+    font-size: 1.25em;
+}
+
+#premios div {
+    display: flex;
+    flex-direction: column;
+}
+
+#premios div h2 {
+    margin-bottom: 1em;
 }
 
 @media (max-width: 1350px) {

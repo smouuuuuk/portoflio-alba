@@ -1,8 +1,11 @@
 /**
  * @type {import('next').NextConfig}
- */
+*/
+
+const { i18n } = require('./next-i18next.config')
+
 const nextConfig = {
-  output: 'export',
+  // output: 'export',
  
   // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
   // trailingSlash: true,
@@ -16,6 +19,9 @@ const nextConfig = {
     unoptimized: true,
   },
 
+  i18n,
+  reactStrictMode: true,
+
 }
- 
+
 module.exports = nextConfig

@@ -7,6 +7,9 @@ import React, { useEffect, useState } from "react";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
+
 
 export default function Catalalata() {
 
@@ -30,6 +33,8 @@ export default function Catalalata() {
         },
     })
 
+    const { t } = useTranslation();
+
     return(
         <Layout donde="proyecto">
             <div id={ imgTodoStyles.todo }>
@@ -46,121 +51,52 @@ export default function Catalalata() {
                         </div>
                         <div id={ textStyles.categorias }>
                             <div className={ textStyles.categoria }>Packaging</div>
-                            <div className={ textStyles.categoria }>Ilustración</div>
+                            <div className={ textStyles.categoria }> {t("CATEGORIA_ILUSTRACION")} </div>
                             <div className={ textStyles.categoria }>Motion graphics</div>
                         </div>
                     </div>
                     <div id={ textStyles.textos_drch }>
-                        <p className={ textStyles.texto_drch }>Diseño de packaging para seis variedades de conservas. Además de mostrar el producto, aparece la figura humana que es clave en todo el proceso. Se diseñó un personaje neutro que interactúa de forma simpática con el producto. Por un lado, este personaje hace referencia a los pescadores y las mariscadoras gallegas y por otro lado, también hace un guiño al consumidor que disfruta del producto. Se buscaba que cualquiera pudiese sentirse identificado con el diseño, independientemente de su edad.</p>
-                        <p className={`${ textStyles.texto_drch } ${ textStyles.small }`}>- Se ha valorado la creatividad y la profesionalidad de ejecución del diseño en su conjunto. La limpieza del diseño, con un predominio del blanco y negro sobre el que contrasta una ingeniosa reinterpretación del logo-marca “Cata la Lata” aplicada en colores vivos. El tratamiento y la carga emotiva de las ilustraciones que representan a un pescador cariñoso en distintas situaciones, que utiliza con versatilidad, jugando con el frente y el reverso de los estuches. El resultado en su conjunto desarrolla una historia coherente, homogénea, que hace familia al integrar con destreza a las distintas categorías de producto - Jurado</p>
+                        <p className={ textStyles.texto_drch }> {t("CATALALATA_TEXTO_1")} </p>
+                        <p className={`${ textStyles.texto_drch } ${ textStyles.small }`}> {t("CATALALATA_TEXTO_2")} </p>
                     </div>
                 </div>
                 <div id={ imgTodoStyles.imagenes }>
                     <Image 
                         className= { imgTodoStyles.imagen }
                         priority={true}
-                        src="/images/catalalata/todas.jpg"
+                        src="/images/catalalata/1.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
                         data-aos="fade-up"
                     />
-                    <div id={ styles.animaciones } data-aos="fade-up">
-                        <div>
-                            <video className={ styles.animacion } autoPlay={true} loop={true} muted={true} playsInline={true} ><source src="/images/catalalata/sardinillas_animar.mp4" type="video/mp4"/></video>
-                        </div>
-                        <div>
-                            <video className={ styles.animacion } autoPlay={true} loop={true} muted={true} playsInline={true} ><source src="/images/catalalata/berberechos_animar.mp4" type="video/mp4"/></video>
-                        </div>
-                    </div>
-                    <div className={ `${imgTodoStyles.imagen} navigation-wrapper` } data-aos="fade-up">
-                        <div ref={sliderRef} className="keen-slider">
-                            <div className="keen-slider__slide">
-                                <Image
-                                    priority
-                                    src="/images/catalalata/atun.jpg"
-                                    width={ 1600 }
-                                    height={ 1600 }
-                                    alt="Todos los estuches de conservas"
-                                />
-                            </div>
-                            <div className="keen-slider__slide">
-                                <Image 
-                                    priority
-                                    src="/images/catalalata/sardinillas.jpg"
-                                    width={ 1600 }
-                                    height={ 1600 }
-                                    alt="Todos los estuches de conservas"
-                                    />
-                            </div>
-                            <div className="keen-slider__slide">
-                                <Image
-                                        priority
-                                        src="/images/catalalata/mejillones.jpg"
-                                        width={ 1600 }
-                                        height={ 1600 }
-                                        alt="Todos los estuches de conservas"
-                                        />
-                            </div>
-                            <div className="keen-slider__slide">
-                                <Image 
-                                    priority
-                                    src="/images/catalalata/chipirones.jpg"
-                                    width={ 1600 }
-                                    height={ 1600 }
-                                    alt="Todos los estuches de conservas"
-                                    />
-                            </div>
-                            <div className="keen-slider__slide">
-                                <Image
-                                        priority
-                                        src="/images/catalalata/berberecho.jpg"
-                                        width={ 1600 }
-                                        height={ 1600 }
-                                        alt="Todos los estuches de conservas"
-                                        />
-                            </div>
-                            <div className="keen-slider__slide">
-                                <Image 
-                                    priority
-                                    src="/images/catalalata/zamburinas.jpg"
-                                    width={ 1600 }
-                                    height={ 1600 }
-                                    alt="Todos los estuches de conservas"
-                                    />
-                            </div>
-                        </div>
-                        {loaded && instanceRef.current && (
-                            <>
-                            <Arrow
-                            left
-                            onClick={(e) =>
-                                e.stopPropagation() || instanceRef.current?.prev()
-                            }
-                            disabled={currentSlide === 0}
-                            />
-
-                            <Arrow
-                            onClick={(e) =>
-                                e.stopPropagation() || instanceRef.current?.next()
-                            }
-                            disabled={
-                                currentSlide ===
-                                instanceRef.current.track.details.slides.length - 1
-                            }
-                            />
-                        </>
-                        )}
-                    </div>
-                        <Image 
-                            className= { imgTodoStyles.imagen }
-                            priority
-                            src="/images/catalalata/sardinas.jpg"
-                            width={ 1600 }
-                            height={ 1600 }
-                            alt="Todos los estuches de conservas"
-                            data-aos="fade-up"
-                        />
+                    <Image 
+                        className= { imgTodoStyles.imagen }
+                        priority
+                        src="/images/catalalata/2.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
+                    />
+                    <Image 
+                        className= { imgTodoStyles.imagen }
+                        priority
+                        src="/images/catalalata/3.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
+                    />
+                    <Image 
+                        className= { imgTodoStyles.imagen }
+                        priority
+                        src="/images/catalalata/4.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
+                    />
                 </div>
             </div>
 
@@ -185,4 +121,16 @@ function Arrow(props) {
             height={ 30 }
         />
     )
-  }
+}
+
+export async function getStaticProps(context) {
+    // extract the locale identifier from the URL
+    const { locale } = context
+
+    return {
+        props: {
+        // pass the translation props to the page component
+        ...(await serverSideTranslations(locale)),
+        },
+    }
+}

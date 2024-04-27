@@ -12,7 +12,7 @@
 }
 
 .imagen {
-    border-radius: 40px;
+    border-radius: var(--project-border-radius);
 }
 
 @media (min-width: 1600px) {

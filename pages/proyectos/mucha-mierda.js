@@ -7,6 +7,9 @@ import React, { useEffect, useState } from "react"
 import { useKeenSlider } from "keen-slider/react"
 import "keen-slider/keen-slider.min.css"
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
+
 
 export default function MuchaMierda(){
 
@@ -29,6 +32,8 @@ export default function MuchaMierda(){
         },
     })
 
+    const { t } = useTranslation();
+
     return(
         <Layout donde="proyecto">
             <div id={imgTodoStyles.todo}>
@@ -50,14 +55,15 @@ export default function MuchaMierda(){
                             <p>Encuadernación grapada</p>
                         </div>
                         <div id={ textStyles.categorias }>
-                            <div className={ textStyles.categoria }>Dirección de arte</div>
-                            <div className={ textStyles.categoria }>Editorial</div>
+                            <div className={ textStyles.categoria }>ADG Laus Bronze Award</div>
+                            <div className={ textStyles.categoria }> {t("CATEGORIA_DIRECCION_ARTE")} </div>
+                            <div className={ textStyles.categoria }> {t("CATEGORIA_EDITORIAL")} </div>
                         </div>
                     </div>
                     <div id={ textStyles.textos_drch }>
-                        <p className={ textStyles.texto_drch }>La revista explora el concepto de suerte en la vida cotidiana. </p>
-                        <p className={ textStyles.texto_drch }>Navega por diferentes temas para informar y entretener al lector, dejando paso a su subjetividad.</p>
-                        <p className={ textStyles.texto_drch }>Equipo: Inés Oliver, Hugo Morán, Sara Zaloña y Alba Castro.</p>
+                        <p className={ textStyles.texto_drch }> {t("MUCHA_MIERDA_TEXTO_1")} </p>
+                        <p className={ textStyles.texto_drch }> {t("MUCHA_MIERDA_TEXTO_2")} </p>
+                        <p className={ textStyles.texto_drch }> {t("MUCHA_MIERDA_TEXTO_3")} </p>
                     </div>
                 </div>
 
@@ -65,88 +71,36 @@ export default function MuchaMierda(){
                     <Image 
                         className= { imgTodoStyles.imagen }
                         priority={true}
-                        src="/images/home/home_3.jpg"
+                        src="/images/mucha-mierda/1.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
                         data-aos="fade-up"
                     />
-                    <div className={ `${imgTodoStyles.imagen} navigation-wrapper` } data-aos="fade-up">
-                        <div ref={sliderRef} className="keen-slider">
-                            <div className="keen-slider__slide">
-                                <Image
-                                    priority
-                                    src="/images/mucha-mierda/carrusel_1.jpg"
-                                    width={ 1600 }
-                                    height={ 1600 }
-                                    alt=""
-                                />
-                            </div>
-                            <div className="keen-slider__slide">
-                                <Image
-                                    priority
-                                    src="/images/mucha-mierda/carrusel_2.jpg"
-                                    width={ 1600 }
-                                    height={ 1600 }
-                                    alt=""
-                                />
-                            </div>
-                            <div className="keen-slider__slide">
-                                <Image
-                                    priority
-                                    src="/images/mucha-mierda/carrusel_3.jpg"
-                                    width={ 1600 }
-                                    height={ 1600 }
-                                    alt=""
-                                />
-                            </div>
-                            <div className="keen-slider__slide">
-                                <Image
-                                    priority
-                                    src="/images/mucha-mierda/carrusel_4.jpg"
-                                    width={ 1600 }
-                                    height={ 1600 }
-                                    alt=""
-                                />
-                            </div>
-                            <div className="keen-slider__slide">
-                                <Image
-                                    priority
-                                    src="/images/mucha-mierda/carrusel_5.jpg"
-                                    width={ 1600 }
-                                    height={ 1600 }
-                                    alt=""
-                                />
-                            </div>
-                        </div>
-                        {loaded && instanceRef.current && (
-                            <>
-                            <Arrow
-                            left
-                            onClick={(e) =>
-                                e.stopPropagation() || instanceRef.current?.prev()
-                            }
-                            disabled={currentSlide === 0}
-                            />
-
-                            <Arrow
-                            onClick={(e) =>
-                                e.stopPropagation() || instanceRef.current?.next()
-                            }
-                            disabled={
-                                currentSlide ===
-                                instanceRef.current.track.details.slides.length - 1
-                            }
-                            />
-                        </>
-                        )}
-                    </div>
+                    <Image 
+                        className= { imgTodoStyles.imagen }
+                        priority
+                        src="/images/mucha-mierda/2.gif"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
+                    />
+                    <Image 
+                        className= { imgTodoStyles.imagen }
+                        priority
+                        src="/images/mucha-mierda/3.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                        data-aos="fade-up"
+                    />
                     <div id={styles.contra_impresora}>
                         <div>
                             <Image 
                                 className= { imgTodoStyles.imagen }
                                 priority
-                                src="/images/mucha-mierda/contraportada.jpg"
+                                src="/images/mucha-mierda/4.jpg"
                                 width={ 1600 }
                                 height={ 1600 }
                                 alt="Todos los estuches de conservas"
@@ -157,7 +111,7 @@ export default function MuchaMierda(){
                             <Image
                                 className= { imgTodoStyles.imagen }
                                 priority
-                                src="/images/mucha-mierda/impresora.jpg"
+                                src="/images/mucha-mierda/5.jpg"
                                 width={ 1600 }
                                 height={ 1600 }
                                 alt="Todos los estuches de conservas"
@@ -165,15 +119,6 @@ export default function MuchaMierda(){
                             />
                         </div>
                     </div>
-                    <Image 
-                        className= { imgTodoStyles.imagen }
-                        priority
-                        src="/images/mucha-mierda/revista_entera.jpg"
-                        width={ 1600 }
-                        height={ 1600 }
-                        alt="Todos los estuches de conservas"
-                        data-aos="fade-up"
-                    />
                 </div>
 
             </div>
@@ -210,4 +155,16 @@ function Arrow(props) {
             height={ 30 }
         />
     )
-  }
+}
+
+export async function getStaticProps(context) {
+    // extract the locale identifier from the URL
+    const { locale } = context
+
+    return {
+        props: {
+        // pass the translation props to the page component
+        ...(await serverSideTranslations(locale)),
+        },
+    }
+}

@@ -4,8 +4,14 @@ import styles from '../../styles/Fos.module.css';
 import textStyles from '../../styles/Textos.module.css';
 import imgTodoStyles from '../../styles/TodoImgs.module.css';
 
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
+
 
 export default function Fos(){
+
+    const { t } = useTranslation();
+
     return(
         <Layout donde="proyecto">
             <div id={imgTodoStyles.todo}>
@@ -22,13 +28,13 @@ export default function Fos(){
                             <p>Cliente: Fos Estudio</p>
                         </div>
                         <div id={ textStyles.categorias }>
-                            <div className={ textStyles.categoria }>Identidad visual</div>
-                            <div className={ textStyles.categoria }>Papelería</div>
-                            <div className={ textStyles.categoria }>Animación de logotipo</div>
+                            <div className={ textStyles.categoria }> {t("CATEGORIA_IDENTIDAD_VISUAL")} </div>
+                            <div className={ textStyles.categoria }> {t("CATEGORIA_PAPELERIA")} </div>
+                            <div className={ textStyles.categoria }>Motion graphics</div>
                         </div>
                     </div>
                     <div id={ textStyles.textos_drch }>
-                        <p className={ textStyles.texto_drch }>Creación de la identidad visual para Fos Estudio ®, un proyecto de interiorismo y diseño llevado a cabo por Irina Ivanova enfocado a traducir la luz, los interiores y la simbiosis entre ambos mundos.</p>
+                        <p className={ textStyles.texto_drch }> {t("FOS_TEXTO")} </p>
                     </div>
                 </div>
 
@@ -47,7 +53,7 @@ export default function Fos(){
                             <Image 
                                 className= { imgTodoStyles.imagen }
                                 priority
-                                src="/images/fos/fos_1.jfif"
+                                src="/images/fos/2.jfif"
                                 width={ 1600 }
                                 height={ 1600 }
                                 alt="Todos los estuches de conservas"
@@ -58,18 +64,39 @@ export default function Fos(){
                             <Image
                                 className= { imgTodoStyles.imagen }
                                 priority
-                                src="/images/fos/tarjetas.jpg"
+                                src="/images/fos/3.jpg"
                                 width={ 1600 }
                                 height={ 1600 }
                                 alt="Todos los estuches de conservas"
                                 data-aos="fade-left"
-                                />
+                            />
                         </div>
                     </div>
-                    <video id={ styles.videofos } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }} data-aos="fade-up"><source src="/images/fos/animacion_logo.mp4" type="video/mp4"/></video>
+                    <Image
+                        className= { imgTodoStyles.imagen }
+                        priority
+                        src="/images/fos/4.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                        data-aos="fade-left"
+                    />
+                    {/* <video id={ styles.videofos } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"35px" }} data-aos="fade-up"><source src="/images/fos/animacion_logo.mp4" type="video/mp4"/></video> */}
                 </div>
 
             </div>
         </Layout>
     )
+}
+
+export async function getStaticProps(context) {
+    // extract the locale identifier from the URL
+    const { locale } = context
+
+    return {
+        props: {
+        // pass the translation props to the page component
+        ...(await serverSideTranslations(locale)),
+        },
+    }
 }

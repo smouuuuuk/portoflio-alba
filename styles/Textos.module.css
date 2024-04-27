@@ -35,7 +35,7 @@
 
 .categoria {
     padding: .25em 1em;
-    border: 1px solid black;
+    border: var(--ancho-borde) solid black;
     border-radius: 40px;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .ver_link {
-    text-decoration: underline;
+    border-bottom: 1.5px solid black;
 }
 
 .ver_link span {

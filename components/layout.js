@@ -6,8 +6,19 @@ import Head from 'next/head';
 import { clsx } from 'clsx';
 import Image from 'next/image';
 import Script from 'next/script';
+import { useRouter } from 'next/router';
 
 export default function Layout({ children, donde }) {
+
+    const { asPath } = useRouter();
+
+    useEffect(() => {
+        AOS.init({
+              duration: 800,
+              once: false,
+            });
+        setInterval(() => {AOS.refresh()}, 500);
+      }, []);
 
     function openMenu(){
         document.getElementById( styles.links ).style.left = "0";
@@ -16,10 +27,6 @@ export default function Layout({ children, donde }) {
     function closeMenu(){
         document.getElementById( styles.links ).style.left = "100vw";
     }
-
-    useEffect(() => {
-        setInterval(() => {AOS.refresh()}, 500);
-     }, [])
 
     return(
         <div id={ styles.todo }>
@@ -31,9 +38,9 @@ export default function Layout({ children, donde }) {
             </Head>
             <header>
                 <div id={ styles.idioma }>
-                    <Link className={ styles.link } href="/">EN</Link>
+                    <Link href={ asPath } locale={ 'en' }>EN</Link>
                     <p>/</p>
-                    <Link className={ styles.link } href="/es">ES</Link>
+                    <Link href={ asPath } locale={ 'es' }>ES</Link>
                 </div>
                 <nav id={ styles.navegacion } className={ clsx({
                         [styles.work]: donde=="work" ||  donde=="proyecto",
@@ -81,6 +88,7 @@ export default function Layout({ children, donde }) {
                 <p>
                     Last update: April 2024
                 </p>
+                {/* Last Update solo aparece en Home y About */}
                 <p>
                     © 2024, Alba Castro. All rights reserved. 
                 </p>

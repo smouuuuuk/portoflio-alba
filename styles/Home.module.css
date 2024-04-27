@@ -16,10 +16,20 @@
   /* max-width: calc(100vw - 4em); */
 }
 
+#proyectos img {
+  max-width: 1400px;
+}
+
+#proyectos a:nth-child(2) {
+  background-color: white;
+  border-radius: var(--project-border-radius);
+}
+
 #videougc {
-  max-width: 100%;
+  max-width: 1400px;
   max-height: 80vh;
-  width: auto;
+  aspect-ratio: 182/100;
+  width: 100%;
   border-radius: var(--project-border-radius);
 }
 
@@ -103,6 +113,25 @@
 
 .logo {
   height: 1em;
+}
+
+@media (max-width: 1600px) {
+
+  .container {
+    display: flex;
+  }
+
+  #proyectos {
+    display: flex;
+    align-items: center;
+    max-width: calc(100vw - 100px);
+    margin-right: 0;
+  }
+
+  #proyectos img {
+    max-width: calc(100vw - 100px);
+  }
+
 }
 
 @media (max-width: 650px) {
