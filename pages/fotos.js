@@ -61,6 +61,7 @@ export default function Fotos (){
                             data-aos="fade-up"
                             onClick={() => { imagenGrande(num) }}
                             alt={`foto de la galería número ${num}`}
+                            placeholder='empty'
                         />
                     ))}
                 </div>  
