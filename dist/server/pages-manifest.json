@@ -1,8 +1,1 @@
-{
-  "/_app": "pages/_app.js",
-  "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/fotos": "pages/fotos.js",
-  "/proyectos/un-gusto-conocerte": "pages/proyectos/un-gusto-conocerte.js"
-}
+{"/_app":"pages/_app.js","/_error":"pages/_error.js","/proyectos/fos":"pages/proyectos/fos.js","/proyectos/catalalata":"pages/proyectos/catalalata.js","/about":"pages/about.js","/proyectos/micenico":"pages/proyectos/micenico.js","/proyectos/un-gusto-conocerte-marca":"pages/proyectos/un-gusto-conocerte-marca.js","/proyectos/mucha-mierda":"pages/proyectos/mucha-mierda.js","/proyectos/un-gusto-conocerte":"pages/proyectos/un-gusto-conocerte.js","/_document":"pages/_document.js","/en/404":"pages/en/404.html","/es/404":"pages/es/404.html","/en/500":"pages/en/500.html","/es/500":"pages/es/500.html","/en/fotos":"pages/en/fotos.html","/es/fotos":"pages/es/fotos.html","/en":"pages/en.html","/es":"pages/es.html"}
