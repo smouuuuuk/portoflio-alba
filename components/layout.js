@@ -37,7 +37,9 @@ export default function Layout({ children, donde }) {
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40,250,0,0" />
             </Head>
             <header>
-                <div id={ styles.idioma }>
+                <div id={ styles.idioma } className={ clsx({
+                    [styles.photo]: donde=="photo"
+                }) }>
                     <Link href={ asPath } locale={ 'en' }>EN</Link>
                     <p>/</p>
                     <Link href={ asPath } locale={ 'es' }>ES</Link>
@@ -83,7 +85,7 @@ export default function Layout({ children, donde }) {
             <footer id={ styles.footer } className={ clsx({
                     [styles.photo]: donde=="photo",
                     [styles.project]: donde=="proyecto",
-                    [styles.resto]: donde!="photo" || donde!="proyecto"
+                    [styles.resto]: donde!="photo" && donde!="proyecto"
                 }) }>
                 <p>
                     Last update: April 2024

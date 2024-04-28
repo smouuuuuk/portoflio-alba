@@ -1,5 +1,5 @@
 #fotos {
-    padding: 0 2em;
+    padding: 0 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

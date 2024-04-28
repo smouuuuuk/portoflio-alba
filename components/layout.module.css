@@ -47,13 +47,22 @@
     border: var(--ancho-borde) solid black;
     border-radius: 30px;
     position: fixed;
-    bottom: 50px;
+    bottom: 33px;
     left: 50px;
     display: flex;
     gap: 1px;
     font-size: 1.5em;
     z-index: 99;
-    /* display: none; */
+}
+
+#idioma.photo {
+    color: white;
+    border: var(--ancho-borde) solid white;
+    background-color: transparent;
+}
+
+#idioma.photo a{
+    color: white;
 }
 
 #idioma p {
@@ -127,6 +136,7 @@
     place-items: center;
 }
 
+
 #footer p:first-child {
     grid-column: 2/3;
 }
@@ -137,6 +147,19 @@
 
 #footer.photo {
     color: white;
+}
+
+#footer.project, #footer.photo {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#footer.project p:first-child, #footer.photo p:first-child {
+    display: none; 
+}
+
+#footer.project p:last-child, #footer.photot p:last-child {
+    grid-column: 3/4;
 }
 
 #footer.resto {
@@ -155,6 +178,9 @@
     transform: rotate(180deg)
 }
 
+#foooter.photo p {
+    color: white;
+}
 
 @media (min-width: 1600px) {
 
