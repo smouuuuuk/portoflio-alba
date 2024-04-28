@@ -122,9 +122,17 @@
     width: 100%;
     padding: 0 50px;
     margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+#footer p:first-child {
+    grid-column: 2/3;
+}
+
+#footer p:last-child {
+    place-self: end;
 }
 
 #footer.photo {
