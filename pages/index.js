@@ -14,7 +14,10 @@ export default function Home() {
             <video hoverable="true" id={ styles.videougc} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/home/home_2.mp4" type="video/mp4"/></video>
           </Link>
           <Proyecto props={{ href:"/proyectos/mucha-mierda", src:"/images/home/3.jpg", alt:"Mucha Mierda" }}></Proyecto>
-          <Proyecto props={{ href:"/proyectos/micenico", src:"/images/home/4.jpg", alt:"Micénico" }}></Proyecto>
+          <Link href="/proyectos/micenico" data-aos="fade-up">
+            <video hoverable="true" id={ styles.videougc} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/home/elgriego_home.mp4" type="video/mp4"/></video>
+          </Link>
+          {/* <Proyecto props={{ href:"/proyectos/micenico", src:"/images/home/4.jpg", alt:"Micénico" }}></Proyecto> */}
           <Proyecto props={{ href:"/proyectos/catalalata", src:"/images/home/5.jpg", alt:"Catalalata" }}></Proyecto>
           <Proyecto props={{ href:"/proyectos/fos", src:"/images/home/6.jpg", alt:"Fos" }}></Proyecto>
         </div>
