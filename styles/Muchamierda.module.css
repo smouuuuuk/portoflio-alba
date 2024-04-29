@@ -11,7 +11,23 @@
 
 #contra_impresora img{
     height: 100%;
+    width: auto;
+}
+
+#gifMag {
+    background-color: black;
+    border-radius: var(--project-border-radius);
+    aspect-ratio: 182/100;
+    overflow: hidden;
     width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+}
+
+#gifMag img {
+    height: 100%;
+    width: auto;
 }
 
 @media (max-width: 400px) {

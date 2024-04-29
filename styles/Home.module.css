@@ -16,10 +16,6 @@
   /* max-width: calc(100vw - 4em); */
 }
 
-#proyectos img {
-  max-width: 1400px;
-}
-
 #proyectos a:nth-child(2) {
   background-color: white;
   border-radius: var(--project-border-radius);
@@ -31,6 +27,7 @@
   aspect-ratio: 182/100;
   width: 100%;
   border-radius: var(--project-border-radius);
+  clip-path: inset(1px 1px);
 }
 
 

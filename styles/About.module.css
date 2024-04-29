@@ -39,7 +39,7 @@
 }
 
 #presentacion div {
-    max-width: 750px;
+    max-width: 600px;
 }
 
 #presentacion p:nth-child(-n+2) {

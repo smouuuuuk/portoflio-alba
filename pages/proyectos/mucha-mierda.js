@@ -67,7 +67,7 @@ export default function MuchaMierda(){
                     </div>
                 </div>
 
-                <div id={ imgTodoStyles.imagenes }>
+                <div id={ imgTodoStyles.imagenes } >
                     <Image 
                         className= { imgTodoStyles.imagen }
                         priority={true}
@@ -77,15 +77,16 @@ export default function MuchaMierda(){
                         alt="Todos los estuches de conservas"
                         data-aos="fade-up"
                     />
-                    <Image 
-                        className= { imgTodoStyles.imagen }
-                        priority
-                        src="/images/mucha-mierda/2.gif"
-                        width={ 1600 }
-                        height={ 1600 }
-                        alt="Todos los estuches de conservas"
-                        data-aos="fade-up"
-                    />
+                    <div id= { styles.gifMag } data-aos="fade-up">
+                        <Image 
+                            className= { imgTodoStyles.imagen }
+                            priority
+                            src="/images/mucha-mierda/2.gif"
+                            width={ 1600 }
+                            height={ 1600 }
+                            alt="Todos los estuches de conservas"
+                        />
+                    </div>
                     <Image 
                         className= { imgTodoStyles.imagen }
                         priority

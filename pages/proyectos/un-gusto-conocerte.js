@@ -87,7 +87,7 @@ export default function UnGustoConocerteLibro() {
                         id="imgModelo"
                         className= { imgTodoStyles.imagen }
                         priority={true}
-                        src="/images/un-gusto-conocerte/1.jpg"
+                        src="/images/home/1.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt=""
