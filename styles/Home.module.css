@@ -16,7 +16,7 @@
   /* max-width: calc(100vw - 4em); */
 }
 
-#proyectos a:nth-child(2) {
+#contUGCVideo {
   background-color: white;
   border-radius: var(--project-border-radius);
 }
@@ -28,6 +28,11 @@
   width: 100%;
   border-radius: var(--project-border-radius);
   clip-path: inset(1px 1px);
+}
+
+#contEGVideo {
+  background-color: black;
+  border-radius: var(--project-border-radius);
 }
 
 

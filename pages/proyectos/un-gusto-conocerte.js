@@ -35,21 +35,20 @@ export default function UnGustoConocerteLibro() {
 
     const { t } = useTranslation();
 
-    useEffect(() => {
+    // useEffect(() => {
        
-        window.addEventListener("resize", handleResize);
+    //     window.addEventListener("resize", handleResize);
        
-        handleResize();
+    //     handleResize();
        
-        return () => window.removeEventListener("resize", handleResize);
-         }, []
-    );
+    //     return () => window.removeEventListener("resize", handleResize);
+    //      }, []
+    // );
 
-    const handleResize = () => {
-        var newHeight = document.getElementById("imgModelo").offsetHeight;
-        var imgParallax = document.getElementById(`UGC-Libro_imgParallax__F_AKW`);
-        imgParallax.style.height = newHeight;
-    }
+    // const handleResize = () => {
+    //     document.getElementById( styles.imgParallax ).style.maxWidth = `${document.getElementsByClassName( imgTodoStyles.imagen )[0].offsetWidth / 2}px`;
+    //     document.getElementById( styles.imgParallax ).style.height = `${document.getElementsByClassName( imgTodoStyles.imagen )[0].offsetHeight}px`;
+    // }
 
     return(
         <Layout donde="proyecto">
@@ -84,7 +83,6 @@ export default function UnGustoConocerteLibro() {
                 <div id={ imgTodoStyles.imagenes }>
 
                     <Image
-                        id="imgModelo"
                         className= { imgTodoStyles.imagen }
                         priority={true}
                         src="/images/home/1.jpg"
@@ -93,36 +91,34 @@ export default function UnGustoConocerteLibro() {
                         alt=""
                         data-aos="fade-up"
                     />
-
+                    <Image
+                        className= { imgTodoStyles.imagen }
+                        priority
+                        src="/images/un-gusto-conocerte/2.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt=""
+                        data-aos="fade-up"
+                    />
                     <div id={ styles.imgParallax }>
                         <Image
                             className= { imgTodoStyles.imagen }
                             priority
-                            src="/images/un-gusto-conocerte/2.png"
+                            src="/images/un-gusto-conocerte/3.jpg"
                             width={ 1600 }
                             height={ 1600 }
                             data-aos="fade-up"
                         />
+                        <Image
+                            className= { imgTodoStyles.imagen }
+                            priority
+                            src="/images/un-gusto-conocerte/4.jpg"
+                            width={ 1600 }
+                            height={ 1600 }
+                            alt=""
+                            data-aos="fade-up"
+                        />
                     </div>
-                    
-                    <Image
-                        className= { imgTodoStyles.imagen }
-                        priority
-                        src="/images/un-gusto-conocerte/3.jpg"
-                        width={ 1600 }
-                        height={ 1600 }
-                        alt=""
-                        data-aos="fade-up"
-                    />
-                    <Image
-                        className= { imgTodoStyles.imagen }
-                        priority
-                        src="/images/un-gusto-conocerte/4.jpg"
-                        width={ 1600 }
-                        height={ 1600 }
-                        alt=""
-                        data-aos="fade-up"
-                    />
                     <Image
                         className= { imgTodoStyles.imagen }
                         priority
@@ -144,7 +140,7 @@ export default function UnGustoConocerteLibro() {
                     <Image
                         className= { imgTodoStyles.imagen }
                         priority
-                        src="/images/un-gusto-conocerte/8.jpg"
+                        src="/images/un-gusto-conocerte/7.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt=""
@@ -153,7 +149,7 @@ export default function UnGustoConocerteLibro() {
                     <Image
                         className= { imgTodoStyles.imagen }
                         priority
-                        src="/images/un-gusto-conocerte/9.jpg"
+                        src="/images/un-gusto-conocerte/8.jpg"
                         width={ 1600 }
                         height={ 1600 }
                         alt=""

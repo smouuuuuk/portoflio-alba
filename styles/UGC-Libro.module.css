@@ -1,9 +1,13 @@
 #imgParallax {
     display: flex;
     align-items: center;
-    max-width: 50%;
-    max-height: 50em;
+    height: auto;
     overflow: hidden;
     border-radius: var(--project-border-radius);
-    align-self: flex-end;
+    gap: 2em;
+    max-width: 1600px;
+}
+
+#imgParallax img {
+    width: 50%;
 }
