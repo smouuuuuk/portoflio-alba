@@ -4,6 +4,7 @@
     width: auto;
     aspect-ratio: 182/100;
     max-width: 1400px;
+    vertical-align: middle;
 }
 
 @media (max-width: 650px) {

@@ -3,12 +3,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1em;
+    gap: 10px
 }
 
 .foto {
-    width: calc((100% - 3em) / 4);
+    width: calc((100% - 30px) / 4);
     height: 100%;
+    border-radius: var(--project-border-radius);
 }
 
 .foto:hover {

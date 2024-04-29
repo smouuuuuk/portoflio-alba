@@ -1,12 +1,12 @@
 #animaciones {
-    padding: 7.5% 0;
+    padding: 5% 0;
     width: 100%;
     max-width: 1600px;
     background-color: black;
-    border-radius: 40px;
+    border-radius: var(--project-border-radius);
     display: flex;
     justify-content: center;
-    aspect-ratio: 58/41;
+    aspect-ratio: 182/100;
     gap: 7.5%;
 }
 
