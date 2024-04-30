@@ -23,14 +23,6 @@
     pointer-events: none;
 }
 
-#alba {
-    transform: rotate(-5deg);
-}
-
-#tulipan {
-    transform: rotate(10deg);
-}
-
 #presentacion {
     padding: 0 50px;
     font-size: 20px;

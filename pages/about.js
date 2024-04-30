@@ -13,7 +13,7 @@ export default function About(){
 
     return(
         <Layout donde="about" >
-                <Draggable className={ styles.drag } defaultPosition={{x: 725, y: 225}} bounds="parent">
+                <Draggable className={ styles.drag } defaultPosition={{x: 725, y: 225}} bounds="parent" rotate={0}>
                     <div className={ styles.div_img} id= { styles.alba }>
                         <Image
                             priority
@@ -24,7 +24,7 @@ export default function About(){
                             />
                     </div>
                 </Draggable>
-                <Draggable className={ styles.drag } defaultPosition={{x: 225, y:425}} bounds="parent">
+                <Draggable className={ styles.drag } defaultPosition={{x: 225, y:425}} bounds="parent" rotate={0}>
                     <div className={ styles.div_img} id= { styles.tulipan }>
                         <Image
                             priority

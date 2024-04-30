@@ -1,0 +1,102 @@
+diff --git a/node_modules/react-draggable/build/cjs/Draggable.js b/node_modules/react-draggable/build/cjs/Draggable.js
+index c29d967..1daf6e1 100644
+--- a/node_modules/react-draggable/build/cjs/Draggable.js
++++ b/node_modules/react-draggable/build/cjs/Draggable.js
+@@ -221,6 +221,7 @@ class Draggable extends React.Component /*:: <DraggableProps, DraggableState>*/{
+       position,
+       positionOffset,
+       scale,
++      rotate,
+       ...draggableCoreProps
+     } = this.props;
+     let style = {};
+@@ -239,13 +240,13 @@ class Draggable extends React.Component /*:: <DraggableProps, DraggableState>*/{
+ 
+     // If this element was SVG, we use the `transform` attribute.
+     if (this.state.isElementSVG) {
+-      svgTransform = (0, _domFns.createSVGTransform)(transformOpts, positionOffset);
++      svgTransform = (0, _domFns.createSVGTransform)(transformOpts, positionOffset, rotate);
+     } else {
+       // Add a CSS transform to move the element around. This allows us to move the element around
+       // without worrying about whether or not it is relatively or absolutely positioned.
+       // If the item you are dragging already has a transform set, wrap it in a <span> so <Draggable>
+       // has a clean slate.
+-      style = (0, _domFns.createCSSTransform)(transformOpts, positionOffset);
++      style = (0, _domFns.createCSSTransform)(transformOpts, positionOffset, rotate);
+     }
+ 
+     // Mark with class while dragging
+@@ -391,5 +392,6 @@ _defineProperty(Draggable, "defaultProps", {
+     x: 0,
+     y: 0
+   },
+-  scale: 1
++  scale: 1,
++  rotate: 0
+ });
+\ No newline at end of file
+diff --git a/node_modules/react-draggable/build/cjs/utils/domFns.js b/node_modules/react-draggable/build/cjs/utils/domFns.js
+index 3da7390..ad90c22 100644
+--- a/node_modules/react-draggable/build/cjs/utils/domFns.js
++++ b/node_modules/react-draggable/build/cjs/utils/domFns.js
+@@ -135,26 +135,26 @@ function offsetXYFromParent(evt /*: EventWithOffset*/, offsetParent /*: HTMLElem
+     y
+   };
+ }
+-function createCSSTransform(controlPos /*: ControlPosition*/, positionOffset /*: PositionOffsetControlPosition*/) /*: Object*/{
+-  const translation = getTranslation(controlPos, positionOffset, 'px');
++function createCSSTransform(controlPos /*: ControlPosition*/, positionOffset /*: PositionOffsetControlPosition*/, rotate) /*: Object*/{
++  const translation = getTranslation(controlPos, positionOffset, 'px', rotate);
+   return {
+     [(0, _getPrefix.browserPrefixToKey)('transform', _getPrefix.default)]: translation
+   };
+ }
+-function createSVGTransform(controlPos /*: ControlPosition*/, positionOffset /*: PositionOffsetControlPosition*/) /*: string*/{
+-  const translation = getTranslation(controlPos, positionOffset, '');
++function createSVGTransform(controlPos /*: ControlPosition*/, positionOffset /*: PositionOffsetControlPosition*/, rotate) /*: string*/{
++  const translation = getTranslation(controlPos, positionOffset, '', rotate);
+   return translation;
+ }
+-function getTranslation(_ref /*:: */, positionOffset /*: PositionOffsetControlPosition*/, unitSuffix /*: string*/) /*: string*/{
++function getTranslation(_ref /*:: */, positionOffset /*: PositionOffsetControlPosition*/, unitSuffix /*: string*/, rotate) /*: string*/{
+   let {
+     x,
+     y
+   } /*: ControlPosition*/ = _ref /*: ControlPosition*/;
+-  let translation = "translate(".concat(x).concat(unitSuffix, ",").concat(y).concat(unitSuffix, ")");
++  let translation = "translate(".concat(x).concat(unitSuffix, ",").concat(y).concat(unitSuffix, ") rotate(".concat(rotate, "deg)"));
+   if (positionOffset) {
+     const defaultX = "".concat(typeof positionOffset.x === 'string' ? positionOffset.x : positionOffset.x + unitSuffix);
+     const defaultY = "".concat(typeof positionOffset.y === 'string' ? positionOffset.y : positionOffset.y + unitSuffix);
+-    translation = "translate(".concat(defaultX, ", ").concat(defaultY, ")") + translation;
++    translation = "translate(".concat(defaultX, ", ").concat(defaultY, ") rotate(".concat(rotate, "deg)")) + translation;
+   }
+   return translation;
+ }
+diff --git a/node_modules/react-draggable/build/web/react-draggable.min.js b/node_modules/react-draggable/build/web/react-draggable.min.js
+index a34fbc5..ac10451 100644
+--- a/node_modules/react-draggable/build/web/react-draggable.min.js
++++ b/node_modules/react-draggable/build/web/react-draggable.min.js
+@@ -269,11 +269,12 @@ function getTranslation(_ref /*:: */, positionOffset /*: PositionOffsetControlPo
+     x,
+     y
+   } /*: ControlPosition*/ = _ref /*: ControlPosition*/;
+-  let translation = "translate(".concat(x).concat(unitSuffix, ",").concat(y).concat(unitSuffix, ")");
++  let translation = "translate(".concat(x).concat(unitSuffix, ",").concat(y).concat(unitSuffix, ") rotate(5deg)");
+   if (positionOffset) {
+     const defaultX = "".concat(typeof positionOffset.x === 'string' ? positionOffset.x : positionOffset.x + unitSuffix);
+     const defaultY = "".concat(typeof positionOffset.y === 'string' ? positionOffset.y : positionOffset.y + unitSuffix);
+-    translation = "translate(".concat(defaultX, ", ").concat(defaultY, ")") + translation;
++    translation = "translate(".concat(defaultX, ", ").concat(defaultY, ") rotate(5deg)") + translation;
++    console.log("test");
+   }
+   return translation;
+ }
+@@ -1111,6 +1112,7 @@ class Draggable extends external_commonjs_react_commonjs2_react_amd_react_root_R
+       position,
+       positionOffset,
+       scale,
++      rotate,
+       ...draggableCoreProps
+     } = this.props;
+     let style = {};
