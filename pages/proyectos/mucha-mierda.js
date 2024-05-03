@@ -96,30 +96,15 @@ export default function MuchaMierda(){
                         alt="Todos los estuches de conservas"
                         data-aos="fade-up"
                     />
-                    <div id={styles.contra_impresora}>
-                        <div>
-                            <Image 
-                                className= { imgTodoStyles.imagen }
-                                priority
-                                src="/images/mucha-mierda/4.jpg"
-                                width={ 1600 }
-                                height={ 1600 }
-                                alt="Todos los estuches de conservas"
-                                data-aos="fade-right"
-                            />
-                        </div>
-                        <div>
-                            <Image
-                                className= { imgTodoStyles.imagen }
-                                priority
-                                src="/images/mucha-mierda/5.jpg"
-                                width={ 1600 }
-                                height={ 1600 }
-                                alt="Todos los estuches de conservas"
-                                data-aos="fade-left"
-                            />
-                        </div>
-                    </div>
+                    <Image 
+                        className= { imgTodoStyles.imagen }
+                        priority
+                        src="/images/mucha-mierda/4.jpg"
+                        width={ 1600 }
+                        height={ 1600 }
+                        alt="Todos los estuches de conservas"
+                        data-aos="fade-right"
+                    />
                 </div>
 
             </div>
