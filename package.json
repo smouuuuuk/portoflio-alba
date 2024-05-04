@@ -10,6 +10,7 @@
     "postinstall": "patch-package"
   },
   "dependencies": {
+    "@vercel/speed-insights": "^1.0.10",
     "aos": "^2.3.4",
     "clsx": "^2.0.0",
     "i18next": "^23.11.2",

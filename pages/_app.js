@@ -4,6 +4,7 @@ import '../styles/globals.css';
 import CustomCursor from '../components/cursor';
 import Script from 'next/script';
 import { appWithTranslation } from 'next-i18next';
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 import localFont from 'next/font/local';
 const helvetica_neue = localFont({
