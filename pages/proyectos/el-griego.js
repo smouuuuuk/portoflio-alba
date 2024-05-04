@@ -3,9 +3,11 @@ import Image from "next/image";
 import styles from '../../styles/Micenico.module.css';
 import textStyles from '../../styles/Textos.module.css';
 import imgTodoStyles from '../../styles/TodoImgs.module.css';
+import { useState } from "react";
 
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 import { useTranslation } from 'next-i18next'
+import { useEffect } from "react";
 
 
 export default function Micenico(){
@@ -42,7 +44,7 @@ export default function Micenico(){
                 </div>
 
                 <div id={ imgTodoStyles.imagenes }>
-                    <video hoverable="true" className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/1.mp4" type="video/mp4"/></video>
+                    <video data-aos="fade-up" id={ styles.video_obj } className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/1.mp4" type="video/mp4"/></video>
                     <Image 
                         className= { imgTodoStyles.imagen }
                         priority={true}
@@ -52,7 +54,7 @@ export default function Micenico(){
                         alt="Todos los estuches de conservas"
                         data-aos="fade-up"
                     />
-                    <video hoverable="true" className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/3.mp4" type="video/mp4"/></video>
+                    <video data-aos="fade-up" id={ styles.video_colores } className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/3.mp4" type="video/mp4"/></video>
                     <Image 
                         className= { imgTodoStyles.imagen }
                         priority={true}
@@ -62,7 +64,7 @@ export default function Micenico(){
                         alt="Todos los estuches de conservas"
                         data-aos="fade-up"
                     />
-                    <video hoverable="true" className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/5.mp4" type="video/mp4"/></video>
+                    <video data-aos="fade-up" id={ styles.video_poster } className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/5.mp4" type="video/mp4"/></video>
 
                 </div>
 
