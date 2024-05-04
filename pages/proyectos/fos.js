@@ -39,15 +39,7 @@ export default function Fos(){
                 </div>
 
                 <div id={ imgTodoStyles.imagenes }>
-                    <Image 
-                        className= { imgTodoStyles.imagen }
-                        priority={true}
-                        src="/images/home/home_5.jpg"
-                        width={ 1600 }
-                        height={ 1600 }
-                        alt="Todos los estuches de conservas"
-                        data-aos="fade-up"
-                    />
+                <video id={ styles.videofos } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"16px" }} data-aos="fade-up"><source src="/images/fos/animacion_logo.mp4" type="video/mp4"/></video>
                     <div id={styles.lamp_tarj}>
                         <div>
                             <Image 

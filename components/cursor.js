@@ -11,9 +11,25 @@ function FlareCursor() {
 
   const [isHover, setIsHover] = useState(false);
 
+  const accel = 10;
+  let last_pos_x = 0;
+  let last_pos_y = 0;
+  let vel_x = 0;
+  let vel_y = 0;
+
   // Event handler for the mousemove event.
   const handleMouseMove = (e) => {
     // Update the cursor position based on the mouse coordinates.
+    // var diff_x = e.clientX - last_pos_x;
+    // var diff_y = e.clientY - last_pos_y;
+
+
+    // var new_x = last_pos_x + (Math.sign(diff_x)==1 ? accel * Math.cos(Math.atan(Math.abs(diff_y/diff_x))) : -accel * Math.cos(Math.atan(Math.abs(diff_x))));
+    // var new_y = last_pos_y + (Math.sign(diff_y)==1 ? accel * Math.sin(Math.atan(Math.abs(diff_y/diff_x))) : -accel * Math.sin(Math.atan(Math.abs(diff_y))));
+
+    // last_pos_x = new_x;
+    // last_pos_y = new_y;
+
     setPosition({ x: e.clientX, y: e.clientY });
 
     // Get the target element that the cursor is currently over.

@@ -1,3 +1,9 @@
+.videos {
+    width: 100%;
+    max-width: 1600px;
+    border-radius: var(--project-border-radius);
+}
+
 #tote_botella {
     width: 100%;
     max-width: 1600px;
