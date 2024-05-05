@@ -10,7 +10,15 @@
 @media (max-width: 650px) {
 
   .image {
-    border-radius: 20px;
+    border-radius: 10px;
+  }
+
+}
+
+@media (max-width: 390px) {
+
+  .image {
+    border-radius: 5px;
   }
 
 }

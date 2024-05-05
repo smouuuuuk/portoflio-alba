@@ -15,11 +15,15 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    color: white;
+    mix-blend-mode: difference;
 }
 
 #navegacion a {
     font-size: 1.5em;
+    font-weight: 100;
     position: relative;
+    color: inherit;
 }
 
 #hamburger, #close_menu {
@@ -48,21 +52,18 @@
     border-radius: 30px;
     position: fixed;
     bottom: 33px;
-    left: 50px;
     display: flex;
     gap: 1px;
     font-size: 1.5em;
     z-index: 99;
 }
 
-#idioma.photo {
-    color: white;
-    border: var(--ancho-borde) solid white;
-    background-color: transparent;
+#idioma.project, #idioma.about {
+    left: 50px;
 }
 
-#idioma.photo a{
-    color: white;
+#idioma.photo {
+    display: none;
 }
 
 #idioma p {
@@ -84,7 +85,7 @@
     background-color: white;
 }
 
-.work #links a:nth-child(2) p::after {
+.work #links a:nth-child(1) p::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -94,7 +95,7 @@
     background-color: black;
 }
 
-.photo #links a:nth-child(3) p::after {
+.photo #links a:nth-child(2) p::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -129,11 +130,11 @@
     left: 0;
     bottom: 0;
     width: 100%;
-    padding: 0 50px;
     margin-bottom: 50px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     place-items: center;
+    font-size: 0.9em;
 }
 
 
@@ -152,6 +153,7 @@
 #footer.project, #footer.photo {
     display: flex;
     justify-content: flex-end;
+    padding: 0 50px;
 }
 
 #footer.project p:first-child, #footer.photo p:first-child {
@@ -173,7 +175,7 @@
 
 #flecha_atras {
     position: absolute;
-    top: 6.5em;
+    top: 120px;
     left: 50px;
     transform: rotate(180deg)
 }
@@ -182,12 +184,24 @@
     color: white;
 }
 
+#footer.about {
+    padding: 0 50px;
+}
+
+
 @media (min-width: 1600px) {
+
+    #idioma {
+        left: 50px;
+    }
 
     #flecha_atras {
         position: fixed;
     }
 
+    #footer{
+        padding: 0 50px;
+    }
     .project#footer {
         position: fixed;
         max-width: 650px;
@@ -196,9 +210,88 @@
 
 }
 
-@media (max-width: 650px) {
+@media (max-width: 875px) {
 
     #links {
+        gap: 80px;
+    }
+
+    #footer{
+        grid-template-columns: 1fr 30% 50%;
+    }
+
+}
+
+@media (max-width: 770px) {
+
+    #links {
+        gap: 60px;
+    }
+
+    #navegacion a {
+        font-size: 1.25em;
+    }
+
+    #idioma {
+        font-size: 1.25em;
+        border: 1px solid black;
+        bottom: 13px;
+    }
+
+    #nav_filler {
+        height: 120px;
+    }
+
+    #flecha_atras {
+        top: 70px;
+        left: 30px;
+    }
+
+    #navegacion {
+        padding: 30px;
+    }
+
+    #footer {
+        margin-bottom: 30px;
+    }
+
+    #footer.project, #footer.photo {
+        padding: 0 30px;
+    }
+
+    #footer.about {
+        padding: 0 30px;
+    }
+
+    #idioma.project, #idioma.about {
+        left: 30px;
+    }
+
+    .link::after {
+        height: 1px;
+    }
+    
+    .work #links a:nth-child(1) p::after {
+        height: 1px;
+    }
+    
+    .photo #links a:nth-child(2) p::after {
+        height: 1px;
+    }
+    
+    .about #links a:last-child p::after {
+        height: 1px;
+    }
+    
+    .link:hover::after {
+        height: 1px;
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    /* #links {
         left: 100vw;
         flex-direction: column;
         justify-content: space-evenly;
@@ -270,26 +363,100 @@
 
     #hamburger:hover, #close_menu:hover {
         cursor: pointer;
-    }
+    } */
 
-    #nav_filler {
-        height: 8em;
+    #idioma {
+        bottom: 25px;
     }
 
     #footer_filler {
-        height: 6em;
+        height: 150px;
     }
 
     #footer {
-        font-size: .75em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
 
-    #flecha_atras {
+    /* #flecha_atras {
         top: 5em;
         left: 2em;
         height: 30px;
         width: 30px;
+    } */
+
+}
+
+@media (max-width: 570px) {
+
+    #links {
+        gap: 30px;
     }
 
 }
-  
+
+@media (max-width: 500px) {
+
+    #links {
+        gap: 20px;
+    }
+
+    #flecha_atras {
+        top: 60px;
+        left: 20px;
+        height: 30px;
+        width: 30px;
+    }
+
+    #nav_filler {
+        height: 100px;
+    }
+
+    #navegacion {
+        font-size: 0.8em;
+        padding: 20px;
+    }
+
+    #footer.project, #footer.photo, #footer.about {
+        padding: 0 20px;
+    }
+
+    #idioma {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    #idioma.project, #idioma.about {
+        left: 20px;
+    }
+
+    #footer {
+        font-size: 0.8em;
+    }
+
+    #footer.about {
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width: 390px) {
+
+    #links {
+        gap: 15px;
+    }
+
+    #navegacion {
+        font-size: 0.75em;
+    }
+
+    #idioma {
+        font-size: 0.95em;
+    }
+
+    #footer {
+        font-size: 0.7em;
+    }
+
+}

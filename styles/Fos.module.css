@@ -2,7 +2,7 @@
     width: 100%;
     max-width: 1600px;
     display: flex;
-    gap: 2em;
+    gap: 28px;
 }
 
 #lamp_tarj div {
@@ -18,10 +18,32 @@
     max-width: 100%;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 875px) {
+    #lamp_tarj{
+      gap: 20px;
+    }
+}
+
+@media (max-width: 650px) {
 
     #lamp_tarj {
-        gap: 1em;
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    #lamp_tarj {
+        gap: 14px;
+    }
+  
+  }
+
+@media (max-width: 390px) {
+
+    #lamp_tarj {
+        gap: 10px;
     }
 
 }

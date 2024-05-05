@@ -21,7 +21,7 @@ export default function About(){
                             width={ 350 }
                             height={ 350 }
                             alt="Alba"
-                            />
+                        />
                     </div>
                 </Draggable>
                 <Draggable className={ styles.drag } defaultPosition={{x: 225, y:425}} bounds="parent" rotate={0}>
@@ -32,7 +32,7 @@ export default function About(){
                             width={ 900 }
                             height={ 900 }
                             alt="Alba"
-                            />
+                        />
                     </div>
                 </Draggable>
                 <div id={ styles.todo }>
@@ -43,6 +43,22 @@ export default function About(){
                             <p> {t("ABOUT_TEXTO_2")} </p>
                             <p> {t("ABOUT_TEXTO_3")} </p>
                         </div>
+                    </div>
+                    <div id= { styles.imagenes_peq }>
+                        <Image
+                            priority
+                            src="/images/alba.jpg"
+                            width={ 350 }
+                            height={ 350 }
+                            alt="Alba"
+                        />
+                        <Image
+                            priority
+                            src="/images/tulipan.png"
+                            width={ 900 }
+                            height={ 900 }
+                            alt="Alba"
+                        />
                     </div>
                     <div id={ styles.datos }>
                         <div className={ styles.seccion_datos } id={ styles.contacto }>
@@ -73,6 +89,8 @@ export default function About(){
                         <div className={ styles.seccion_datos } id={ styles.premios }>
                             <h2> {t("ABOUT_PREMIOS")} </h2>
                             <div>
+                                <h2>(2024)</h2>
+                                <p>ADG Laus Aporta</p>
                                 <h2>(2023)</h2>
                                 <p>Design for the future, UNESCO</p>
                                 <a hoverable="true" href="https://bid-dimad.org/encuentrosbid/decimo/talentos/udit_-un-gusto-conocerte/" target="_blank">BID-Dimad 10ª Edición, Mención Gráfico</a>
@@ -84,6 +102,7 @@ export default function About(){
                         </div>
                         <div className={ styles.seccion_datos } id={ styles.prensa }>
                             <h2> {t("ABOUT_PRENSA")} </h2>
+                            <a hoverable="true" href="https://www.ondacero.es/emisoras/asturias/alba-castro-aun-existen-muchos-estigmas-personas-que-tienen-alguna-discapacidad-todo-intelectual_2024031865f863099e2a440001bc3481.html" target="_blank">Entrevista Radio Onda Cero</a>
                             <a hoverable="true" href="https://www.ivoox.com/ser-occidente-castropol-barres-premio-nacional-packaging-asociacion-audios-mp3_rf_112228507_1.html" target="_blank">Entrevista Radio SER</a>
                             <a hoverable="true" href="https://www.fundacionbancosabadell.com/alba-castro-ganadora-del-v-premio-de-diseno-anfaco/" target="_blank">Fundación Banco Sabadell</a>
                             <a hoverable="true" href="https://www.lavozdegalicia.es/noticia/sociedad/2023/06/30/alba-castro-ganadora-v-premio-diseno-anfaco-fundacion-banco-sabadell/00031688120090515387871.htm" target="_blank">La Voz de Galicia</a>

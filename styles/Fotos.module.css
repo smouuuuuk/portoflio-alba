@@ -41,10 +41,36 @@
     object-fit: contain;
 }
 
-@media (max-width: 650px) {
-
+@media (max-width: 1300px) {
     .foto {
-        width: calc((100% - 3em) / 2);
+        border-radius: 10px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .foto {
+        border-radius: 8px;
+        width: calc((100% - 20px) / 3);
+    }
+}
+
+@media (max-width: 770px) {
+    #fotos {
+        padding: 0 30px;
     }
 
+    .foto {
+        width: calc((100% - 10px) / 2);
+    }
+
+}
+
+@media (max-width: 500px) {
+    .foto {
+        border-radius: 5px;
+    }
+
+    #fotos {
+        padding: 0 20px;
+    }
 }

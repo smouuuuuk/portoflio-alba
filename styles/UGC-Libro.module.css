@@ -4,10 +4,40 @@
     height: auto;
     overflow: hidden;
     border-radius: var(--project-border-radius);
-    gap: 2em;
+    gap: 28px;
     max-width: 1600px;
 }
 
 #imgParallax img {
     width: 50%;
+}
+
+@media (max-width: 875px) {
+    #imgParallax{
+      gap: 20px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    #imgParallax {
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 500px) {
+
+    #imgParallax {
+        gap: 14px;
+    }
+  
+  }
+
+@media (max-width: 390px) {
+
+    #imgParallax {
+        gap: 10px;
+    }
+
 }

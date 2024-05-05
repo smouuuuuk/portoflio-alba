@@ -8,7 +8,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2em;
+    gap: 28px;
 }
 
 .imagen {
@@ -36,14 +36,26 @@
 
 }
 
+@media (max-width: 875px) {
+    #imagenes{
+      gap: 20px;
+    }
+}
+
+@media (max-width: 770px) {
+    #todo {
+        padding: 0 30px;
+    }
+}
+
 @media (max-width: 650px) {
 
     #imagenes {
-        gap: 1em;
+        gap: 20px;
     }
 
     .imagen {
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     .arrow.arrow--right {
@@ -51,3 +63,27 @@
     }
 
 }
+
+@media (max-width: 500px) {
+
+    #todo {
+        padding: 0 20px;
+    }
+
+    #imagenes {
+        gap: 14px;
+    }
+  
+  }
+
+  @media (max-width: 390px) {
+
+    #imagenes {
+        gap: 10px;
+    }
+
+    .imagen {
+        border-radius: 5px;
+    }
+  
+  }

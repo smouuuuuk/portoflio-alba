@@ -20,13 +20,13 @@ export default function Layout({ children, donde }) {
         setInterval(() => {AOS.refresh()}, 500);
       }, []);
 
-    function openMenu(){
-        document.getElementById( styles.links ).style.left = "0";
-    }
+    // function openMenu(){
+    //     document.getElementById( styles.links ).style.left = "0";
+    // }
     
-    function closeMenu(){
-        document.getElementById( styles.links ).style.left = "100vw";
-    }
+    // function closeMenu(){
+    //     document.getElementById( styles.links ).style.left = "100vw";
+    // }
 
     return(
         <div id={ styles.todo }>
@@ -38,7 +38,9 @@ export default function Layout({ children, donde }) {
             </Head>
             <header>
                 <div id={ styles.idioma } className={ clsx({
-                    [styles.photo]: donde=="photo"
+                    [styles.photo]: donde=="photo",
+                    [styles.project]: donde=="proyecto",
+                    [styles.about]: donde=="about"
                 }) }>
                     <Link href={ asPath } locale={ 'en' }>EN</Link>
                     <p>/</p>
@@ -50,9 +52,9 @@ export default function Layout({ children, donde }) {
                         [styles.about]: donde=="about"
                     }) }>
                     <Link hoverable="true" href="/">ALBA CASTRO</Link>
-                    <span id={ styles.hamburger } className="material-symbols-rounded md-48" onClick={() => { openMenu() }}>menu</span>
+                    {/* <span id={ styles.hamburger } className="material-symbols-rounded md-48" onClick={() => { openMenu() }}>menu</span> */}
                     <div id={ styles.links } >
-                        <span id={ styles.close_menu } className="material-symbols-rounded" onClick={() => { closeMenu() }} >close</span>
+                        {/* <span id={ styles.close_menu } className="material-symbols-rounded" onClick={() => { closeMenu() }} >close</span> */}
                         <Link className={ styles.link } href="/" ><p hoverable="true">WORK</p></Link>
                         <Link className={ styles.link } href="/fotos"><p hoverable="true">PHOTO</p></Link>
                         <Link className={ styles.link } href="/about"><p hoverable="true">ABOUT</p></Link>
@@ -85,7 +87,8 @@ export default function Layout({ children, donde }) {
             <footer id={ styles.footer } className={ clsx({
                     [styles.photo]: donde=="photo",
                     [styles.project]: donde=="proyecto",
-                    [styles.resto]: donde!="photo" && donde!="proyecto"
+                    [styles.resto]: donde!="photo" && donde!="proyecto",
+                    [styles.about]: donde=="about"
                 }) }>
                 <p>
                     Last update: April 2024
