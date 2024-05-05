@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    color: white;
+    color: var(--gris-coorporativo);
     mix-blend-mode: difference;
 }
 

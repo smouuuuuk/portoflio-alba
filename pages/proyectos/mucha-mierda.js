@@ -53,17 +53,18 @@ export default function MuchaMierda(){
                             <p>Tamaño: A2</p>
                             <p>Papel ecológico de 100gr</p>
                             <p>Encuadernación grapada</p>
+                            <p>W/ Inés Oliver, Hugo Morán, Sara Zaloña</p>
                         </div>
                         <div id={ textStyles.categorias }>
                             <div className={ textStyles.categoria }>ADG Laus Bronze Award</div>
                             <div className={ textStyles.categoria }> {t("CATEGORIA_DIRECCION_ARTE")} </div>
                             <div className={ textStyles.categoria }> {t("CATEGORIA_EDITORIAL")} </div>
                         </div>
+
                     </div>
                     <div id={ textStyles.textos_drch }>
                         <p className={ textStyles.texto_drch }> {t("MUCHA_MIERDA_TEXTO_1")} </p>
                         <p className={ textStyles.texto_drch }> {t("MUCHA_MIERDA_TEXTO_2")} </p>
-                        <p className={ textStyles.texto_drch }> {t("MUCHA_MIERDA_TEXTO_3")} </p>
                     </div>
                 </div>
 
