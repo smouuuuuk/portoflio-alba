@@ -66,10 +66,6 @@
     display: none;
 }
 
-#idioma p {
-    font-weight: bold;
-}
-
 .link::after {
     content: "";
     position: absolute;

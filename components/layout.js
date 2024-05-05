@@ -8,6 +8,11 @@ import Image from 'next/image';
 import Script from 'next/script';
 import { useRouter } from 'next/router';
 
+import LanguageSwitchLink from './LanguageSwitchLink';
+import i18nextConfig from '../next-i18next.config';
+import pkg from 'next-i18next/package.json'
+import pkgLD from 'next-language-detector/package.json'
+
 export default function Layout({ children, donde }) {
 
     const { asPath } = useRouter();
@@ -18,7 +23,9 @@ export default function Layout({ children, donde }) {
               once: false,
             });
         setInterval(() => {AOS.refresh()}, 500);
-      }, []);
+    }, []);
+
+    const currentLocale = useRouter().query.locale || i18nextConfig.i18n.defaultLocale;
 
     // function openMenu(){
     //     document.getElementById( styles.links ).style.left = "0";
@@ -42,9 +49,15 @@ export default function Layout({ children, donde }) {
                     [styles.project]: donde=="proyecto",
                     [styles.about]: donde=="about"
                 }) }>
-                    <Link href={ asPath } locale={ 'en' }>EN</Link>
-                    <p>/</p>
-                    <Link href={ asPath } locale={ 'es' }>ES</Link>
+                    {i18nextConfig.i18n.locales.map((locale) => {
+                        if (locale === currentLocale) return null;
+                        return (
+                            <LanguageSwitchLink
+                            locale={locale}
+                            key={locale}
+                            />
+                        );
+                    })}
                 </div>
                 <nav id={ styles.navegacion } className={ clsx({
                         [styles.work]: donde=="work" ||  donde=="proyecto",
@@ -77,7 +90,7 @@ export default function Layout({ children, donde }) {
                         </>
                             ) : (
                                 <>
-                            </>
+                                </>
                             )
                     }
                 </div>

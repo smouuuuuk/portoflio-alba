@@ -1,11 +1,15 @@
-// next-i18next.config.js
+// used for SSR (getServerSideProps)
+// const path = require('path')
+// const localePath = path.resolve('./public/locales')
 
 module.exports = {
-    i18n: {
-      // all the locales supported in the application
-      locales: ['en', 'es'], 
-      // the default locale to be used when visiting
-      // a non-localized route (e.g. `/about`)   
-      defaultLocale: 'en'
-    },
-  }
+  // https://www.i18next.com/overview/configuration-options#logging
+  debug: process.env.NODE_ENV === 'development',
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
+  },
+  // localePath,
+  reloadOnPrerender: process.env.NODE_ENV === 'development',
+  // serializeConfig: false,
+}
