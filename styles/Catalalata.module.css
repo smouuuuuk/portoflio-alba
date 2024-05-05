@@ -24,15 +24,14 @@
     justify-content: flex-end;
 }
 
-@media (min-width: 1600px) {
-
-
+@media (max-width: 650px) {
+    #animaciones {
+        border-radius: 10px;
+    }
 }
 
-@media (max-width: 650px) {
-
+@media (max-width: 390px) {
     #animaciones {
-        border-radius: 20px;
+        border-radius: 5px;
     }
-
 }

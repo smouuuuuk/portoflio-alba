@@ -3,7 +3,13 @@ import Layout from '../../components/layout';
 import Proyecto from '../../components/proyecto';
 import Link from '../../components/Link';
 
+import { getStaticPaths, makeStaticProps } from '../../lib/getStatic'
+import { useTranslation } from 'next-i18next'
+
 export default function Home() {
+
+  const { t } = useTranslation();
+  
   return (
     <div className={ styles.container }>
       <Layout donde="work">
@@ -25,3 +31,6 @@ export default function Home() {
     </div>
   )
 }
+
+const getStaticProps = makeStaticProps(['common', 'footer'])
+export { getStaticPaths, getStaticProps }

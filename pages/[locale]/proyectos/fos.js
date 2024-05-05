@@ -39,7 +39,7 @@ export default function Fos(){
                 </div>
 
                 <div id={ imgTodoStyles.imagenes }>
-                <video id={ styles.videofos } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} style={{ borderRadius:"16px" }} data-aos="fade-up"><source src="/images/fos/animacion_logo.mp4" type="video/mp4"/></video>
+                <video id={ styles.videofos } width="1600" autoPlay={true} loop={true} muted={true} playsInline={true} data-aos="fade-up"><source src="/images/fos/animacion_logo.mp4" type="video/mp4"/></video>
                     <div id={styles.lamp_tarj}>
                         <div>
                             <Image 

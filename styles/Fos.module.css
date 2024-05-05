@@ -16,6 +16,7 @@
 
 #videofos {
     max-width: 100%;
+    border-radius: var(--project-border-radius);
 }
 
 @media (max-width: 875px) {
@@ -28,6 +29,10 @@
 
     #lamp_tarj {
         gap: 20px;
+    }
+
+    #videofos{
+        border-radius: 10px;
     }
 
 }
@@ -44,6 +49,10 @@
 
     #lamp_tarj {
         gap: 10px;
+    }
+
+    #videofos{
+        border-radius: 5px;
     }
 
 }

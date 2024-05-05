@@ -104,7 +104,7 @@ export default function MuchaMierda(){
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
-                        data-aos="fade-right"
+                        data-aos="fade-up"
                     />
                 </div>
 
