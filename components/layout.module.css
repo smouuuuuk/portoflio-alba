@@ -15,7 +15,7 @@
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    color: var(--gris-coorporativo);
+    color: white;
     mix-blend-mode: difference;
 }
 
@@ -70,7 +70,7 @@
     content: "";
     position: absolute;
     height: var(--ancho-borde);
-    background-color: black;
+    background-color: white;
     bottom: 0;
     left: 0;
     width: 0;
@@ -88,7 +88,7 @@
     left: 0;
     width: 100%;
     height: var(--ancho-borde);
-    background-color: black;
+    background-color: white;
 }
 
 .photo #links a:nth-child(2) p::after {
@@ -108,7 +108,7 @@
     left: 0;
     width: 100%;
     height: var(--ancho-borde);
-    background-color: black;
+    background-color: white;
 }
 
 .link:hover::after {

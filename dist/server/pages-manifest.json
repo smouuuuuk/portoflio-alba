@@ -1,0 +1,11 @@
+{
+  "/_app": "pages/_app.js",
+  "/_error": "pages/_error.js",
+  "/_document": "pages/_document.js",
+  "/[locale]": "pages/[locale].js",
+  "/[locale]/proyectos/catalalata": "pages/[locale]/proyectos/catalalata.js",
+  "/": "pages/index.js",
+  "/proyectos/catalalata": "pages/proyectos/catalalata.js",
+  "/about": "pages/about.js",
+  "/[locale]/about": "pages/[locale]/about.js"
+}

@@ -14,26 +14,11 @@
     min-width: 260px;
 }
 
-#tote_gif {
-    width: 100%;
-    max-width: 1600px;
-    gap: 2em;
-    display: flex;
-}
-
-#tote_gif div {
-    flex-grow: 1;
-}
-
-#tote_gif img {
-    height: 100%;
-    width: 100%;
-}
-
 #gifManos {
     width: 100%;
-    display: grid;
-    place-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     aspect-ratio: 182/100;
     overflow: hidden;
     background-color: white;

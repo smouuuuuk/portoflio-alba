@@ -46,13 +46,10 @@ export default function MuchaMierda(){
                         <div id={ textStyles.fecha }>
                             <p>2023</p>
                         </div>
-                        <div id={ textStyles.mencion }>
-                            <p>Premiado: <a href="https://www.adg-fad.org/es/laus/proyecto/mucha-mierda-0">ADG Laus Bronce</a></p>
-                        </div>
                         <div id={ textStyles.informacion}>
-                            <p>Tamaño: A2</p>
-                            <p>Papel ecológico de 100gr</p>
-                            <p>Encuadernación grapada</p>
+                            <p> {t("MUCHA_MIERDA_TAMANO")} </p>
+                            <p> {t("MUCHA_MIERDA_PAPEL_ECOLOGICO")} </p>
+                            <p> {t("MUCHA_MIERDA_ENCUADERNACION")} </p>
                             <p>W/ Inés Oliver, Hugo Morán, Sara Zaloña</p>
                         </div>
                         <div id={ textStyles.categorias }>

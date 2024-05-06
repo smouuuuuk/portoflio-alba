@@ -43,13 +43,11 @@ export default function Catalalata() {
                         <div id={ textStyles.titulo }>
                             <h2>CATA LA LATA</h2>
                         </div>
-                        <div id={ textStyles.fecha }>
+                        <div id={ textStyles.mencion }>
                             <p>2023</p>
                         </div>
-                        <div id={ textStyles.mencion }>
-                            <p>Premiado: <a href="https://www.fundacionbancosabadell.com/alba-castro-ganadora-del-v-premio-de-diseno-anfaco/">Ganadora V Edición Cata La Lata <br></br> Anfaco x Fundación Banco Sabadell</a></p>
-                        </div>
                         <div id={ textStyles.categorias }>
+                            <div className={ textStyles.categoria }>Cata La Lata Award - Winner</div>
                             <div className={ textStyles.categoria }>Packaging</div>
                             <div className={ textStyles.categoria }> {t("CATEGORIA_ILUSTRACION")} </div>
                             <div className={ textStyles.categoria }>Motion graphics</div>
