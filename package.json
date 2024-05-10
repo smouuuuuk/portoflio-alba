@@ -18,7 +18,7 @@
     "jquery": "^3.7.1",
     "jquey": "^0.0.1-security",
     "keen-slider": "^6.8.6",
-    "next": "latest",
+    "next": ">=14.1.1",
     "next-i18next": "^15.3.0",
     "next-language-detector": "^1.1.0",
     "react": "18.2.0",
