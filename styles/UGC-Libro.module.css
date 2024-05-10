@@ -3,7 +3,6 @@
     align-items: center;
     height: auto;
     overflow: hidden;
-    border-radius: var(--project-border-radius);
     gap: 28px;
     max-width: 1600px;
 }
