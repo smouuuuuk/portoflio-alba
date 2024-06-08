@@ -44,16 +44,16 @@ export default function Micenico(){
                 </div>
 
                 <div id={ imgTodoStyles.imagenes }>
-                    <video data-aos="fade-up" id={ styles.video_obj } className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/1.mp4" type="video/mp4"/></video>
-                    <Image 
+                    <Image
                         className= { imgTodoStyles.imagen }
-                        priority={true}
-                        src="/images/el-griego/2.jpg"
+                        priority
+                        src="/images/el-griego/1.gif"
                         width={ 1600 }
                         height={ 1600 }
                         alt="Todos los estuches de conservas"
                         data-aos="fade-up"
                     />
+                    <video data-aos="fade-up" id={ styles.video_colores } className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/2.mp4" type="video/mp4"/></video>
                     <video data-aos="fade-up" id={ styles.video_colores } className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/3.mp4" type="video/mp4"/></video>
                     <Image 
                         className= { imgTodoStyles.imagen }
@@ -65,6 +65,8 @@ export default function Micenico(){
                         data-aos="fade-up"
                     />
                     <video data-aos="fade-up" id={ styles.video_poster } className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/5.mp4" type="video/mp4"/></video>
+                    <video data-aos="fade-up" id={ styles.video_poster } className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/6.mp4" type="video/mp4"/></video>
+                    <video data-aos="fade-up" id={ styles.video_poster } className={ styles.videos} width="1400" autoPlay={true} loop={true} muted={true} playsInline={true}><source src="/images/el-griego/7.mp4" type="video/mp4"/></video>
 
                 </div>
 
